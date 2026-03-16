@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BlueDot - ">
+    <meta name="keywords" content="">
+    <meta name="author" content="BlueDot">
+
+    <title>BlueDot | </title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ========== HEADER START ========== -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-main">
+            <div class="container">
+                <div class="header-inner">
+                    <!-- Logo -->
+                    <a href="index.html" class="header-logo" id="headerLogo">
+                        <img src="images/main-logo.png" alt="Bluedot Logo">
+                    </a>
+
+                    <!-- Right Side Actions -->
+                    <div class="header-actions">
+                        <a href="tel:+1234567890" class="header-btn" id="btnGlobalAssistance">
+                            24/7 Global Assistance
+                        </a>
+                        <a href="#contact" class="header-btn" id="btnEnquiry">
+                            Make an Enquiry
+                        </a>
+                        <div class="header-lang" id="langSelector">
+                            <span>EN</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <button class="header-hamburger" id="headerHamburger" aria-label="Toggle menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="12" viewBox="0 0 48 12"
+                                fill="none">
+                                <path d="M0 0.75H47.3799" stroke="currentColor" stroke-width="1.5" />
+                                <path d="M0 10.917H47.3799" stroke="currentColor" stroke-width="1.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile / Fullscreen Nav -->
+        <div class="header-nav-overlay" id="headerNavOverlay"></div>
+        <nav class="header-nav" id="headerNav">
+            <div class="nav-drawer-header">
+                <div class="nav-drawer-actions">
+                    <a href="tel:+1234567890" class="nav-outline-btn">24/7 Global Assistance</a>
+                    <a href="#contact" class="nav-outline-btn">Make an Enquiry</a>
+                    <div class="nav-lang">
+                        <span>EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <button class="nav-close-btn" id="navCloseBtn" aria-label="Close menu">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="close-icon">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#000000" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-drawer-content">
+                <div class="nav-menus-wrapper" id="navMenusWrapper">
+                    <!-- Main Menu -->
+                    <div class="nav-menu-main">
+                        <ul class="header-nav-links">
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services" class="has-submenu" data-target="servicesMenu">Services</a></li>
+                            <li><a href="fleet.html">Fleet</a></li>
+                            <li><a href="news.html">News & Insights</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services Submenu -->
+                    <div class="nav-menu-sub" id="servicesMenu">
+                        <button class="nav-back-btn" id="navBackBtn">
+                            <svg width="40" height="24" viewBox="0 0 40 24" fill="none">
+                                <path d="M40 12H2M2 12L12 22M2 12L12 2" stroke="#000000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <ul class="header-nav-links">
+                            <li><a href="#air-ambulance">Air Ambulance</a></li>
+                            <li><a href="#commercial-transfer">Commercial Airline Transfer</a></li>
+                            <li><a href="#medical-escorts">Medical Escorts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-drawer-footer">
+                <a href="#careers" class="nav-outline-btn">Join the Team</a>
+                <div class="nav-socials">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========== HEADER END ========== -->
+
+    <!-- ========== VIDEO BANNER SECTION ========== -->
+    <section class="video-banner" id="home">
+        <div class="video-banner-media">
+            <video autoplay muted loop playsinline id="bannerVideo">
+                <source src="images/banner-vid.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-banner-overlay"></div>
+        <div class="video-banner-content">
+            <div class="container">
+                <h1 class="hero-title">
+                    Medical journeys that <br> puts patients first
+
+                </h1>
+                <p class="hero-description">
+                    8800+ Worldwide Assists, 100% Success rate
+                </p>
+                <div class="hero-buttons">
+
+                    <a href="#contact" class="btn-hero-secondary">
+                        Make an Inquiry
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MISSION / QUOTE SECTION ========== -->
+    <section class="mission-section" id="mission">
+        <div class="container">
+            <div class="mission-card">
+                <!-- Left Half -->
+                <div class="mission-card-left">
+                    <div class="mission-logo">
+                        <img src="images/bl-logo.png" alt="Bluedot Logo">
+                    </div>
+                    <blockquote class="mission-blockquote">
+                        &ldquo;In air medical transport, small compromises can have serious consequences. What stands
+                        out
+                        about Bluedot is our clinical discipline &mdash; every decision is driven by patient safety, not
+                        convenience.&rdquo;
+                    </blockquote>
+                    <div class="mission-author">
+                        <span class="mission-author-name">Vinod Nair</span>
+                        <span class="mission-author-role">Chief Executive Officer</span>
+                    </div>
+                </div>
+
+                <!-- Right Half -->
+                <div class="mission-card-right">
+                    <h2 class="mission-heading">
+                        Delivering Medically Supervised Air Medical Transfers Across International Routes
+                    </h2>
+                    <div class="mission-features">
+                        <div class="mission-feature">
+                            <div class="mission-feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36"
+                                    fill="none">
+                                    <path
+                                        d="M19.2964 7.69263C19.7609 6.25507 20.4104 5.04784 21.3783 4.04376C24.0088 1.31875 27.2061 0.366418 30.8278 1.41838C34.4508 2.47034 36.657 4.98573 37.3842 8.70318C37.8526 11.1021 37.3402 13.4131 36.4771 15.649C35.3397 18.5978 33.5645 21.1559 31.5123 23.5303C28.0291 27.5622 23.9726 30.9393 19.5642 33.9076C19.3533 34.0486 19.211 34.0421 19.0065 33.9063C14.2229 30.7232 9.84682 27.0769 6.21477 22.5948C4.21178 20.1221 2.54391 17.4501 1.63945 14.3654C0.989902 12.1502 0.696181 9.89489 1.43372 7.64993C2.65001 3.948 5.20551 1.6901 9.06917 1.1363C13.5694 0.491929 17.5987 3.02673 19.1372 7.29798C19.1709 7.39243 19.2136 7.4856 19.2964 7.69133V7.69263Z"
+                                        stroke="#0095D6" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h4 class="mission-feature-title">Patient-First Planning</h4>
+                            <p class="mission-feature-desc">Every mission reviewed by flight physicians, before wheels
+                                leave the ground.</p>
+                        </div>
+                        <div class="mission-feature">
+                            <div class="mission-feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="34" viewBox="0 0 42 34"
+                                    fill="none">
+                                    <path
+                                        d="M28.9698 14.2764L30.2436 20.3533L30.3774 20.2596C30.8033 19.9626 31.3904 20.0671 31.6873 20.493L32.4043 21.5216C32.7013 21.9475 32.5968 22.5346 32.1709 22.8316L30.8199 23.7732L31.8436 29.8472C31.9179 30.2858 31.7313 30.7273 31.3669 30.9823L30.5669 31.54C30.0023 31.9337 29.2218 31.7461 28.8955 31.1405L22.1769 19.0112C17.9648 21.9485 13.2271 24.5576 9.6226 26.397L10.5438 31.8634C10.5906 32.1427 10.4724 32.425 10.239 32.5862L9.72907 32.9428C9.36862 33.1938 8.86946 33.0746 8.66237 32.6878L6.19391 28.0899C5.61172 28.3682 5.11939 28.5968 4.73843 28.7727C4.47761 28.8928 4.19238 28.9114 3.93156 28.8391C3.67075 28.7678 3.43338 28.6086 3.26829 28.3731C2.9391 27.9013 2.99576 27.2615 3.40114 26.8551C3.6981 26.5582 4.08297 26.1762 4.54501 25.7259L1.08507 21.8196C0.792995 21.4904 0.854535 20.9824 1.21499 20.7314L1.72489 20.3748C1.95738 20.2127 2.26313 20.199 2.50929 20.3397L7.3202 23.0943C10.2927 20.3484 14.3788 16.8064 18.5919 13.8681L9.53468 3.37009C9.07752 2.8553 9.17325 2.0582 9.73786 1.66356L10.5379 1.10676C10.9023 0.851809 11.3809 0.831295 11.7667 1.05206L17.113 4.11346L18.4639 3.17179C18.8898 2.87483 19.4769 2.97935 19.7739 3.40525L20.4899 4.43288C20.7878 4.85976 20.6833 5.44586 20.2564 5.74379L20.1226 5.83659L25.3848 9.13341L32.3858 4.25217C35.5097 2.07383 38.8456 1.4594 39.8361 2.87972C40.8256 4.30003 39.0956 7.21686 35.9717 9.3952C35.9717 9.3952 32.5753 11.763 28.9708 14.2764H28.9698Z"
+                                        stroke="#0095D6" stroke-width="1.8" stroke-miterlimit="10" />
+                                </svg>
+                            </div>
+                            <h4 class="mission-feature-title">Flexible Medical Transport</h4>
+                            <p class="mission-feature-desc">Dedicated air ambulance or commercial airline care, chosen
+                                by patient need.</p>
+                        </div>
+                        <div class="mission-feature">
+                            <div class="mission-feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="39" viewBox="0 0 36 39"
+                                    fill="none">
+                                    <path
+                                        d="M6.00168 37.5093L9.2183 34.2148C9.76491 33.655 10.5109 33.3357 11.2926 33.3272L22.7381 33.2002C23.1383 33.1956 23.5229 33.0406 23.8142 32.7665L34.1508 23.038C34.5736 22.6401 34.4615 21.9417 33.9359 21.6964L33.0591 21.2869C31.9495 20.7683 30.6437 20.9038 29.665 21.6404L24.7337 25.3475"
+                                        stroke="#0095D6" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M1 30.2515L6.59073 25.0041C6.59073 25.0041 11.1513 21.0813 16.2024 24.906H20.4282C21.8858 24.906 23.1605 25.8895 23.5303 27.2996L23.6876 27.8999C23.7966 28.3142 23.4844 28.7199 23.0554 28.7199L14.6319 28.7308"
+                                        stroke="#0095D6" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M17.4333 5.02771C17.7129 4.16262 18.1038 3.43614 18.6862 2.8319C20.2692 1.19206 22.1932 0.61897 24.3727 1.25201C26.5529 1.88506 27.8805 3.39876 28.3181 5.63583C28.6 7.07946 28.2917 8.47013 27.7723 9.81565C27.0879 11.5902 26.0195 13.1296 24.7846 14.5584C22.6885 16.9847 20.2474 19.017 17.5945 20.8032C17.4676 20.8881 17.3819 20.8842 17.2589 20.8024C14.3802 18.887 11.7468 16.6927 9.56114 13.9955C8.35579 12.5075 7.3521 10.8995 6.80782 9.04322C6.41694 7.71017 6.24019 6.35297 6.68402 5.00201C7.41595 2.77428 8.95379 1.41553 11.2789 1.08227C13.987 0.694499 16.4117 2.21988 17.3376 4.79022C17.3578 4.84706 17.3835 4.90312 17.4333 5.02693V5.02771Z"
+                                        stroke="#0095D6" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h4 class="mission-feature-title">Care for the Most Vulnerable</h4>
+                            <p class="mission-feature-desc">Specialized support for paediatric and ECMO transfers.</p>
+                        </div>
+                        <div class="mission-feature">
+                            <div class="mission-feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36" viewBox="0 0 30 36"
+                                    fill="none">
+                                    <path d="M8.55103 15.2906L13.5926 20.9324L21.9181 11.7927" stroke="#0095D6"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M24.6593 26.8767L14.6135 34.6014L4.99006 26.8767C2.46754 24.8519 1 21.7929 1 18.558V5.16245L14.7977 1L28.8238 5.16245V18.4203C28.8238 21.7327 27.285 24.8567 24.6593 26.876V26.8767Z"
+                                        stroke="#0095D6" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h4 class="mission-feature-title">Global Standards &amp; Compliance</h4>
+                            <p class="mission-feature-desc">International medical and aviation standards, everywhere.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== OUR SERVICES SLIDER SECTION ========== -->
+    <section class="services-slider-section" id="ourServices">
+        <div class="container">
+            <div class="services-slider-header">
+                <h2 class="services-slider-title">Our Services</h2>
+                <p class="services-slider-desc">
+                    We provide advanced life support and critical care air ambulance
+                    transfers, including paediatric cases, along with commercial airline
+                    stretcher transfers and medical escort services.
+                </p>
+            </div>
+        </div>
+
+        <div class="services-slider-wrapper">
+            <div class="swiper servicesSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card">
+                            <img src="images/s-1.png" alt="Air Ambulance" class="service-slide-img">
+                            <div class="service-slide-overlay"></div>
+                            <div class="service-slide-content">
+                                <div class="service-slide-left">
+
+                                    <h3 class="service-slide-name">Air Ambulance</h3>
+                                </div>
+                                <a href="#" class="service-slide-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card">
+                            <img src="images/s-2.png" alt="Commercial Stretcher" class="service-slide-img">
+                            <div class="service-slide-overlay"></div>
+                            <div class="service-slide-content">
+                                <div class="service-slide-left">
+
+                                    <h3 class="service-slide-name">Commercial Stretcher</h3>
+                                </div>
+                                <a href="#" class="service-slide-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card">
+                            <img src="images/s-3.png" alt="Medical Escort" class="service-slide-img">
+                            <div class="service-slide-overlay"></div>
+                            <div class="service-slide-content">
+                                <div class="service-slide-left">
+
+                                    <h3 class="service-slide-name">Medical Escort</h3>
+                                </div>
+                                <a href="#" class="service-slide-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card">
+                            <img src="images/s-1.png" alt="Paediatric Transfer" class="service-slide-img">
+                            <div class="service-slide-overlay"></div>
+                            <div class="service-slide-content">
+                                <div class="service-slide-left">
+
+                                    <h3 class="service-slide-name">Paediatric Transfer</h3>
+                                </div>
+                                <a href="#" class="service-slide-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card">
+                            <img src="images/s-2.png" alt="ECMO Transport" class="service-slide-img">
+                            <div class="service-slide-overlay"></div>
+                            <div class="service-slide-content">
+                                <div class="service-slide-left">
+
+                                    <h3 class="service-slide-name">ECMO Transport</h3>
+                                </div>
+                                <a href="#" class="service-slide-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <div class="services-slider-nav">
+                <button class="services-nav-btn services-prev" id="servicesPrev" aria-label="Previous slide">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="services-nav-btn services-next" id="servicesNext" aria-label="Next slide">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ACCREDITED SECTION ========== -->
+    <section class="accredited-section" id="accredited">
+        <div class="container">
+            <div class="accredited-wrapper row g-0">
+                <!-- Left: White Card with accent border -->
+                <div class="col-md-6 accredited-left">
+                    <div class="accredited-left-inner">
+                        <h2 class="accredited-heading">Accredited for Excellence</h2>
+                        <p class="accredited-desc">
+                            Bluedot is accredited by the European Aeromedical
+                            Institute (EURAMI), an independent organization that
+                            evaluates air ambulance providers against recognized
+                            international standards for medical oversight, flight
+                            operations, safety management, and personnel
+                            governance
+                        </p>
+                        <a href="#" class="accredited-btn">Download certificate</a>
+                    </div>
+                </div>
+                <!-- Right: Gray wall background + Certificate image -->
+                <div class="col-md-6 accredited-right">
+                    <img src="images/certificate.png" alt="EURAMI Accredited Provider Certificate"
+                        class="accredited-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GLOBAL OPERATIONS SECTION ========== -->
+    <section class="global-ops-section" id="globalOps">
+        <div class="global-ops-bg">
+            <img src="images/world-bg.png" alt="Earth from space" class="global-ops-bg-img">
+        </div>
+        <div class="global-ops-overlay"></div>
+        <div class="container global-ops-content">
+            <h2 class="global-ops-heading">Global Operations<br>Coordinated 24/7</h2>
+            <div class="global-ops-stats">
+                <div class="global-ops-stat">
+                    <span class="global-ops-number">60+</span>
+                    <span class="global-ops-label">Countries Served</span>
+                </div>
+                <div class="global-ops-stat">
+                    <span class="global-ops-number">140+</span>
+                    <span class="global-ops-label">Cities Covered</span>
+                </div>
+                <div class="global-ops-stat">
+                    <span class="global-ops-number">5500+</span>
+                    <span class="global-ops-label">World Wide Assists</span>
+                </div>
+                <div class="global-ops-stat">
+                    <span class="global-ops-number">32,750+</span>
+                    <span class="global-ops-label">Flight Hours</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== OUR FLEET SECTION ========== -->
+    <section class="fleet-section" id="fleet">
+        <div class="container">
+            <div class="fleet-header">
+                <h2 class="fleet-heading">Our Fleet</h2>
+                <a href="fleet.html" class="fleet-explore-btn">Explore All</a>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="fleet-card">
+                        <img src="images/fleet-1.png" alt="Beechcraft King Air C90" class="fleet-card-img">
+                        <div class="fleet-card-overlay"></div>
+                        <div class="fleet-card-content2">
+                            <span class="fleet-card-brand">Beechcraft</span>
+                            <h3 class="fleet-card-model">King Air C90</h3>
+                            <a href="fleet.html" class="fleet-card-btn">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="fleet-card">
+                        <img src="images/fleet-2.png" alt="Bombardier Challenger 605" class="fleet-card-img">
+                        <div class="fleet-card-overlay"></div>
+                        <div class="fleet-card-content2">
+                            <span class="fleet-card-brand">Bombardier</span>
+                            <h3 class="fleet-card-model">Challenger 605</h3>
+                            <a href="fleet.html" class="fleet-card-btn">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="testi-header">
+                <div class="testi-header-left">
+                    <h2 class="testi-heading">What our customers say</h2>
+                    <p class="testi-desc">
+                        Hear from hospitals, insurers and government<br>
+                        entities that work with Bluedot.
+                    </p>
+                </div>
+                <div class="testi-controls">
+                    <div class="testi-pagination"></div>
+                    <button class="testi-nav-btn testi-prev" id="testiPrev" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="testi-nav-btn testi-next" id="testiNext" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="swiper testiSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="testi-card">
+                            <div class="testi-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill="currentColor"
+                                        d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm352 256c-35.3 0-64-28.7-64-64V344c0-35.3 28.7-64 64-64h64v-8c0-30.9-25.1-56-56-56h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c66.3 0 120 53.7 120 120v72 32 104c0 35.3-28.7 64-64 64H352z" />
+                                </svg>
+                            </div>
+                            <p class="testi-text">Umm al houl power co. would like to thank
+                                universal air ambulance for their professional
+                                service that was provided to our employee
+                                from qatar to chennai, everything was handled
+                                well, the transfers service were quick and well
+                                planned and the team was very supportive,
+                                they provided great health care and moral
+                                support for our employee.</p>
+                            <span class="testi-author">Raya Al Qahtani, Qatar</span>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="testi-card">
+                            <div class="testi-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="currentColor"
+                                        d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm352 256c-35.3 0-64-28.7-64-64V344c0-35.3 28.7-64 64-64h64v-8c0-30.9-25.1-56-56-56h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c66.3 0 120 53.7 120 120v72 32 104c0 35.3-28.7 64-64 64H352z" />
+                                </svg>
+                            </div>
+                            <p class="testi-text">Their services were excellent. From approval
+                                until reaching the patient in India. We are
+                                extremely happy that the patient reached his
+                                home country safely. The most relieved is that
+                                Universal was also involved in speaking to the
+                                provider in UAE and the airlines to arrange all
+                                documents that were required for evacuation.
+                                Thank you.</p>
+                            <span class="testi-author">Rajani Jayan, India</span>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="testi-card">
+                            <div class="testi-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="currentColor"
+                                        d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm352 256c-35.3 0-64-28.7-64-64V344c0-35.3 28.7-64 64-64h64v-8c0-30.9-25.1-56-56-56h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c66.3 0 120 53.7 120 120v72 32 104c0 35.3-28.7 64-64 64H352z" />
+                                </svg>
+                            </div>
+                            <p class="testi-text">I wanted to thank you again for all you did for
+                                my dad. Although he is still in the ICU, he is
+                                doing better. He sat in the chair for 2 hours
+                                yesterday & had some amazing jello for Easter
+                                Sunday dinner. You are such a gentleman &
+                                my family & I are eternally grateful for saving
+                                my dad's life. You will always have a special
+                                place in my heart.</p>
+                            <span class="testi-author">Mr. Renold Jackson, USA</span>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="testi-card">
+                            <div class="testi-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="currentColor"
+                                        d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm352 256c-35.3 0-64-28.7-64-64V344c0-35.3 28.7-64 64-64h64v-8c0-30.9-25.1-56-56-56h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c66.3 0 120 53.7 120 120v72 32 104c0 35.3-28.7 64-64 64H352z" />
+                                </svg>
+                            </div>
+                            <p class="testi-text">Bluedot team handled everything with care
+                                and precision. The medical staff onboard were
+                                very professional. Thank you guys for your
+                                excellent job.</p>
+                            <span class="testi-author">Sarah Williams, UK</span>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="testi-card">
+                            <div class="testi-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="currentColor"
+                                        d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm352 256c-35.3 0-64-28.7-64-64V344c0-35.3 28.7-64 64-64h64v-8c0-30.9-25.1-56-56-56h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c66.3 0 120 53.7 120 120v72 32 104c0 35.3-28.7 64-64 64H352z" />
+                                </svg>
+                            </div>
+                            <p class="testi-text">Highly recommended air ambulance service.
+                                They communicated clearly throughout the entire
+                                process and offered a competitive price.</p>
+                            <span class="testi-author">Abdul Rahman, UAE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NEWS & STORIES SECTION ========== -->
+    <section class="news-section" id="news">
+        <div class="container">
+            <div class="news-header-top">
+                <div class="news-header-left">
+                    <h2 class="news-heading">News &amp; Stories</h2>
+                    <p class="news-desc">
+                        Explore our stories of change, recent news, the work we do,<br>
+                        and ways to make an even greater impact together.
+                    </p>
+                </div>
+                <div class="news-header-right">
+                    <a href="#" class="news-main-btn">News &amp; Stories</a>
+                </div>
+            </div>
+
+            <div class="news-grid">
+                <!-- Top Card: Span Full Width -->
+                <div class="news-card top-card">
+                    <div class="news-card-img-wrapper">
+                        <img src="images/news-1.png" alt="Bluedot Wins" class="news-card-img">
+                    </div>
+                    <div class="news-card-content">
+                        <span class="news-badge">NEWS</span>
+                        <h3 class="news-card-title">Bluedot Wins Marketing Campaign of the Year at the 2025 ITIJ Awards
+                        </h3>
+                        <p class="news-card-meta">Published on 18 Dec 2025 - 1:20 min read</p>
+                    </div>
+                </div>
+
+                <!-- Bottom Left Card -->
+                <div class="news-card bottom-left-card">
+                    <div class="news-card-img-wrapper">
+                        <img src="images/news-2.png" alt="Mission Story" class="news-card-img">
+                    </div>
+                    <div class="news-card-content">
+                        <span class="news-badge">MISSION STORY</span>
+                        <h3 class="news-card-title">Lifesaving Burn Evacuation from the Maldives to Bangkok</h3>
+                        <p class="news-card-meta">Published on 18 Dec 2025 - 1:20 min read</p>
+                    </div>
+                </div>
+
+                <!-- Bottom Right Card -->
+                <div class="news-card bottom-right-card">
+                    <div class="news-card-img-wrapper">
+                        <img src="images/news-3.png" alt="Partnership" class="news-card-img">
+                    </div>
+                    <div class="news-card-content">
+                        <h3 class="news-card-title">The New Bluedot Partnership</h3>
+                        <p class="news-card-meta">Published on 18 Dec 2025 - 1:20 min read</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CERTIFICATIONS SECTION ========== -->
+    <section class="certifications-section" id="certifications">
+        <div class="container">
+            <h2 class="certi-heading">Certifications</h2>
+            <div class="certi-logos">
+                <div class="certi-logo-item">
+                    <img src="images/c-1.png" alt="ISO 9001:2015">
+                </div>
+                <div class="certi-logo-item">
+                    <img src="images/c-2.png" alt="ISO 45001:2018">
+                </div>
+                <div class="certi-logo-item">
+                    <img src="images/c-3.png" alt="Member of NBAA">
+                </div>
+                <div class="certi-logo-item">
+                    <img src="images/c-4.png" alt="Universal Medical Escort Network">
+                </div>
+                <div class="certi-logo-item">
+                    <img src="images/c-5.png" alt="EURAMI Accredited Provider">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ SECTION ========== -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="row">
+                <!-- Left Content -->
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <span class="faq-subtitle">Frequently Asked Questions</span>
+                    <h2 class="faq-heading">What else do you<br>need to know?</h2>
+                </div>
+                <!-- Right Accordion -->
+                <div class="col-lg-7">
+                    <div class="accordion faq-accordion" id="faqAccordion">
+
+                        <!-- Item 1 -->
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed faq-button" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseOne">
+                                    What should I focus on when choosing a<br>medical transfer Service?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body faq-body">
+                                    When choosing a medical transfer service, consider factors such as the medical
+                                    crew's qualifications, the equipment on board, the company's safety record, and
+                                    their ability to provide bed-to-bed service.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed faq-button" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Can I book destination hospitals and flights<br>via your Service?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body faq-body">
+                                    Yes, we offer comprehensive coordination services including arranging admission to
+                                    destination hospitals, booking commercial flights for attendants, and managing all
+                                    ground transportation.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed faq-button" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Is it necessary to translate the medical<br>report for the doctors?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body faq-body">
+                                    Our medical team can typically work with reports in multiple languages. If
+                                    translation is necessary for the receiving facility, we can assist in coordinating
+                                    certified medical translations.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed faq-button" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    When should I pay for the Air Ambulance<br>services?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body faq-body">
+                                    Payment terms vary depending on the urgency and specifics of the mission. Generally,
+                                    payment or an accepted guarantee of payment (from insurance or an embassy) is
+                                    required prior to the aircraft's dispatch.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed faq-button" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    What happens if I cancel the program?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body faq-body">
+                                    Cancellations are subject to our terms and conditions. Depending on when the
+                                    cancellation occurs relative to the flight dispatch, there may be cancellation fees
+                                    to cover costs already incurred.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 6 -->
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed faq-button" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                    aria-controls="collapseSix">
+                                    What are the different types of air ambulance?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body faq-body">
+                                    Air ambulances generally fall into two categories: dedicated medical aircraft (like
+                                    jets or turboprops equipped as flying ICUs) and commercial airline stretcher
+                                    transport, depending on the patient's condition and route.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ADVISOR CTA SECTION ========== -->
+    <section class="advisor-cta-section">
+        <div class="container">
+            <div class="advisor-cta-card">
+                <div class="advisor-cta-left">
+                    <h2 class="advisor-cta-title">Talk to an advisor</h2>
+                    <p class="advisor-cta-desc">
+                        Speak with our team to discuss medical transport options<br>
+                        and find the right solution for your case.
+                    </p>
+                </div>
+                <div class="advisor-cta-right">
+                    <a href="#contact" class="advisor-cta-btn">Request Assistance</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <!-- Top Row -->
+            <div class="footer-top">
+                <div class="footer-col-left">
+                    <span class="footer-title">Services</span>
+                    <ul class="footer-links-main">
+                        <li><a href="#">Air Ambulance</a></li>
+                        <li><a href="#">Commercial Airline Transfer</a></li>
+                        <li><a href="#">Medical Escorts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-right">
+                    <ul class="footer-links-sub">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Fleet</a></li>
+                        <li><a href="#">News &amp; Insights</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <ul class="footer-links-sub">
+                        <li><a href="#">Linkedin</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Middle Row -->
+            <div class="footer-middle">
+                <div class="footer-logo">
+                    <img src="images/bl-logo.png" alt="Bluedot Logo" class="footer-logo-img">
+                </div>
+                <div class="footer-middle-right">
+                    <img src="images/award.png" alt="ITIJ Awards 2025 Winner" class="footer-award-img">
+                    <a href="#" class="btn-offices">Offices <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="footer-bottom">
+                <p class="copyright">2026 &copy; Bluedot Air Ambulance</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== FOOTER END ========== -->
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+    <!-- Services Swiper Init -->
+    <script>
+        const servicesSwiper = new Swiper('.servicesSwiper', {
+            slidesPerView: 1.15,
+            centeredSlides: true,
+            spaceBetween: 5,
+            loop: true,
+            speed: 600,
+            navigation: {
+                nextEl: '#servicesNext',
+                prevEl: '#servicesPrev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1.3,
+                    spaceBetween: 28,
+                },
+                992: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 5,
+                },
+                1200: {
+                    slidesPerView: 1.6,
+                    spaceBetween: 5,
+                },
+            },
+        });
+
+        // Testimonials Swiper
+        const testiSwiper = new Swiper('.testiSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            speed: 600,
+            navigation: {
+                nextEl: '#testiNext',
+                prevEl: '#testiPrev',
+            },
+            pagination: {
+                el: '.testi-pagination',
+                type: 'fraction',
+                renderFraction: function (currentClass, totalClass) {
+                    return '<span class="' + currentClass + '"></span> / <span class="' + totalClass + '"></span>';
+                }
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
