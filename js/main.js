@@ -93,6 +93,50 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ============================
+    // Enquiry Drawer Toggle
+    // ============================
+    const enquiryTriggers = document.querySelectorAll('.trigger-enquiry');
+    const enquiryDrawer = document.getElementById('enquiryDrawer');
+    const enquiryOverlay = document.getElementById('enquiryDrawerOverlay');
+    const enquiryClose = document.getElementById('enquiryCloseBtn');
+
+    if (enquiryDrawer) {
+        const toggleEnquiry = (show = true) => {
+            if (show) {
+                enquiryDrawer.classList.add('open');
+                if (enquiryOverlay) enquiryOverlay.classList.add('open');
+                document.body.style.overflow = 'hidden';
+
+                // Close the main nav if it's open
+                const navDrawer = document.getElementById('headerNav');
+                const hamburgerIcon = document.getElementById('headerHamburger');
+                const navOverlay = document.getElementById('headerNavOverlay');
+
+                if (navDrawer && navDrawer.classList.contains('open')) {
+                    navDrawer.classList.remove('open');
+                    if (hamburgerIcon) hamburgerIcon.classList.remove('active');
+                    if (navOverlay) navOverlay.classList.remove('open');
+                }
+            } else {
+                enquiryDrawer.classList.remove('open');
+                if (enquiryOverlay) enquiryOverlay.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+        };
+
+        enquiryTriggers.forEach(trigger => {
+            trigger.addEventListener('click', (e) => {
+                e.preventDefault();
+                toggleEnquiry(true);
+            });
+        });
+
+        if (enquiryClose) enquiryClose.addEventListener('click', () => toggleEnquiry(false));
+        if (enquiryOverlay) enquiryOverlay.addEventListener('click', () => toggleEnquiry(false));
+    }
+
+
+    // ============================
     // Active Nav Link Highlighter
     // ============================
     const sections = document.querySelectorAll('section[id]');
