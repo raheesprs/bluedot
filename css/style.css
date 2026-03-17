@@ -4355,7 +4355,7 @@ img {
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 60px;
-    gap: 40px;
+    gap: 140px;
 }
 
 .mission-stories-title {
@@ -4397,13 +4397,17 @@ img {
 }
 
 .mission-card-title {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 500;
     color: #01284F;
     margin-bottom: 130px;
     line-height: 1.3;
     font-family: 'Aeonik', sans-serif;
     letter-spacing: -0.48px;
+}
+
+.pt-s {
+    padding-top: 30px;
 }
 
 .btn-mission-story {
