@@ -3486,7 +3486,8 @@ img {
 
 .request-bg a {
     background: transparent;
-    border: 1px solid #fff;
+
+    border: 1.8px solid var(--Grays-White, #FFF);
     padding: 10px 15px;
     border-radius: 30px;
     color: #fff;
@@ -4144,7 +4145,7 @@ img {
    ======================================== */
 .air-ambulance-page {
     background-color: #EDF2F6;
-    padding-top: 140px;
+    padding-top: 200px;
 }
 
 .air-ambulance-hero {
