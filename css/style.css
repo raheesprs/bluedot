@@ -347,7 +347,7 @@ img {
     color: #444;
     /* matching screenshot */
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 8px 20px;
     border: 1px solid #000;
     border-radius: 999px;
@@ -1018,7 +1018,7 @@ img {
     position: relative;
     border-radius: 16px;
     overflow: hidden;
-    height: 500px;
+    height: 520px;
     cursor: grab;
 }
 
@@ -2187,7 +2187,7 @@ img {
 .news-header-top {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
     margin-bottom: 48px;
 }
 
@@ -2551,6 +2551,7 @@ img {
 .advisor-cta-section {
     padding: 100px 0 100px;
     background: #EDF2F6;
+    padding-bottom: 50px;
 }
 
 .advisor-cta-card {
