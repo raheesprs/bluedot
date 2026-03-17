@@ -2902,9 +2902,9 @@ img {
 .fleet-stats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    gap: 6px;
     max-width: 550px;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: -110px;
     /* pulls grid out the bottom of the background */
     position: relative;
@@ -2918,7 +2918,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 110px;
+    min-height: 100px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
 }
 
@@ -2942,7 +2942,7 @@ img {
     font-size: 11px;
     font-weight: 500;
     align-self: flex-end;
-    margin-top: 24px;
+    margin-top: 10px;
     display: block;
 }
 
