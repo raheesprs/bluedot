@@ -576,7 +576,7 @@ img {
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-size: 82px;
     font-weight: 900;
     color: var(--white);
     line-height: 1.1;
@@ -1920,7 +1920,7 @@ img {
 .footer-top {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 180px;
+    margin-bottom: 210px;
 }
 
 .footer-col-left {
@@ -1981,7 +1981,7 @@ img {
 
 .footer-links-sub a {
     color: #01284F;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
@@ -2201,12 +2201,14 @@ img {
 
 .news-heading {
     color: #022F43;
-    font-size: 35px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: -0.8px;
-    margin-bottom: 12px;
+    font-family: "Aeonik";
+    font-size: 50.665px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64.398px;
+    letter-spacing: -1.073px;
 }
+
 
 .news-desc {
     color: #022F43;
@@ -2242,6 +2244,7 @@ img {
     gap: 12px;
     margin-bottom: 48px;
     flex-wrap: wrap;
+    padding-top: 50px;
 }
 
 .news-filter-btn {
@@ -2251,7 +2254,7 @@ img {
     background: transparent;
     color: #022F43;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: capitalize;
@@ -2266,7 +2269,7 @@ img {
 .news-filter-btn.active {
     background: #0095D6;
     color: #fff;
-    border-color: #0095D6;
+    border: 1.644px solid var(--Miscellaneous-Window-Grabber, #000);
 }
 
 .news-grid {
@@ -2711,7 +2714,7 @@ img {
    ======================================== */
 .fleet-hero-section {
     background: #F4F7F9;
-    padding-top: 150px;
+    padding-top: 200px;
 }
 
 .fleet-hero-section .container {
@@ -3875,7 +3878,7 @@ img {
     line-height: 16px;
     /* 114.286% */
     letter-spacing: -0.07px;
-    max-width: 300px;
+    max-width: 320px;
     font-weight: 500;
 }
 
@@ -4010,7 +4013,7 @@ img {
 
 .phone-card .phone-number {
     font-size: 56px;
-    font-weight: 700;
+    font-weight: 500;
     color: #000;
     font-family: 'Aeonik', sans-serif;
     letter-spacing: -1.5px;
