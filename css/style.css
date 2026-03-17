@@ -2871,10 +2871,15 @@ img {
 
 .fleet-card-right .fleet-card-content {
     align-items: flex-end;
+    min-width: 550px;
+}
+
+.fleet-card-right .fleet-stats-grid {
+    min-width: 550px;
 }
 
 .fleet-card-text {
-    max-width: 480px;
+    max-width: 550px;
 }
 
 .fleet-card-text h3 {
