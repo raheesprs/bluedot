@@ -1942,7 +1942,7 @@ img {
 }
 
 .footer-links-main li {
-    margin-bottom: 16px;
+    margin-bottom: 4px;
 }
 
 .footer-links-main a {
@@ -1950,7 +1950,7 @@ img {
     color: #01284F;
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 26px;
     /* 118.182% */
     letter-spacing: -0.44px;
@@ -1976,7 +1976,7 @@ img {
 }
 
 .footer-links-sub li {
-    margin-bottom: 16px;
+    margin-bottom: 2px;
 }
 
 .footer-links-sub a {
@@ -2005,7 +2005,7 @@ img {
 }
 
 .footer-logo-img {
-    height: 48px;
+    height: 68px;
     width: auto;
     object-fit: contain;
 }
