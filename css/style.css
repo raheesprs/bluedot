@@ -3238,12 +3238,13 @@ img {
 }
 
 .about-banner-content p {
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
     font-weight: 400;
-    font-size: 26px;
-    line-height: 1.5;
-    letter-spacing: -0.01em;
-    color: #FFFFFF;
-    margin-bottom: 25px;
+    line-height: 37.776px;
+    /* 120% */
+    letter-spacing: -0.535px;
     font-family: 'PP Neue Montreal', sans-serif;
 }
 
@@ -4172,7 +4173,7 @@ img {
 .btn-talk-advisor {
     display: inline-block;
     padding: 12px 32px;
-    border: 1px solid #01284f94;
+    border: 2px solid #022F43;
     border-radius: 999px;
     color: #01284F;
     font-size: 16px;
@@ -4432,7 +4433,7 @@ img {
 
 .why-choose-grid {
     display: flex;
-    gap: 60px;
+    gap: 130px;
 }
 
 .why-choose-left {
@@ -4451,7 +4452,7 @@ img {
 }
 
 .why-choose-right {
-    flex: 1.5;
+    flex: 1;
     display: flex;
     flex-direction: column;
     /* gap: 40px; */
