@@ -623,7 +623,7 @@ img {
 
 .btn-hero-secondary {
     border-radius: 179px;
-    border: 2px solid var(--Grays-Black, #000);
+    /* border: 2px solid var(--Grays-Black, #000); */
     background: #1D96D4;
     padding: 6px 10px;
     color: var(--Grays-White, #FFF);
