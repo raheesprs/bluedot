@@ -355,6 +355,14 @@ img {
     white-space: nowrap;
 }
 
+.pt-40 {
+    padding-top: 100px;
+}
+
+.pb-30 {
+    padding-bottom: 70px;
+}
+
 .nav-outline-btn:hover {
     background: #000;
     color: #fff;
@@ -3138,7 +3146,7 @@ img {
     display: flex;
     flex-direction: column;
 
-    min-height: 160px;
+    min-height: 180px;
 }
 
 .about-banner-content p {
@@ -3234,6 +3242,10 @@ img {
 
 }
 
+.profile-sec {
+    margin-top: auto;
+}
+
 .profile-sec a {
     display: flex;
     align-items: center;
@@ -3310,7 +3322,7 @@ img {
 
 .join {
 
-    background: #e1e1e1;
+    background: #EDF2F6;
     padding: 40px;
 }
 
@@ -3333,7 +3345,7 @@ img {
 }
 
 .request {
-    background: #e0e0e0;
+    background: #EDF2F6;
     padding-bottom: 50px;
 }
 
@@ -3341,6 +3353,28 @@ img {
     background: linear-gradient(169deg, #006dd6, transparent);
     padding: 30px;
     border-radius: 10px;
+}
+
+.join-content h3 {
+    color: #022F43;
+    font-family: "Aeonik";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    /* 133.333% */
+    letter-spacing: -0.72px;
+}
+
+.join-content p {
+    color: #022F43;
+    font-family: "Aeonik";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 140% */
+    letter-spacing: -0.08px;
 }
 
 .request-bg h3 {
