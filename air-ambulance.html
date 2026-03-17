@@ -1,279 +1,426 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/js/all.min.js"></script>
 </head>
+
 <body>
 
+    <!-- ========== HEADER START ========== -->
+    <header class="site-header site-header-light" id="siteHeader">
 
-    <section class="blog-detail common-padding">
+
+        <div class="header-main">
+            <div class="container">
+                <div class="header-inner">
+                    <!-- Logo -->
+                    <a href="index.html" class="header-logo" id="headerLogo">
+                        <img src="images/bl-logo.png" alt="Bluedot Logo">
+                    </a>
+
+                    <!-- Right Side Actions -->
+                    <div class="header-actions">
+                        <a href="tel:+1234567890" class="header-btn" id="btnGlobalAssistance">
+                            24/7 Global Assistance
+                        </a>
+                        <a href="contact.html" class="header-btn" id="btnEnquiry">
+                            Make an Enquiry
+                        </a>
+                        <div class="header-lang" id="langSelector">
+                            <span>EN</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <button class="header-hamburger" id="headerHamburger" aria-label="Toggle menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="12" viewBox="0 0 48 12"
+                                fill="none">
+                                <path d="M0 0.75H47.3799" stroke="currentColor" stroke-width="1.5" />
+                                <path d="M0 10.917H47.3799" stroke="currentColor" stroke-width="1.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile / Fullscreen Nav -->
+        <div class="header-nav-overlay" id="headerNavOverlay"></div>
+        <nav class="header-nav" id="headerNav">
+            <div class="nav-drawer-header">
+                <div class="nav-drawer-actions">
+                    <a href="tel:+1234567890" class="nav-outline-btn">24/7 Global Assistance</a>
+                    <a href="#contact" class="nav-outline-btn">Make an Enquiry</a>
+                    <div class="nav-lang">
+                        <span>EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <button class="nav-close-btn" id="navCloseBtn" aria-label="Close menu">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="close-icon">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#000000" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-drawer-content">
+                <div class="nav-menus-wrapper" id="navMenusWrapper">
+                    <!-- Main Menu -->
+                    <div class="nav-menu-main">
+                        <ul class="header-nav-links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#services" class="has-submenu" data-target="servicesMenu">Services</a></li>
+                            <li><a href="fleet.html">Fleet</a></li>
+                            <li><a href="news.html">News & Insights</a></li>
+                            <li><a href="roles.html">Careers</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services Submenu -->
+                    <div class="nav-menu-sub" id="servicesMenu">
+                        <button class="nav-back-btn" id="navBackBtn">
+                            <svg width="40" height="24" viewBox="0 0 40 24" fill="none">
+                                <path d="M40 12H2M2 12L12 22M2 12L12 2" stroke="#000000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <ul class="header-nav-links">
+                            <li><a href="air-ambulance.html">Air Ambulance</a></li>
+                            <li><a href="Comercial-Airline-Transfer.html">Commercial Airline Transfer</a></li>
+                            <li><a href="Medical-Escort-Services.html">Medical Escorts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-drawer-footer">
+                <a href="roles.html" class="nav-outline-btn">Join the Team</a>
+                <div class="nav-socials">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========== HEADER END ========== -->
+
+    <main class="air-ambulance-page">
+        <!-- Hero Section -->
+        <section class="air-ambulance-hero">
+            <div class="container">
+                <div class="hero-text-wrapper">
+                    <h1 class="hero-title-main">Air ambulance services</h1>
+                    <p class="hero-subtitle">24/7 medically coordinated air transport — supporting patients who need to
+                        be transferred safely between hospitals, cities, and countries.</p>
+                    <a href="#" class="btn-talk-advisor">Talk to an advisor</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Large Image Section -->
+        <section class="air-ambulance-image">
+            <img src="images/s-1.png" alt="Air Ambulance Transfer" class="full-width-image">
+        </section>
+
+        <!-- Info Section -->
+        <section class="air-ambulance-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 class="info-tagline">When medical care has to move, risk moves with it.</h2>
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-description">
+                            <p>Serious illness or injury doesn't always happen where the right care is available. When a
+                                patient needs to be transferred across cities or borders, every decision timing,
+                                routing, aircraft, medical capability directly affects the outcome.</p>
+                            <p>Most families and organisations aren't equipped to manage complex medical transfers
+                                alone. It's not just about arranging a flight. It's knowing whether a patient is stable
+                                enough to travel. Which aircraft can support ICU-level care. How to move a ventilated
+                                patient across continents. Or how to coordinate hospitals, authorities, and medical
+                                teams under pressure.</p>
+                            <p>Bluedot was built to manage these moments. With experienced medical professionals and
+                                operational teams, we provide 24/7 air ambulance coordination ensuring patients receive
+                                continuous care, wherever that care needs to go.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coordination Section -->
+        <section class="coordination-section">
+            <div class="container">
+                <div class="coordination-header">
+                    <h2 class="coordination-title">What care and coordination look like</h2>
+                    <p class="coordination-subtitle">Not every transfer is time-critical. But every case demands
+                        attention. Most of the work happens behind the scenes, where medical decisions and planning
+                        shape the outcome.</p>
+                </div>
+
+                <div class="row coordination-grid">
+                    <!-- Card 1 -->
+                    <div class="col-lg-4">
+                        <div class="coordination-card">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="148" height="183" viewBox="0 0 148 183"
+                                    fill="none">
+                                    <path
+                                        d="M89.7864 169.309H83.3486V146.198C83.3486 136.749 91.1991 129.094 100.883 129.094H106.973C116.657 129.094 124.507 136.754 124.507 146.198V169.309H118.006"
+                                        stroke="#0095D6" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M73.5149 83.203C95.9385 83.203 114.116 65.0251 114.116 42.6015C114.116 20.1779 95.9385 2 73.5149 2C51.0913 2 32.9133 20.1779 32.9133 42.6015C32.9133 65.0251 51.0913 83.203 73.5149 83.203Z"
+                                        stroke="#0095D6" stroke-width="4" stroke-miterlimit="10" />
+                                    <path
+                                        d="M40.1518 151.594C47.1763 151.594 52.8709 145.9 52.8709 138.875C52.8709 131.851 47.1763 126.156 40.1518 126.156C33.1272 126.156 27.4326 131.851 27.4326 138.875C27.4326 145.9 33.1272 151.594 40.1518 151.594Z"
+                                        stroke="#0095D6" stroke-width="4" stroke-miterlimit="10" />
+                                    <path
+                                        d="M2 180.425V144.267C2 117.543 23.6646 95.8831 50.3836 95.8831L73.1822 116.506L96.978 95.8831C123.702 95.8831 145.362 117.548 145.362 144.267V180.425"
+                                        stroke="#0095D6" stroke-width="4" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path d="M39.521 124.636C39.521 124.636 38.646 110.748 43.1774 95.2476"
+                                        stroke="#0095D6" stroke-width="4" stroke-miterlimit="10" />
+                                    <path d="M104.516 127.124C104.516 127.124 105.391 113.236 100.86 97.7358"
+                                        stroke="#0095D6" stroke-width="4" stroke-miterlimit="10" />
+                                </svg>
+                            </div>
+                            <h3 class="card-title">It starts with understanding the case</h3>
+                            <p class="card-text">Every transfer begins with listening and medical review. We take the
+                                time to understand the patient’s condition, the current situation, and what level of
+                                care is required. What’s the diagnosis? Is the patient stable to travel? What risks need
+                                to be managed, and what options are available?</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-lg-4">
+                        <div class="coordination-card">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="193" height="159" viewBox="0 0 193 159"
+                                    fill="none">
+                                    <path
+                                        d="M136.916 66.2938L143.039 95.5021L143.682 95.0514C145.729 93.6241 148.551 94.1264 149.978 96.1735L153.424 101.117C154.851 103.165 154.349 105.986 152.302 107.414L145.809 111.94L150.729 141.134C151.086 143.242 150.189 145.364 148.438 146.59L144.593 149.271C141.879 151.163 138.127 150.261 136.559 147.35L104.266 89.051C84.0209 103.169 61.2496 115.71 43.9247 124.551L48.3521 150.825C48.5775 152.167 48.0094 153.524 46.8873 154.299L44.4364 156.013C42.7039 157.219 40.3047 156.647 39.3094 154.787L27.4448 132.687C24.6465 134.026 22.2802 135.124 20.4491 135.969C19.1955 136.547 17.8245 136.636 16.5709 136.289C15.3173 135.946 14.1764 135.181 13.3829 134.049C11.8007 131.781 12.073 128.706 14.0215 126.753C15.4488 125.325 17.2987 123.49 19.5195 121.325L2.88936 102.549C1.48552 100.967 1.78131 98.5258 3.51381 97.3191L5.96466 95.6054C7.08209 94.826 8.55166 94.7603 9.73483 95.4364L32.8583 108.677C47.1455 95.4786 66.7852 78.4541 87.0352 64.3312L43.5021 13.8728C41.3048 11.3985 41.7649 7.56731 44.4787 5.67048L48.324 2.99427C50.0753 1.76884 52.3759 1.67024 54.2304 2.73134L79.9268 17.4458L86.4201 12.9197C88.4672 11.4924 91.289 11.9948 92.7163 14.0419L96.1578 18.9811C97.5898 21.0329 97.0874 23.85 95.0357 25.282L94.3924 25.728L119.685 41.574L153.335 18.1125C168.35 7.64243 184.384 4.6892 189.145 11.5159C193.901 18.3426 185.586 32.3622 170.571 42.8323C170.571 42.8323 154.246 54.2133 136.921 66.2938H136.916Z"
+                                        stroke="#0095D6" stroke-width="4" stroke-miterlimit="10" />
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Then we plan the transfer</h3>
+                            <p class="card-text">Medical teams, coordinators, and operations specialists work together
+                                to plan the journey. Clinicians assess and define care requirements. Aircraft, crew, and
+                                equipment are selected. Clearances, routing, and ground support are arranged. From
+                                hospital coordination to in-flight care, the transfer is planned end to end.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-lg-4">
+                        <div class="coordination-card">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="198" height="194" viewBox="0 0 198 194"
+                                    fill="none">
+                                    <path
+                                        d="M106.45 42.631C117.655 42.631 126.739 33.5355 126.739 22.3155C126.739 11.0956 117.655 2 106.45 2C95.2448 2 86.1611 11.0956 86.1611 22.3155C86.1611 33.5355 95.2448 42.631 106.45 42.631Z"
+                                        stroke="#0095D6" stroke-width="4" stroke-miterlimit="10" />
+                                    <path
+                                        d="M63.9756 99.2819V81.1911C63.9756 67.8204 76.8105 56.9812 92.6468 56.9812L106.158 67.3014L120.259 56.9812C136.095 56.9812 148.93 67.8204 148.93 81.1911V99.2819"
+                                        stroke="#0095D6" stroke-width="4" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M30.9512 191.085L49.5681 171.993C52.7317 168.748 57.0491 166.898 61.5737 166.848L127.817 166.113C130.133 166.086 132.359 165.188 134.045 163.599L193.87 107.219C196.317 104.913 195.669 100.866 192.627 99.4442L187.552 97.0706C181.13 94.0653 173.573 94.8505 167.908 99.1193L139.367 120.604"
+                                        stroke="#0095D6" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="4" />
+                                    <path
+                                        d="M2 149.028L34.3576 118.618C34.3576 118.618 60.7529 95.884 89.9875 118.05H114.445C122.881 118.05 130.259 123.749 132.399 131.921L133.31 135.4C133.941 137.801 132.133 140.152 129.65 140.152L80.8976 140.215"
+                                        stroke="#0095D6" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="4" />
+                                </svg>
+                            </div>
+                            <h3 class="card-title">And we stay with it</h3>
+                            <p class="card-text">We don’t hand cases off. From departure to arrival, our teams remain
+                                involved until the patient is safely transferred and care is handed over at the
+                                receiving facility. Throughout the journey, communication stays clear and continuous, so
+                                everyone involved knows what’s happening and what comes next.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Stories Section -->
+        <section class="mission-stories-section">
+            <div class="container">
+                <div class="mission-stories-header">
+                    <h2 class="mission-stories-title">Behind every transfer is a person</h2>
+                    <p class="mission-stories-desc">Every air medical transfer represents someone at a vulnerable
+                        moment, a patient, a family, and a network of clinicians working to ensure care continues
+                        safely. Here are examples of how we’ve supported patients and the organisations responsible for
+                        their care, across regions and borders.</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-lg-4">
+                        <div class="mission-card-white">
+                            <h3 class="mission-card-title">Delhi to Hyderabad:<br>Emergency Liver Transplant Mission
+                            </h3>
+                            <a href="#" class="btn-mission-story">Mission story</a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-lg-4">
+                        <div class="mission-card-white">
+                            <h3 class="mission-card-title">A Lifeline from<br>Calicut to Riyadh</h3>
+                            <a href="#" class="btn-mission-story">Mission story</a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-lg-4">
+                        <div class="mission-card-white">
+                            <h3 class="mission-card-title">Bringing a Critically Ill<br>Patient Safely Across Continents
+                            </h3>
+                            <a href="#" class="btn-mission-story">Mission story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Section -->
+        <section class="why-choose-section">
+            <div class="container">
+                <div class="why-choose-grid">
+                    <div class="why-choose-left">
+                        <h2 class="why-choose-title">Why you choose bluedot</h2>
+                    </div>
+                    <div class="why-choose-right">
+                        <!-- Feature 1 -->
+                        <div class="why-feature-item">
+                            <h3 class="why-feature-title">24/7 coordination</h3>
+                            <p class="why-feature-desc">Dedicated medical and operations teams managing cases around the
+                                clock</p>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div class="why-feature-item">
+                            <h3 class="why-feature-title">Medically led planning</h3>
+                            <p class="why-feature-desc">Transfers planned around patient condition and care needs, not
+                                schedules</p>
+                        </div>
+                        <!-- Feature 3 -->
+                        <div class="why-feature-item">
+                            <h3 class="why-feature-title">Clear communication</h3>
+                            <p class="why-feature-desc">Single point of contact with regular updates throughout the
+                                transfer</p>
+                        </div>
+                        <!-- Feature 4 -->
+                        <div class="why-feature-item">
+                            <h3 class="why-feature-title">Global standards</h3>
+                            <p class="why-feature-desc">Accredited operations, Clinical oversight and compliance with
+                                international standards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========== ADVISOR CTA SECTION ========== -->
+        <section class="advisor-cta-section">
+            <div class="container">
+                <div class="advisor-cta-card">
+                    <div class="advisor-cta-left">
+                        <h2 class="advisor-cta-title">Talk to an advisor</h2>
+                        <p class="advisor-cta-desc">
+                            Speak with our team to discuss medical transport options<br>
+                            and find the right solution for your case.
+                        </p>
+                    </div>
+                    <div class="advisor-cta-right">
+                        <a href="#contact" class="advisor-cta-btn">Request Assistance</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- ========== FOOTER START ========== -->
+    <footer class="site-footer">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="">
-                        
-                        <h3>Air ambulance services</h3>
-                        <p>24/7 medically coordinated air transport — supporting patients who need to be transferred safely between hospitals, cities, and countries.</p>
-                        <div class="mt-4">
-                            <a href="#">Talk to an advisor</a>
-                        </div>
-                    </div>
+            <!-- Top Row -->
+            <div class="footer-top">
+                <div class="footer-col-left">
+                    <span class="footer-title">Services</span>
+                    <ul class="footer-links-main">
+                        <li><a href="#">Air Ambulance</a></li>
+                        <li><a href="#">Commercial Airline Transfer</a></li>
+                        <li><a href="#">Medical Escorts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-right">
+                    <ul class="footer-links-sub">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Fleet</a></li>
+                        <li><a href="#">News &amp; Insights</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <ul class="footer-links-sub">
+                        <li><a href="#">Linkedin</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Middle Row -->
+            <div class="footer-middle">
+                <div class="footer-logo">
+                    <img src="images/bl-logo.png" alt="Bluedot Logo" class="footer-logo-img">
+                </div>
+                <div class="footer-middle-right">
+                    <img src="images/award.png" alt="ITIJ Awards 2025 Winner" class="footer-award-img">
+                    <a href="#" class="btn-offices">Offices <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="footer-bottom">
+                <p class="copyright">2026 &copy; Bluedot Air Ambulance</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
+    <!-- ========== FOOTER END ========== -->
 
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 p-0">
-                    <div>
-                        <img src="images/air-amb.png" width="100%" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
-    <section class="common-padding">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-4">
-                    <h3>When medical care has to move, risk moves with it.</h3>
-                </div>
-                <div class="col-lg-6">
-                    <div class="blog-contant">
-                        <p>Serious illness or injury doesn’t always happen where the right care is available. When a patient needs to be transferred across cities or borders, every decision  timing, routing, aircraft, medical capability directly affects the outcome</p>
-                        <p>Most families and organisations aren’t equipped to manage complex medical transfers alone. It’s not just about arranging a flight. It’s knowing whether a patient is stable enough to travel. Which aircraft can support ICU-level care. How to move a ventilated patient across continents. Or how to coordinate hospitals, authorities, and medical teams under pressure.</p>
-                        <p>Bluedot was built to manage these moments. With experienced medical professionals and operational teams, we provide 24/7 air ambulance coordination  ensuring patients receive continuous care, wherever that care needs to go.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <section class="What-care">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3>What care can we provide in the air?</h3>
-                    <p>Our medical teams are trained to provide critical care during transport, including advanced respiratory support, cardiac monitoring, and emergency interventions. We ensure patients receive the necessary medical attention throughout their journey, whether it’s a short domestic transfer or a long international flight.</p>
-                </div>   
-            </div>
-            <div class="row mt-5">
-                <div class="col-lg-4">
-                    <div class="care-card">
-                        <div>
-                            <img src="images/care1.svg" />
-                        </div>
-                        <div>
-                            <h4>It starts with understanding the case</h4>
-                            <p>Every transfer begins with listening and medical review. We take the time to understand the patient’s condition, the current situation, and what level of care is required. What’s the diagnosis? Is the patient stable to travel? What risks need to be managed, and what options are available?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="care-card">
-                        <div>
-                            <img src="images/care2.svg" />
-                        </div>
-                        <div>
-                            <h4>It starts with understanding the case</h4>
-                            <p>Every transfer begins with listening and medical review. We take the time to understand the patient’s condition, the current situation, and what level of care is required. What’s the diagnosis? Is the patient stable to travel? What risks need to be managed, and what options are available?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="care-card">
-                        <div>
-                            <img src="images/care3.svg" />
-                        </div>
-                        <div>
-                            <h4>It starts with understanding the case</h4>
-                            <p>Every transfer begins with listening and medical review. We take the time to understand the patient’s condition, the current situation, and what level of care is required. What’s the diagnosis? Is the patient stable to travel? What risks need to be managed, and what options are available?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-     <section class="common-padding">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-6">
-                    <h3>Behind every transfer is a person.</h3>
-                </div>
-                <div class="col-lg-6">
-                    <div class="blog-contant">
-                        <p>Every air medical transfer represents someone at a vulnerable moment, a patient, a family, and a network of clinicians working to ensure care continues safely. Here are examples of how we’ve supported patients and the organisations responsible for their care, across regions and borders.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="case-card">
-                        <div>
-                            <h3>Delhi to Hyderabad: Emergency LiverTransplant Mission</h3>
-                        </div>
-                        <div>
-                            <a href="">Mission story</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="case-card">
-                        <div>
-                            <h3>A Lifeline from Calicut to Riyadh</h3>
-                        </div>
-                        <div>
-                            <a href="">Mission story</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="case-card">
-                        <div>
-                            <h3>Bringing a Critically Ill Patient SafelyAcross Continents</h3>
-                        </div>
-                        <div>
-                            <a href="">Mission story</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="common-padding why-choose">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-6">
-                    <h3>Why you choose bluedot</h3>
-                </div>
-                <div class="col-lg-6">
-                    <div class="blog-contant">
-                        <h4>24/7 coordination</h4>
-                        <p>Dedicated medical and operations teams managing cases around the clock</p>
-                        <h4>Medically led planning</h4>
-                        <p>Transfers planned around patient condition and care needs, not schedules</p>
-                        <h4>Clear communication</h4>
-                        <p>Single point of contact with regular updates throughout the transfer</p>
-                        <h4>Global standards</h4>
-                        <p>Accredited operations, Clinical oversight and compliance with international standards</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-     <section class="request common-padding">
-        <div class="container">
-            <div class="request-bg">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <h3>Talk to an advisor</h3>
-                        <p>Speak with our team to discuss medical transport options and find the right solution for your case.</p>
-                    </div>
-                    <div class="col-lg-6 text-end">
-                        <a href="">Request Assistance</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<script>
-
-    var swiper = new Swiper(".related-blog", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-      },
-    });
-
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 2,
-          spaceBetween: 50,
-        },
-      },
-    });
-
-     var swiper = new Swiper(".team", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-        },
-      },
-    });
-  </script>
-
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
 </body>
-</html>
 
+</html>

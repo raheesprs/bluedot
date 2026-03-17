@@ -1,24 +1,123 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/js/all.min.js"></script>
 </head>
+
 <body>
+    <!-- ========== HEADER START ========== -->
+    <header class="site-header site-header-light" id="siteHeader">
 
 
-    <section class="blog-detail common-padding">
+        <div class="header-main">
+            <div class="container">
+                <div class="header-inner">
+                    <!-- Logo -->
+                    <a href="index.html" class="header-logo" id="headerLogo">
+                        <img src="images/bl-logo.png" alt="Bluedot Logo">
+                    </a>
+
+                    <!-- Right Side Actions -->
+                    <div class="header-actions">
+                        <a href="tel:+1234567890" class="header-btn" id="btnGlobalAssistance">
+                            24/7 Global Assistance
+                        </a>
+                        <a href="#contact" class="header-btn" id="btnEnquiry">
+                            Make an Enquiry
+                        </a>
+                        <div class="header-lang" id="langSelector">
+                            <span>EN</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <button class="header-hamburger" id="headerHamburger" aria-label="Toggle menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="12" viewBox="0 0 48 12"
+                                fill="none">
+                                <path d="M0 0.75H47.3799" stroke="currentColor" stroke-width="1.5" />
+                                <path d="M0 10.917H47.3799" stroke="currentColor" stroke-width="1.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile / Fullscreen Nav -->
+        <div class="header-nav-overlay" id="headerNavOverlay"></div>
+        <nav class="header-nav" id="headerNav">
+            <div class="nav-drawer-header">
+                <div class="nav-drawer-actions">
+                    <a href="tel:+1234567890" class="nav-outline-btn">24/7 Global Assistance</a>
+                    <a href="#contact" class="nav-outline-btn">Make an Enquiry</a>
+                    <div class="nav-lang">
+                        <span>EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <button class="nav-close-btn" id="navCloseBtn" aria-label="Close menu">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="close-icon">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#000000" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-drawer-content">
+                <div class="nav-menus-wrapper" id="navMenusWrapper">
+                    <!-- Main Menu -->
+                    <div class="nav-menu-main">
+                        <ul class="header-nav-links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#services" class="has-submenu" data-target="servicesMenu">Services</a></li>
+                            <li><a href="fleet.html">Fleet</a></li>
+                            <li><a href="news.html">News & Insights</a></li>
+                            <li><a href="roles.html">Careers</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services Submenu -->
+                    <div class="nav-menu-sub" id="servicesMenu">
+                        <button class="nav-back-btn" id="navBackBtn">
+                            <svg width="40" height="24" viewBox="0 0 40 24" fill="none">
+                                <path d="M40 12H2M2 12L12 22M2 12L12 2" stroke="#000000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <ul class="header-nav-links">
+                            <li><a href="air-ambulance.html">Air Ambulance</a></li>
+                            <li><a href="Comercial-Airline-Transfer.html">Commercial Airline Transfer</a></li>
+                            <li><a href="Medical-Escort-Services.html">Medical Escorts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-drawer-footer">
+                <a href="#careers" class="nav-outline-btn">Join the Team</a>
+                <div class="nav-socials">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========== HEADER END ========== -->
+
+    <section class="blog-detail pt-pb common-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
@@ -52,138 +151,205 @@
                 <div class="col-lg-7 m-auto">
                     <div class="blog-contant">
                         <h3>Bluedot and Yashoda Hospitals Collaborate to Advance Aeromedical Care</h3>
-                        <p>Bluedot Air Ambulance has entered into an association with Yashoda Hospitals to strengthen collaboration in air ambulance and medical assistance services. The partnership brings together Bluedot’s aeromedical transport expertise with Yashoda Hospitals’ clinical capabilities, supporting more coordinated care for patients requiring specialised medical transfers.</p>
-                        <p>As part of this collaboration, both organisations jointly hosted an academic programme focused on Interventional Pulmonology and ECMO, bringing together members of the medical fraternity to exchange knowledge, discuss evolving clinical practices, and explore the role of advanced respiratory support in complex patient transfers.</p>
+                        <p>Bluedot Air Ambulance has entered into an association with Yashoda Hospitals to strengthen
+                            collaboration in air ambulance and medical assistance services. The partnership brings
+                            together Bluedot’s aeromedical transport expertise with Yashoda Hospitals’ clinical
+                            capabilities, supporting more coordinated care for patients requiring specialised medical
+                            transfers.</p>
+                        <p>As part of this collaboration, both organisations jointly hosted an academic programme
+                            focused on Interventional Pulmonology and ECMO, bringing together members of the medical
+                            fraternity to exchange knowledge, discuss evolving clinical practices, and explore the role
+                            of advanced respiratory support in complex patient transfers.</p>
 
                         <h3>Why this collaboration matters</h3>
                         <h6>Clinical and aeromedical alignment</h6>
-                        <p>The partnership connects hospital-based critical care expertise with aeromedical transport capabilities, improving coordination when patients require advanced care across locations.</p>
+                        <p>The partnership connects hospital-based critical care expertise with aeromedical transport
+                            capabilities, improving coordination when patients require advanced care across locations.
+                        </p>
                         <h6>Knowledge exchange with the medical community</h6>
-                        <p>The academic programme created a platform for clinicians and specialists to share insights on interventional pulmonology, ECMO-supported care, and the challenges involved in transferring critically ill patients.</p>
+                        <p>The academic programme created a platform for clinicians and specialists to share insights on
+                            interventional pulmonology, ECMO-supported care, and the challenges involved in transferring
+                            critically ill patients.</p>
                         <h6>Strengthening referral and transfer networks</h6>
-                        <p>By fostering closer engagement between healthcare institutions and aeromedical providers, the collaboration helps streamline the pathway for patients who require specialised treatment beyond their current location.</p>
+                        <p>By fostering closer engagement between healthcare institutions and aeromedical providers, the
+                            collaboration helps streamline the pathway for patients who require specialised treatment
+                            beyond their current location.</p>
                         <h3>Expanding dialogue between hospitals and aeromedical providers</h3>
-                        <p>Initiatives such as this academic programme are part of a broader effort to encourage collaboration between hospitals, specialists, and aeromedical operators. As critical care transport becomes increasingly important in modern healthcare systems, structured partnerships help ensure that patients can move safely between facilities while maintaining continuity of care.</p>
-                        <p>Bluedot and Yashoda Hospitals plan to continue engaging with the medical fraternity through similar knowledge-sharing initiatives in the future.</p>
+                        <p>Initiatives such as this academic programme are part of a broader effort to encourage
+                            collaboration between hospitals, specialists, and aeromedical operators. As critical care
+                            transport becomes increasingly important in modern healthcare systems, structured
+                            partnerships help ensure that patients can move safely between facilities while maintaining
+                            continuity of care.</p>
+                        <p>Bluedot and Yashoda Hospitals plan to continue engaging with the medical fraternity through
+                            similar knowledge-sharing initiatives in the future.</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="related-blog-section">
-                    <h3>Recent news & Stories</h3>
-                    <div>
-                        <div class="swiper related-blog">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="blog-card">
-                                        <img src="images/blog1.png" width="100%" />
-                                        <div class="blog-slider-content">
-                                            <h5>Delhi to Hyderabad: Emergency LiverTransplant Mission</h5>
-                                            <p>Published on 30 Sep 2025 - 2 min read</p>
+                        <h3>Recent news & Stories</h3>
+                        <div>
+                            <div class="swiper related-blog">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="blog-card">
+                                            <img src="images/blog1.png" width="100%" />
+                                            <div class="blog-slider-content">
+                                                <h5>Delhi to Hyderabad: Emergency LiverTransplant Mission</h5>
+                                                <p>Published on 30 Sep 2025 - 2 min read</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="blog-card">
+                                            <img src="images/blog2.png" width="100%" />
+                                            <div class="blog-slider-content">
+                                                <h5>A Lifeline from Calicut to Riyadh</h5>
+                                                <p>Published on 12 Nov 2025 - 1.3 min read</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="blog-card">
+                                            <img src="images/blog3.png" width="100%" />
+                                            <div class="blog-slider-content">
+                                                <h5>Bringing a Critically Ill Patient SafelyAcross Continents</h5>
+                                                <p>Published on 11 Dec 2025 - 1.7 min read</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="blog-card">
-                                        <img src="images/blog2.png" width="100%" />
-                                        <div class="blog-slider-content">
-                                            <h5>A Lifeline from Calicut to Riyadh</h5>
-                                            <p>Published on 12 Nov 2025 - 1.3 min read</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="blog-card">
-                                        <img src="images/blog3.png" width="100%" />
-                                        <div class="blog-slider-content">
-                                            <h5>Bringing a Critically Ill Patient SafelyAcross Continents</h5>
-                                            <p>Published on 11 Dec 2025 - 1.7 min read</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="swiper-pagination"></div>
                             </div>
-                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
-                </div>
-            </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ========== FOOTER START ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <!-- Top Row -->
+            <div class="footer-top">
+                <div class="footer-col-left">
+                    <span class="footer-title">Services</span>
+                    <ul class="footer-links-main">
+                        <li><a href="#">Air Ambulance</a></li>
+                        <li><a href="#">Commercial Airline Transfer</a></li>
+                        <li><a href="#">Medical Escorts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-right">
+                    <ul class="footer-links-sub">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Fleet</a></li>
+                        <li><a href="#">News &amp; Insights</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <ul class="footer-links-sub">
+                        <li><a href="#">Linkedin</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
 
+            <!-- Middle Row -->
+            <div class="footer-middle">
+                <div class="footer-logo">
+                    <img src="images/bl-logo.png" alt="Bluedot Logo" class="footer-logo-img">
+                </div>
+                <div class="footer-middle-right">
+                    <img src="images/award.png" alt="ITIJ Awards 2025 Winner" class="footer-award-img">
+                    <a href="#" class="btn-offices">Offices <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
 
-<script>
+            <!-- Bottom Row -->
+            <div class="footer-bottom">
+                <p class="copyright">2026 &copy; Bluedot Air Ambulance</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== FOOTER END ========== -->
 
-    var swiper = new Swiper(".related-blog", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-      },
-    });
+    <script>
 
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 2,
-          spaceBetween: 50,
-        },
-      },
-    });
+        var swiper = new Swiper(".related-blog", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            },
+        });
 
-     var swiper = new Swiper(".team", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-        },
-      },
-    });
-  </script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+        var swiper = new Swiper(".team", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
 
 </body>
-</html>
 
+</html>
