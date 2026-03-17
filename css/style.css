@@ -1223,7 +1223,7 @@ img {
 .services-slider-nav {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 5px;
     margin-top: 36px;
 }
 
@@ -2834,7 +2834,7 @@ img {
 .fleet-explore-section {
     background: #F4F7F9;
     padding-top: 60px;
-    padding-bottom: 200px;
+    padding-bottom: 130px;
     /* provides space for bottom-overlapping stats grid */
 }
 
@@ -2854,7 +2854,7 @@ img {
     position: relative;
     /* optional: add a minimum height if background feels short */
     min-height: 560px;
-    margin-bottom: 200px;
+    margin-bottom: 110px;
 }
 
 .fleet-card-container:last-of-type {
@@ -2903,7 +2903,7 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
-    max-width: 600px;
+    max-width: 550px;
     margin-top: 50px;
     margin-bottom: -110px;
     /* pulls grid out the bottom of the background */
@@ -3196,25 +3196,25 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
+    padding-top: 480px;
+    padding-bottom: 120px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: start;
-
 }
 
 .about-banner-content h2 {
     font-weight: 500;
-    font-style: Medium;
-    font-size: 43.38px;
-    line-height: 52.06px;
-    letter-spacing: -1.7%;
+    font-size: 52px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
     color: #FFFFFF;
-    margin-bottom: 90px;
+    margin-bottom: 150px;
 }
 
 .about-banner-content {
-    width: 60%;
+    width: 85%;
 }
 
 .leader-slide {
@@ -3222,7 +3222,7 @@ img {
 }
 
 .main-team .leader-content {
-    bottom: -30px;
+    bottom: 10px;
 }
 
 .leader-content {
@@ -3234,18 +3234,17 @@ img {
     display: flex;
     flex-direction: column;
 
-    min-height: 180px;
+    /* min-height: 180px; */
 }
 
 .about-banner-content p {
-    font-family: Aeonik !important;
     font-weight: 400;
-    font-style: Regular;
-    font-size: 27px;
-    line-height: 37.78px;
-    letter-spacing: -1.7%;
+    font-size: 26px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
     color: #FFFFFF;
-    font-family: NeueMontreal, sans-serif;
+    margin-bottom: 25px;
+    font-family: 'PP Neue Montreal', sans-serif;
 }
 
 .vision {
