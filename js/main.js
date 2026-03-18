@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             header.classList.remove('scrolled');
             if (header.classList.contains('site-header-light') && logoImg) {
-                logoImg.src = 'images/bl-logo.png';
+                logoImg.src = 'images/bl-logo.svg';
             }
         }
     };

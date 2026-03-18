@@ -28,7 +28,7 @@
                 <div class="header-inner">
                     <!-- Logo -->
                     <a href="index.html" class="header-logo" id="headerLogo">
-                        <img src="images/bl-logo.png" alt="Bluedot Logo">
+                        <img src="images/bl-logo.svg" alt="Bluedot Logo">
                     </a>
 
                     <!-- Right Side Actions -->
@@ -36,7 +36,7 @@
                         <a href="tel:+1234567890" class="header-btn" id="btnGlobalAssistance">
                             24/7 Global Assistance
                         </a>
-                        <a href="contact.html" class="header-btn" id="btnEnquiry">
+                        <a href="javascript:void(0)" class="header-btn trigger-enquiry" id="btnEnquiry">
                             Make an Enquiry
                         </a>
                         <div class="header-lang" id="langSelector">
@@ -61,7 +61,7 @@
             <div class="nav-drawer-header">
                 <div class="nav-drawer-actions">
                     <a href="tel:+1234567890" class="nav-outline-btn">24/7 Global Assistance</a>
-                    <a href="#contact" class="nav-outline-btn">Make an Enquiry</a>
+                    <a href="javascript:void(0)" class="nav-outline-btn trigger-enquiry">Make an Enquiry</a>
                     <div class="nav-lang">
                         <span>EN</span>
                         <i class="fas fa-chevron-down"></i>
@@ -392,7 +392,7 @@
             <!-- Middle Row -->
             <div class="footer-middle">
                 <div class="footer-logo">
-                    <img src="images/bl-logo.png" alt="Bluedot Logo" class="footer-logo-img">
+                    <img src="images/bl-logo.svg" alt="Bluedot Logo" class="footer-logo-img">
                 </div>
                 <div class="footer-middle-right">
                     <img src="images/award.png" alt="ITIJ Awards 2025 Winner" class="footer-award-img">
@@ -421,6 +421,85 @@
 
     <!-- Custom JS -->
     <script src="js/main.js"></script>
+
+    <!-- ========== ENQUIRY DRAWER START ========== -->
+    <div class="enquiry-drawer-overlay" id="enquiryDrawerOverlay"></div>
+    <div class="enquiry-drawer" id="enquiryDrawer">
+        <div class="enquiry-drawer-header">
+            <a href="tel:+1234567890" class="nav-outline-btn">24/7 Global Assistance</a>
+            <div class="enquiry-header-right">
+                <div class="nav-lang">
+                    <span>EN</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <button class="enquiry-close-btn" id="enquiryCloseBtn" aria-label="Close enquiry drawer">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#000000" stroke-width="1.2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="enquiry-drawer-content">
+            <form class="enquiry-form">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="ex: john">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Choose Services</label>
+                        <div class="select-wrapper">
+                            <select class="form-select">
+                                <option selected disabled>ex: Air Ambulance</option>
+                                <option>Air Ambulance</option>
+                                <option>Commercial Stretcher</option>
+                                <option>Medical Escort</option>
+                                <option>Paediatric Transfer</option>
+                                <option>ECMO Transport</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="john@gmail.com">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" placeholder="Enter your phone number">
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="5" placeholder="Enter your question here"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check d-flex align-items-start gap-2">
+                            <input class="form-check-input" type="checkbox" id="consentCheck">
+                            <label class="form-check-label" for="consentCheck">
+                                I consent to have this website store my submitted information so they can respond to my
+                                inquiry.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 text-end mt-4">
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="enquiry-drawer-footer">
+            <a href="roles.html" class="nav-outline-btn">Join the Team</a>
+            <div class="nav-socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </div>
+    <!-- ========== ENQUIRY DRAWER END ========== -->
+
 </body>
 
 </html>

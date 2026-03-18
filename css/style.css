@@ -2682,11 +2682,12 @@ img {
     font-size: 16px;
     font-weight: 500;
     padding: 10px 35px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.8);
     border-radius: 999px;
     transition: all 0.3s ease;
     text-decoration: none;
     white-space: nowrap;
+    font-weight: 500;
 }
 
 .advisor-cta-btn:hover {
@@ -4443,7 +4444,7 @@ img {
 
 .why-choose-grid {
     display: flex;
-    gap: 130px;
+    gap: 190px;
 }
 
 .why-choose-left {

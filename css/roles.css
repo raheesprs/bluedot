@@ -86,7 +86,7 @@
 .job-title {
     font-family: 'Aeonik', sans-serif;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 500;
     color: #000;
     margin-bottom: 20px;
     line-height: 1.2;
@@ -177,7 +177,7 @@
 .difference-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 6px;
     justify-content: center;
 }
 
@@ -242,6 +242,7 @@
 
 .learn-more-content {
     padding: 80px 60px;
+    padding-top: 30px;
 }
 
 .learn-more-title {
