@@ -4755,3 +4755,13 @@ img {
     padding-right: 5px;
     padding-left: 5px;
 }
+
+.team-text {
+    color: #022F43;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 127.273% */
+    letter-spacing: -0.44px;
+}
