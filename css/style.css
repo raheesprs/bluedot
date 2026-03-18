@@ -4164,7 +4164,7 @@ img {
 }
 
 .hero-title-main {
-    font-size: 64px;
+    font-size: 55px;
     font-weight: 400;
     color: #01284F;
     margin-bottom: 4px;
@@ -4264,6 +4264,7 @@ img {
     line-height: 28px;
     /* 93.333% */
     letter-spacing: -0.6px;
+    margin-bottom: 15px;
 }
 
 .coordination-grid .col-lg-4 {
@@ -4408,7 +4409,7 @@ img {
 }
 
 .mission-card-title {
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 500;
     color: #01284F;
     margin-bottom: 130px;
@@ -4483,7 +4484,7 @@ img {
 .why-feature-title {
     color: #022F43;
     font-family: "Aeonik";
-    font-size: 24px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
@@ -4492,8 +4493,8 @@ img {
 }
 
 .why-feature-desc {
-    font-size: 18px;
-    color: #01284F;
+    font-size: 20px;
+    color: #022F43;
     opacity: 0.8;
     line-height: 1.4;
     font-family: 'Aeonik', sans-serif;
