@@ -421,7 +421,7 @@ img {
     font-size: 13px;
     font-weight: 600;
     padding: 8px 20px;
-    border: 1px solid #000;
+    border: 1.5px solid #000;
     border-radius: 999px;
     transition: all 0.3s ease;
     white-space: nowrap;
@@ -4579,7 +4579,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #F1F5F9;
+    /* border-bottom: 1px solid #F1F5F9; */
 }
 
 .enquiry-header-right {
@@ -4676,23 +4676,31 @@ img {
 }
 
 .enquiry-form .form-check-label {
-    font-size: 14px;
-    font-weight: 500;
     color: #000;
-    line-height: 1.5;
-    cursor: pointer;
-    max-width: 400px;
+
+    font-size: 13.884px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15.426px;
+    /* 111.111% */
+    letter-spacing: -0.069px;
+    max-width: 320px;
 }
 
 .enquiry-form .btn-submit {
     background: #0095D6;
     color: #FFF;
     border: none;
-    padding: 12px 55px;
+    padding: 10px 25px;
     border-radius: 100px;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
     transition: all 0.3s ease;
+    margin-left: auto;
+}
+
+.enquiry-form {
+    padding-top: 50px;
 }
 
 .enquiry-form .btn-submit:hover {
