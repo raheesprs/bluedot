@@ -1,5 +1,5 @@
 /**
- * BlueDot - Main JavaScript
+ * Bluedot - Main JavaScript
  * ========================
  */
 
@@ -271,5 +271,5 @@ document.addEventListener('DOMContentLoaded', () => {
         yearEl.textContent = new Date().getFullYear();
     }
 
-    console.log('🔵 BlueDot website loaded successfully!');
+    console.log('🔵 Bluedot website loaded successfully!');
 });
