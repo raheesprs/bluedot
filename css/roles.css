@@ -69,7 +69,7 @@
 }
 
 .job-card {
-    background: #F1F6F9;
+    background: #0B3C5D;
     border-radius: 16px;
     padding: 40px 30px;
     height: 100%;
@@ -87,13 +87,13 @@
     font-family: 'Aeonik', sans-serif;
     font-size: 28px;
     font-weight: 500;
-    color: #000;
+    color: #ffffff;
     margin-bottom: 20px;
     line-height: 1.2;
 }
 
 .job-description {
-    color: #060606;
+    color: #ffffff;
     font-family: "Aeonik";
     font-size: 16.017px;
     font-style: normal;
@@ -112,15 +112,15 @@
 
 .job-meta {
     font-size: 13px;
-    color: #666;
+    color: #ffffff;
 }
 
 .btn-apply {
     display: inline-block;
     padding: 8px 30px;
-    border: 1px solid #000;
+    border: 1px solid #ffffff;
     border-radius: 999px;
-    color: #000;
+    color: #ffffff;
     font-size: 14px;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -182,7 +182,7 @@
 }
 
 .diff-card {
-    background: #fff;
+    background: #0B3C5D;
     border-radius: 20px;
     padding: 40px 30px;
     flex: 0 0 calc(33.333% - 16px);
@@ -216,16 +216,22 @@
     font-family: 'Aeonik', sans-serif;
     font-size: 20px;
     font-weight: 500;
-    color: #000;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 .diff-text {
     font-size: 14px;
-    color: #444;
+    color: #ffffff;
     line-height: 1.5;
     margin-bottom: 0;
 }
+
+
+.diff-icon svg path {
+    stroke: white;
+}
+
 
 /* Learn More Section */
 .roles-learn-more {
@@ -234,7 +240,7 @@
 }
 
 .learn-more-card {
-    background: #fff;
+    background: #0B3C5D;
     border-radius: 24px;
     overflow: hidden;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
@@ -246,7 +252,7 @@
 }
 
 .learn-more-title {
-    color: #060606;
+    color: #ffffff;
     font-family: "Aeonik";
     font-size: 34px;
     font-style: normal;
@@ -257,7 +263,7 @@
 }
 
 .learn-more-text {
-    color: #060606;
+    color: #ffffff;
     font-family: "Aeonik";
     font-size: 18px;
     font-style: normal;
@@ -270,9 +276,9 @@
 .btn-learn-more {
     display: inline-block;
     padding: 12px 36px;
-    border: 1.5px solid #000;
+    border: 1.5px solid #ffffff;
     border-radius: 999px;
-    color: #000;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 500;
     transition: all 0.3s ease;

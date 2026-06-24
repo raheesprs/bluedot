@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bluedot - ">
+    <meta name="keywords" content="">
+    <meta name="author" content="Bluedot">
+
+    <title>Bluedot | </title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="fleet-page">
+
+    <!-- ========== HEADER START ========== -->
+    <header class="site-header site-header-light" id="siteHeader">
+
+
+        <div class="header-main">
+            <div class="container">
+                <div class="header-inner">
+                    <!-- Logo -->
+                    <a href="index.html" class="header-logo" id="headerLogo">
+                        <img src="images/bl-logo.svg" alt="Bluedot Logo">
+                    </a>
+
+                    <!-- Right Side Actions -->
+                    <div class="header-actions">
+                        <a href="tel:+1234567890" class="header-btn" id="btnGlobalAssistance">
+                            24/7 Global Assistance
+                        </a>
+                        <a href="javascript:void(0)" class="header-btn trigger-enquiry" id="btnEnquiry">
+                            Make an Enquiry
+                        </a>
+                        <div class="header-lang" id="langSelector">
+                            <span>EN</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <button class="header-hamburger" id="headerHamburger" aria-label="Toggle menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="12" viewBox="0 0 48 12"
+                                fill="none">
+                                <path d="M0 0.75H47.3799" stroke="currentColor" stroke-width="1.5" />
+                                <path d="M0 10.917H47.3799" stroke="currentColor" stroke-width="1.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile / Fullscreen Nav -->
+        <div class="header-nav-overlay" id="headerNavOverlay"></div>
+        <nav class="header-nav" id="headerNav">
+            <div class="nav-drawer-header">
+                <div class="nav-drawer-actions">
+                    <a href="tel:+1234567890" class="nav-outline-btn">24/7 Global Assistance</a>
+                    <a href="javascript:void(0)" class="nav-outline-btn trigger-enquiry">Make an Enquiry</a>
+                    <div class="nav-lang">
+                        <span>EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <button class="nav-close-btn" id="navCloseBtn" aria-label="Close menu">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="close-icon">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#000000" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-drawer-content">
+                <div class="nav-menus-wrapper" id="navMenusWrapper">
+                    <!-- Main Menu -->
+                    <div class="nav-menu-main">
+                        <ul class="header-nav-links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#services" class="has-submenu" data-target="servicesMenu">Services</a></li>
+                            <li><a href="fleet.html">Fleet</a></li>
+                            <li><a href="news.html">News & Insights</a></li>
+                            <li><a href="roles.html">Careers</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services Submenu -->
+                    <div class="nav-menu-sub" id="servicesMenu">
+                        <button class="nav-back-btn" id="navBackBtn">
+                            <svg width="40" height="24" viewBox="0 0 40 24" fill="none">
+                                <path d="M40 12H2M2 12L12 22M2 12L12 2" stroke="#000000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <ul class="header-nav-links">
+                            <li><a href="air-ambulance.html">Air Ambulance</a></li>
+                            <li><a href="Comercial-Airline-Transfer.html">Commercial Airline Transfer</a></li>
+                            <li><a href="Medical-Escort-Services.html">Medical Escorts</a></li>
+                            <li><a href="Helicopter-Air-Ambulance.html">Helicopter Air Ambulance</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-drawer-footer">
+                <a href="roles.html" class="nav-outline-btn">Join the Team</a>
+                <div class="nav-socials">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========== HEADER END ========== -->
+
+
+    <!-- ========== FLEET BANNER SLIDER ========== -->
+    <section class="fleet-banner-slider" id="fleetBannerSlider">
+        <!-- Background image -->
+        <div class="fbs-bg"></div>
+
+        <!-- Title -->
+        <div class="fbs-title-wrap">
+            <h1 class="fbs-title">Meet our fleet</h1>
+        </div>
+
+        <!-- Swiper carousel -->
+        <div class="fbs-swiper-wrap">
+            <div class="swiper fleetSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide fbs-swiper-slide"
+                         data-subtitle="bombardier"
+                         data-name="challenger 605"
+                         data-url="challenger-605.html">
+                        <img src="images/plane.png" alt="Bombardier Challenger 605" class="fbs-plane-img">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide fbs-swiper-slide"
+                         data-subtitle="learjet"
+                         data-name="learjet 75"
+                         data-url="learjet-75.html">
+                        <img src="images/plane.png" alt="Learjet 75" class="fbs-plane-img">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide fbs-swiper-slide"
+                         data-subtitle="cessna"
+                         data-name="citation xls"
+                         data-url="citation-xls.html">
+                        <img src="images/plane.png" alt="Cessna Citation XLS" class="fbs-plane-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Caption below plane -->
+        <div class="fbs-caption-wrap">
+            <p class="fbs-subtitle" id="fbsSubtitle">bombardier</p>
+            <h2 class="fbs-name" id="fbsName">challenger 605</h2>
+            <a href="challenger-605.html" class="fbs-learn-btn" id="fbsLearnBtn">Learn More</a>
+        </div>
+
+        <!-- Navigation arrows – bottom right -->
+        <div class="fbs-nav">
+            <button class="fbs-arrow fbs-prev" id="fbsPrev" aria-label="Previous aircraft">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="fbs-arrow fbs-next" id="fbsNext" aria-label="Next aircraft">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+   
+
+
+
+  <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <!-- Row 1: Logo | Nav links | Badges -->
+            <div class="footer-row1">
+                <div class="footer-logo">
+                    <img src="images/bl-logo.svg" alt="Bluedot Logo" class="footer-logo-img">
+                </div>
+                <ul class="footer-links-sub footer-nav-center">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="fleet.html">Fleet</a></li>
+                    <li><a href="news.html">News &amp; Insights</a></li>
+                    <li><a href="roles.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="footer-badges">
+                    <!-- <img src="images/certificate.png" alt="EURAMI Accredited Provider" class="footer-badge-img"> -->
+                  
+                  <div class="footer-flex">
+                    <img src="images/new-ft.png" alt="ITIJ Awards 2025 Winner" class="footer-award-img">
+  <div class="footer-socials">
+                    <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                  </div>
+               
+               
+               
+               
+             </div>
+            </div>
+
+            <!-- Row 2: Services | Social icons -->
+            <div class="footer-row2">
+                <div class="footer-col-left">
+                    <span class="footer-title">Services</span>
+                    <ul class="footer-links-main">
+                        <li><a href="air-ambulance.html">Air Ambulance</a></li>
+                        <li><a href="Comercial-Airline-Transfer.html">Commercial Airline Transfer</a></li>
+                        <li><a href="Medical-Escort-Services.html">Medical Escorts</a></li>
+                        <li><a href="#">HEMS</a></li>
+                    </ul>
+                </div>
+              
+            </div>
+
+            <!-- Row 3: Copyright | Privacy -->
+            <div class="footer-bottom">
+                <p class="copyright">2026 &copy; Bluedot Air Ambulance</p>
+                <div class="footer-bottom-links">
+                    <a href="contact.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== FOOTER END ========== -->
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+    <!-- Fleet Banner Swiper Init -->
+    <script>
+        (function () {
+            const subtitleEl = document.getElementById('fbsSubtitle');
+            const nameEl     = document.getElementById('fbsName');
+            const learnBtn   = document.getElementById('fbsLearnBtn');
+
+            const fleetSwiper = new Swiper('.fleetSwiper', {
+                slidesPerView: 1.35,
+                centeredSlides: true,
+                spaceBetween: 0,
+                loop: true,
+                speed: 700,
+                navigation: {
+                    nextEl: '#fbsNext',
+                    prevEl: '#fbsPrev',
+                },
+                breakpoints: {
+                    576: { slidesPerView: 1.4 },
+                    768: { slidesPerView: 1.5 },
+                    1024: { slidesPerView: 1.6 },
+                    1280: { slidesPerView: 1.7 },
+                },
+                on: {
+                    slideChange: function () {
+                        const slide = this.slides[this.activeIndex];
+                        if (slide) {
+                            subtitleEl.textContent       = slide.dataset.subtitle || '';
+                            nameEl.textContent           = slide.dataset.name    || '';
+                            learnBtn.href                = slide.dataset.url     || '#';
+                        }
+                    }
+                }
+            });
+        })();
+    </script>
+
+    <!-- Services Swiper Init -->
+    <script>
+        const servicesSwiper = new Swiper('.servicesSwiper', {
+            slidesPerView: 1.15,
+            centeredSlides: true,
+            spaceBetween: 24,
+            loop: true,
+            speed: 600,
+            navigation: {
+                nextEl: '#servicesNext',
+                prevEl: '#servicesPrev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1.3,
+                    spaceBetween: 28,
+                },
+                992: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 32,
+                },
+                1200: {
+                    slidesPerView: 1.6,
+                    spaceBetween: 40,
+                },
+            },
+        });
+
+        // Testimonials Swiper
+        const testiSwiper = new Swiper('.testiSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            speed: 600,
+            navigation: {
+                nextEl: '#testiNext',
+                prevEl: '#testiPrev',
+            },
+            pagination: {
+                el: '.testi-pagination',
+                type: 'fraction',
+                renderFraction: function (currentClass, totalClass) {
+                    return '<span class="' + currentClass + '"></span> / <span class="' + totalClass + '"></span>';
+                }
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                }
+            }
+        });
+    </script>
+
+    <!-- ========== ENQUIRY DRAWER START ========== -->
+    <div class="enquiry-drawer-overlay" id="enquiryDrawerOverlay"></div>
+    <div class="enquiry-drawer" id="enquiryDrawer">
+        <div class="enquiry-drawer-header">
+            <a href="tel:+1234567890" class="nav-outline-btn">24/7 Global Assistance</a>
+            <div class="enquiry-header-right">
+                <div class="nav-lang">
+                    <span>EN</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <button class="enquiry-close-btn" id="enquiryCloseBtn" aria-label="Close enquiry drawer">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#000000" stroke-width="1.2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="enquiry-drawer-content">
+            <form class="enquiry-form">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="ex: john">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Choose Services</label>
+                        <div class="select-wrapper">
+                            <select class="form-select">
+                                <option selected disabled>ex: Air Ambulance</option>
+                                <option>Air Ambulance</option>
+                                <option>Commercial Stretcher</option>
+                                <option>Medical Escort</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="john@gmail.com">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" placeholder="Enter your phone number">
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="5" placeholder="Enter your question here"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check d-flex align-items-start gap-2">
+                            <input class="form-check-input" type="checkbox" id="consentCheck">
+                            <label class="form-check-label" for="consentCheck">
+                                I consent to have this website store my submitted information so they can respond to my
+                                inquiry.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 text-end mt-4">
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="enquiry-drawer-footer">
+            <a href="roles.html" class="nav-outline-btn">Join the Team</a>
+            <div class="nav-socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </div>
+    <!-- ========== ENQUIRY DRAWER END ========== -->
+
+</body>
+
+</html>
