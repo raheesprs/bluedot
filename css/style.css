@@ -688,7 +688,7 @@ img {
     font-weight: 600;
     color: var(--white);
     line-height: 1.1;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     letter-spacing: -1.5px;
     max-width: 900px;
     text-transform: uppercase;
@@ -704,12 +704,12 @@ img {
 }
 
 .hero-description {
-    font-size: 28px;
+    font-size: 26px;
     color: white;
     max-width: 900px;
 
     margin-bottom: 35px;
-    line-height: 1.4;
+    line-height: 1.2;
 }
 
 .hero-buttons {
