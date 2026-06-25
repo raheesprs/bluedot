@@ -684,13 +684,14 @@ img {
 }
 
 .hero-title {
-    font-size: 92px;
+    font-size: 75px;
     font-weight: 600;
     color: var(--white);
     line-height: 1.1;
     margin-bottom: 4px;
     letter-spacing: -1.5px;
     max-width: 900px;
+    text-transform: uppercase;
 }
 
 .hero-title .gradient-text {
@@ -703,11 +704,11 @@ img {
 }
 
 .hero-description {
-    font-size: 30px;
+    font-size: 28px;
     color: white;
     max-width: 900px;
 
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     line-height: 1.4;
 }
 
@@ -749,7 +750,7 @@ img {
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.5px;
-    padding: 8px 20px;
+    padding: 15px 20px;
 }
 
 .btn-hero-secondary:hover {
@@ -5240,6 +5241,7 @@ img {
     letter-spacing: -1.5px;
     line-height: 1.05;
     font-family: 'Aeonik', sans-serif;
+
 }
 
 .hero-subtitle {
