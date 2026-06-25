@@ -1137,7 +1137,7 @@ img {
     flex: 0 0 44%;
     /* background: #2A6E96; */
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     overflow: hidden;
 }
 
@@ -1176,7 +1176,7 @@ img {
     color: #ffffff;
     font-size: 44px;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.1;
     letter-spacing: -0.4px;
     margin: 0;
     padding-bottom: 13px;
@@ -1204,7 +1204,7 @@ img {
     border: 1.5px solid rgba(255, 255, 255, 0.8);
     border-radius: 999px;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
     text-decoration: none;
     width: fit-content;
