@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Arabic Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/7 Air Ambulance Service Oman </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/js/all.min.js"></script>
+</head>
+
+<body>
+
+    <!-- ========== HEADER START ========== -->
+    <header class="site-header site-header-light" id="siteHeader">
+
+
+        <div class="header-main">
+            <div class="container">
+                <div class="header-inner">
+                    <!-- Logo -->
+                    <a href="index.html" class="header-logo" id="headerLogo">
+                        <img src="images/bl-logo.svg" alt="Bluedot Logo">
+                    </a>
+
+                    <!-- Right Side Actions -->
+                    <div class="header-actions">
+                        <a href="tel:+1234567890" class="header-btn" id="btnGlobalAssistance"
+                            data-i18n="nav.global_assistance">
+                            24/7 Global Assistance
+                        </a>
+                        <a href="javascript:void(0)" class="header-btn trigger-enquiry" id="btnEnquiry"
+                            data-i18n="nav.make_enquiry">
+                            Make an Enquiry
+                        </a>
+                        <div class="header-lang" id="langSelector">
+                            <span class="lang-current-label">EN</span>
+                            <i class="fas fa-chevron-down"></i>
+                            <div class="lang-dropdown">
+                                <span class="lang-option active" data-lang="en">
+                                    <span class="lang-flag">🇬🇧</span>
+                                    <span class="lang-name">EN</span>
+                                </span>
+                                <span class="lang-option" data-lang="ar">
+                                    <span class="lang-flag">🇸🇦</span>
+                                    <span class="lang-name">AR</span>
+                                </span>
+                            </div>
+                        </div>
+                        <button class="header-hamburger" id="headerHamburger" aria-label="Toggle menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="12" viewBox="0 0 48 12"
+                                fill="none">
+                                <path d="M0 0.75H47.3799" stroke="currentColor" stroke-width="1.5" />
+                                <path d="M0 10.917H47.3799" stroke="currentColor" stroke-width="1.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile / Fullscreen Nav -->
+        <div class="header-nav-overlay" id="headerNavOverlay"></div>
+        <nav class="header-nav" id="headerNav">
+            <div class="nav-drawer-header">
+                <div class="nav-drawer-actions">
+                    <a href="tel:+1234567890" class="nav-outline-btn" data-i18n="nav.global_assistance">24/7 Global
+                        Assistance</a>
+                    <a href="javascript:void(0)" class="nav-outline-btn trigger-enquiry"
+                        data-i18n="nav.make_enquiry">Make an Enquiry</a>
+                    <div class="nav-lang">
+                        <span class="lang-current-label">EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="lang-dropdown">
+                            <span class="lang-option active" data-lang="en">
+                                <span class="lang-flag">🇬🇧</span>
+                                <span class="lang-name">EN</span>
+                            </span>
+                            <span class="lang-option" data-lang="ar">
+                                <span class="lang-flag">🇸🇦</span>
+                                <span class="lang-name">AR</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <button class="nav-close-btn" id="navCloseBtn" aria-label="Close menu">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="close-icon">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#000000" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-drawer-content">
+                <div class="nav-menus-wrapper" id="navMenusWrapper">
+                    <!-- Main Menu -->
+                    <div class="nav-menu-main">
+                        <ul class="header-nav-links">
+                            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+                            <li><a href="#services" class="has-submenu" data-target="servicesMenu">Services</a></li>
+                            <li><a href="fleet-select.html" data-i18n="nav.fleet">Fleet</a></li>
+                            <li><a href="news.html" data-i18n="nav.news">News & Insights</a></li>
+                            <li><a href="roles.html" data-i18n="nav.careers">Careers</a></li>
+                            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services Submenu -->
+                    <div class="nav-menu-sub" id="servicesMenu">
+                        <button class="nav-back-btn" id="navBackBtn">
+                            <svg width="40" height="24" viewBox="0 0 40 24" fill="none">
+                                <path d="M40 12H2M2 12L12 22M2 12L12 2" stroke="#000000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <ul class="header-nav-links">
+                            <li><a href="air-ambulance.html" data-i18n="nav.air_ambulance">Air Ambulance</a></li>
+                            <li><a href="Comercial-Airline-Transfer.html" data-i18n="nav.commercial_transfer">Commercial
+                                    Airline Transfer</a></li>
+                            <li><a href="Medical-Escort-Services.html" data-i18n="nav.medical_escorts">Medical
+                                    Escorts</a></li>
+                            <li><a href="Helicopter-Air-Ambulance.html" data-i18n="nav.helicopter">Helicopter Air
+                                    Ambulance</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-drawer-footer">
+                <a href="roles.html" class="nav-outline-btn" data-i18n="nav.join_team">Join the Team</a>
+                <div class="nav-socials">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========== HEADER END ========== -->
+
+    <main class="air-ambulance-page">
+        <!-- Hero Section -->
+        <section class="air-ambulance-hero">
+            <img src="images/oman.png" alt="Air Ambulance Transfer" class="aa-hero-bg">
+            <div class="aa-hero-overlay"></div>
+            <div class="container aa-hero-content">
+                <div class="hero-text-wrapper">
+                    <h1 class="hero-title-main">Journeys of Care</h1>
+                    <p class="hero-subtitle">224/7 Air Ambulance Service Oman</p>
+                    <a href="javascript:void(0)" class="btn-talk-advisor trigger-enquiry">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intro & Stats Section -->
+        <section class="oman-intro-section">
+            <div class="container">
+                <!-- Top White Box -->
+                <div class="oman-intro-top">
+                    <div class="oman-intro-text">
+                        Based in Dubai, Bluedot is the Middle East’s leading provider of Air Ambulance service with a
+                        difference: a committed, rightly qualified, and highly experienced medical team, a strongly
+                        service-minded approach, and strictly deploying CAMTS & EURAMI certified operators.
+                    </div>
+                    <div class="oman-intro-bg-text">
+                        The Middle East’s leading
+                    </div>
+                </div>
+
+                <!-- Bottom Stats Box -->
+                <div class="oman-stats-box">
+                    <div class="oman-stat-col">
+                        <h3 class="oman-stat-val">4000+ Medical<br>Assists</h3>
+                        <p class="oman-stat-desc">Completed over 4000 assists worldwide, including neonatal transfers.
+                        </p>
+                    </div>
+                    <div class="oman-stat-col">
+                        <h3 class="oman-stat-val">100% Success<br>Rate</h3>
+                        <p class="oman-stat-desc">Attending to every detail and improvising in the face of challenges.
+                        </p>
+                    </div>
+                    <div class="oman-stat-col">
+                        <h3 class="oman-stat-val">100+ Embassies<br>&amp; Consulates</h3>
+                        <p class="oman-stat-desc">International missions in the Middle East trust us for smooth
+                            repatriation.</p>
+                    </div>
+                    <div class="oman-stat-col">
+                        <h3 class="oman-stat-val">90+ Cities and<br>Countries</h3>
+                        <p class="oman-stat-desc">Serving you at new and more locations all over the blue planet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="air-ambulance-info">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 class="info-tagline">Bluedot : Quality Leader in
+                            Air Ambulance</h2>
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-description">
+                            <p>Bluedot (formerly Universal Medical Transfer services) has years of experience and
+                                networks with Airports around the world, including Muscat International Airport, Oman
+                                ensuring smooth passage, rapid response, and easier paperwork with shorter lead times.
+                            </p>
+                            <p>Bluedot is the Middle East’s leading provider of Air Ambulance service with a difference:
+                                a committed, rightly qualified, and highly experienced medical team that has led more
+                                than 4000 medical assists worldwide, counting more than 100 embassies and consulates
+                                among our clients, as well as several government organizations in the middle east.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Worldwide Section -->
+        <section class="oman-worldwide-section">
+            <div class="container">
+                <div class="worldwide-box">
+                    <div class="row h-100">
+                        <div class="col-lg-5">
+                            <div class="worldwide-content">
+                                <h2>24/7 Air Ambulance<br>Worldwide</h2>
+                                <p>Our Air Ambulance control centre is available 24/7 to talk to you. Bluedot can
+                                    arrange medical transport home for patients within the shortest time possible by jet
+                                    or helicopter. You can make an inquiry by calling us or filling in our contact form.
+                                </p>
+                                <p>We plan the entire journey from bedside to bedside (bed to bed care) from Oman to any
+                                    country in the world and back. Therefore our clients include more than 90 embassies
+                                    and international consulates worldwide, as well as several governmental
+                                    organizations.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 d-flex align-items-end justify-content-end pr-0">
+                            <div class="worldwide-img-wrapper">
+                                <img src="images/24.png" alt="24/7 Air Ambulance Worldwide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="oman-worldwide-section">
+            <div class="container">
+                <div class="worldwide-box">
+                    <div class="row h-100">
+                        <div class="col-lg-7 d-flex align-items-end justify-content-end pr-0">
+                            <div class="worldwide-img-wrapper">
+                                <img src="images/25.png" alt="24/7 Air Ambulance Worldwide">
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="worldwide-content">
+                                <h2>About Oman</h2>
+                                <p>Oman is the oldest continuously independent state in the Arab world and offers a
+                                    great mix of natural wealth, traditional values, and modern infrastructure.
+                                    Expatriates form a major part of the population and visitors are frequent from
+                                    neighboring countries. Hence the need for air ambulance services, including
+                                    repatriation and chartered flights are not infrequent. Omani nationals also travel
+                                    abroad for advanced healthcare services, including to India and Europe.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Oman Info Cards Section -->
+        <section class="oman-cards-section">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="oman-info-card">
+                            <h3>Muscat International Airport</h3>
+                            <p>Muscat International Airport (IATA: MCT, ICAO: OOMS), formerly Seeb International
+                                Airport, is the main international airport in Oman and is located in Seeb, 32 km from
+                                the old city and capital Muscat within the Muscat metropolitan area. The airport serves
+                                as the hub for flag carrier Oman Air and Oman's first budget airline Salam Air, and
+                                features flights to several regional destinations as well as some intercontinental
+                                services to Asia, Africa, and Europe.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="oman-info-card">
+                            <h3>Tourism Destination</h3>
+                            <p>Middle eastern and Arab citizens, including Omanis who are residing outside of Oman,
+                                represent the highest ratio of all tourists visiting Oman, estimated to be 48 percent.
+                                The second highest number of visitors comes from other Asian countries, which account
+                                for 17 percent of the total number of visitors. Healthcare facilities are increasingly
+                                growing in the country with over 60 hospitals and 900 medical centers.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="oman-info-card">
+                            <h3>Healthcare Services in Oman</h3>
+                            <p>Omani hospitals, medical centers, dispensaries, and clinics, include those managed by the
+                                Ministry of Public Health, the Ministry of Defence, one university hospital, and one
+                                hospital for the Royal Oman Police. The Omani Ministry of Health has established
+                                standards, policies, and funding for the expansion of public healthcare facilities in
+                                Oman.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hospitals Directory Section -->
+        <section class="oman-hospitals-section">
+            <div class="container">
+                <div class="hospitals-tabs">
+                    <button class="hospital-tab active">Hospitals in Muscat</button>
+                    <button class="hospital-tab">Hospitals outside of Muscat</button>
+                </div>
+
+                <div class="hospitals-grid">
+                    <ul class="hospital-list">
+                        <li>Abeer Hospital</li>
+                        <li>Al Khair Hospital</li>
+                        <li>Al Masarra Hospital<br>(Psychiatric Hospital)</li>
+                        <li>Al Nahdha Hospital</li>
+                        <li>Al Shaiti Hospital</li>
+                        <li>Aster Al Raffah Hospital</li>
+                        <li>Apollo Hospital</li>
+                        <li>Armed Forces Hospital</li>
+                        <li>Badr al Samaa Group of Hospitals and Polyclinic</li>
+                    </ul>
+                    <ul class="hospital-list">
+                        <li>Bilad Bahi Bu Ali Hospital</li>
+                        <li>Boukha Hospital</li>
+                        <li>Burjeel Hospital</li>
+                        <li>Deba Hospital</li>
+                        <li>Fakih IVF Hospital</li>
+                        <li>Gulf Specialized Hospital</li>
+                        <li>Haima Hospital</li>
+                        <li>Hamdan Hospital</li>
+                        <li>Ibn Sina Hospital</li>
+                        <li>Ibri Hospital</li>
+                        <li>Izki Hospital</li>
+                        <li>Khoula Hospital (National Trauma Center)</li>
+                    </ul>
+                    <ul class="hospital-list">
+                        <li>KIMS Oman Hospital</li>
+                        <li>Lifeline Hospital</li>
+                        <li>Masirah Hospital</li>
+                        <li>Muscat Private Hospital and IVF Center</li>
+                        <li>NMC Healthcare Specialty Hospital</li>
+                        <li>Police Hospital</li>
+                        <li>Quiriyat Hospital</li>
+                        <li>The Royal Hospital</li>
+                        <li>Starcare Group of Hospitals (Seeb)</li>
+                    </ul>
+                    <ul class="hospital-list">
+                        <li>Starcare Group of Hospitals (Bousher)</li>
+                        <li>Sultan Qaboos University Hospital</li>
+                        <li>Wadi Mistal Hospital</li>
+                        <li>Al Hayat International Hospital (Cardiology, Orthopaedics, Diabetes, Gyneac, and other
+                            specialties) and Al Hayat polyclinics (Al Ghubra, Sohar and Al Hail)</li>
+                    </ul>
+                </div>
+            </div>
+            <img class="ab-vec" src="images/ve.png" alt="">
+        </section>
+
+
+        <!-- Air Ambulance In Oman Section -->
+        <section class="oman-bg-section" style="background-image: url('images/oman-bg.png');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="oman-bg-content">
+                            <h2>Air Ambulance In Oman</h2>
+                            <p>We provide air ambulance services from major city centers and hospitals in Oman, it is
+                                our mission to provide a travel experience that is as safe, comfortable, and stress-free
+                                as possible for patients and loved ones alike. Cities we cover include: Muscat, Seeb,
+                                Salalah,Bawshar,Sohar,Suwayq,Ibri,Saham,Barka,Rustaq.</p>
+                            <p>Bluedot Air Ambulance services include medical repatriation flights as well as medical
+                                assistance flights. Allied Bluedot services include chartered flights and medical escort
+                                services, as well as FAA-approved medical stretchers on commercial flights.</p>
+                            <p>Air Ambulance Services are often used for repatriation by embassies and consulates. In a
+                                recent instance, the Philippine Embassy in Muscat announced a government-funded
+                                repatriation flight for Filipino nationals affected by the travel restrictions or their
+                                departure from Oman to the Philippines in July 2021.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="air-ambulance-info">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 class="info-tagline">Pediatric & Neonatal <br> Transport</h2>
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-description">
+                            <p>Bluedot also specializes in pediatric and neonatal transport with incubators from Muscat
+                                International Airport and other airports in the Middle East such as Dubai International
+                                Airport, Abu Dhabi International Airport, Bahrain International Airport, and Kuwait
+                                International Airport.
+                            </p>
+                            <p>We have carried out, with 100% success, the transfer of child/ infant patients across
+                                international borders from the Middle East to South Asian countries, such as from UAE
+                                and Oman to India, Bangladesh, Sri Lanka, etc. as well as to Western countries such as
+                                Canada, United States, United Kingdom, etc.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        </section>
+
+        <!-- UMeN Section -->
+        <section class="oman-umen-section">
+            <div class="row g-0 h-100">
+                <div class="col-lg-6">
+                    <div class="umen-content-box">
+                        <h2>Bluedot's Universal<br>Medical Escort Network<br>(UMeN)</h2>
+                        <p>All <u>air ambulance</u> medical staff are vetted by Bluedot for their qualifications and
+                            continuous training credentials. Our lead medical team has flight physicians with over
+                            fifteen years of experience in critical care transport and medical escort services. We are
+                            part of Bluedot's Universal Medical Escort Network UMeN which gives access to a worldwide
+                            network of aeromedical professionals.</p>
+                        <p>We employ several kinds of jets from a large fleet of aircraft, depending on patient needs,
+                            from short range, such as King Air B200, to mid-range, such as Learjet 45, to long-range
+                            flights such as Challenger 650 or Global Express, as well as network with ground ambulances
+                            and helicopter ambulances for shorter range parts of the journey.</p>
+                        <p>Bluedot is available at any time to assist you with costs, or any other queries you may have.
+                            If you would like an ambulance flight for an emergency or plan a medical flight in advance,
+                            then WhatsApp chat on <u>+971 55 188 1441</u> , and we will give you specific costs and a
+                            quotation tailored to your needs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="umen-img-box">
+                        <img src="images/u-m.png" alt="Medical Escort Network">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Oman Contact Form Section -->
+        <section class="oman-contact-section">
+            <div class="container">
+                <div class="oman-contact-header">
+                    <span class="oman-contact-subtitle">Contact Us</span>
+                    <h2 class="oman-contact-title">We’re here to help. Whether you need medical<br>transport support,
+                        have a question about our<br>services, or are exploring a partnership, our<br>team is ready to
+                        assist.</h2>
+                </div>
+
+                <div class="oman-form-wrapper">
+                    <form action="#" class="oman-main-form">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="oman-name">Name</label>
+                                    <input type="text" id="oman-name" name="name" placeholder="ex: john" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="oman-services">Choose Services</label>
+                                    <div class="select-wrapper">
+                                        <select id="oman-services" name="services" required>
+                                            <option value="" disabled selected>ex: Air Ambulance</option>
+                                            <option value="air-ambulance">Air Ambulance</option>
+                                            <option value="commercial-transfer">Commercial Airline Transfer</option>
+                                            <option value="medical-escorts">Medical Escorts</option>
+                                        </select>
+                                        <i class="fas fa-chevron-down ab-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="oman-email">Email Address</label>
+                                    <input type="email" id="oman-email" name="email" placeholder="john@gmail.com"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="oman-phone">Phone Number</label>
+                                    <input type="tel" id="oman-phone" name="phone" placeholder="Enter your phone number"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="oman-message">Message</label>
+                                    <textarea id="oman-message" name="message" rows="5"
+                                        placeholder="Enter your question here" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="oman-form-footer">
+                                    <div class="oman-consent-group">
+                                        <input type="checkbox" id="oman-consent" name="consent" required>
+                                        <label for="oman-consent">I consent to have this website store my submitted
+                                            information so they can respond to my inquiry.</label>
+                                    </div>
+                                    <button type="submit" class="oman-btn-submit">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <!-- Row 1: Logo | Nav links | Badges -->
+            <div class="footer-row1">
+                <div class="footer-logo">
+                    <img src="images/bl-logo.svg" alt="Bluedot Logo" class="footer-logo-img">
+                </div>
+                <ul class="footer-links-sub footer-nav-center">
+                    <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+                    <li><a href="fleet-select.html" data-i18n="nav.fleet">Fleet</a></li>
+                    <li><a href="news.html" data-i18n="nav.news">News &amp; Insights</a></li>
+                    <li><a href="roles.html" data-i18n="nav.careers">Careers</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+                <div class="footer-badges">
+                    <!-- <img src="images/certificate.png" alt="EURAMI Accredited Provider" class="footer-badge-img"> -->
+
+                    <div class="footer-flex">
+                        <img src="images/new-ft.png" alt="ITIJ Awards 2025 Winner" class="footer-award-img">
+                        <div class="footer-socials">
+                            <a href="#" class="footer-social-btn" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="footer-social-btn" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+            <!-- Row 2: Services | Social icons -->
+            <div class="footer-row2">
+                <div class="footer-col-left">
+                    <span class="footer-title" data-i18n="footer.services">Services</span>
+                    <ul class="footer-links-main">
+                        <li><a href="air-ambulance.html" data-i18n="nav.air_ambulance">Air Ambulance</a></li>
+                        <li><a href="Comercial-Airline-Transfer.html" data-i18n="nav.commercial_transfer">Commercial
+                                Airline Transfer</a></li>
+                        <li><a href="Medical-Escort-Services.html" data-i18n="nav.medical_escorts">Medical Escorts</a>
+                        </li>
+                        <li><a href="#">HEMS</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Row 3: Copyright | Privacy -->
+            <div class="footer-bottom">
+                <p class="copyright" data-i18n="footer.copyright">2026 &copy; Bluedot Air Ambulance</p>
+                <div class="footer-bottom-links">
+                    <a href="contact.html" data-i18n="nav.contact">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== FOOTER END ========== -->
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+
+
+
+    <!-- ========== ENQUIRY DRAWER START ========== -->
+    <div class="enquiry-drawer-overlay" id="enquiryDrawerOverlay"></div>
+    <div class="enquiry-drawer" id="enquiryDrawer">
+        <div class="enquiry-drawer-header">
+            <a href="tel:+1234567890" class="nav-outline-btn" data-i18n="nav.global_assistance">24/7 Global
+                Assistance</a>
+            <div class="enquiry-header-right">
+                <div class="nav-lang">
+                    <span class="lang-current-label">EN</span>
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="lang-dropdown">
+                        <span class="lang-option active" data-lang="en">
+                            <span class="lang-flag">🇬🇧</span>
+                            <span class="lang-name">EN</span>
+                        </span>
+                        <span class="lang-option" data-lang="ar">
+                            <span class="lang-flag">🇸🇦</span>
+                            <span class="lang-name">AR</span>
+                        </span>
+                    </div>
+                </div>
+                <button class="enquiry-close-btn" id="enquiryCloseBtn" aria-label="Close enquiry drawer">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#000000" stroke-width="1.2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="enquiry-drawer-content">
+            <form class="enquiry-form">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="ex: john">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Choose Services</label>
+                        <div class="select-wrapper">
+                            <select class="form-select">
+                                <option selected disabled>ex: Air Ambulance</option>
+                                <option>Air Ambulance</option>
+                                <option>Commercial Stretcher</option>
+                                <option>Medical Escort</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="john@gmail.com">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" placeholder="Enter your phone number">
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="5" placeholder="Enter your question here"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check d-flex align-items-start gap-2">
+                            <input class="form-check-input" type="checkbox" id="consentCheck">
+                            <label class="form-check-label" for="consentCheck">
+                                I consent to have this website store my submitted information so they can respond to my
+                                inquiry.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 text-end mt-4">
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="enquiry-drawer-footer">
+            <a href="roles.html" class="nav-outline-btn" data-i18n="nav.join_team">Join the Team</a>
+            <div class="nav-socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </div>
+    <!-- ========== ENQUIRY DRAWER END ========== -->
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+    <!-- Swiper Initialization -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Hero Banner Slider
+            const heroBannerSwiper = new Swiper('.heroBannerSwiper', {
+                slidesPerView: 1,
+                loop: true,
+                speed: 1500, // increase for slower sliding
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.hero-banner-pagination',
+                    clickable: true,
+                    bulletClass: 'hero-bullet',
+                    bulletActiveClass: 'hero-bullet-active',
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '"></span>';
+                    },
+                },
+                effect: 'slide', // left-right sliding
+            });
+            // Our Services Swiper
+            const servicesSwiper = new Swiper('.servicesSwiper', {
+                slidesPerView: 1,
+                spaceBetween: 24,
+                loop: true,
+                speed: 700,
+                navigation: {
+                    nextEl: '.services-next',
+                    prevEl: '.services-prev',
+                },
+            });
+
+            // Testimonials Swiper
+            const testiSwiper = new Swiper('.testiSwiper', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                speed: 600,
+                navigation: {
+                    nextEl: '#testiNext',
+                    prevEl: '#testiPrev',
+                },
+                pagination: {
+                    el: '.testi-pagination',
+                    type: 'fraction',
+                    renderFraction: function (currentClass, totalClass) {
+                        return '<span class="' + currentClass + '"></span> / <span class="' + totalClass + '"></span>';
+                    }
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    1024: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    }
+                }
+            });
+
+            // Our Fleet Swiper
+            const fleetSwiper = new Swiper('.fleetSwiper', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                speed: 700,
+                navigation: {
+                    nextEl: '.fleet-next',
+                    prevEl: '.fleet-prev',
+                },
+            });
+
+            // News Category Filtering
+            const filterBtns = document.querySelectorAll('.news-filter-btn');
+            const newsCols = document.querySelectorAll('.news-card-col');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    // Toggle active class
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    newsCols.forEach(col => {
+                        const categories = col.getAttribute('data-category').split(' ');
+                        if (filterValue === 'all' || categories.includes(filterValue)) {
+                            col.style.display = 'flex';
+                            col.style.opacity = '0';
+                            setTimeout(() => {
+                                col.style.transition = 'opacity 0.4s ease';
+                                col.style.opacity = '1';
+                            }, 50);
+                        } else {
+                            col.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+
+        // ── Count-up animation on scroll into view ──
+        (function () {
+            function animateCount(el) {
+                const target = parseInt(el.dataset.target, 10);
+                const suffix = el.dataset.suffix || '';
+                const useSeparator = !!el.dataset.separator;
+                const duration = 2000;
+                const startTime = performance.now();
+
+                function format(n) {
+                    if (useSeparator) {
+                        return n.toLocaleString('en-US') + suffix;
+                    }
+                    return n + suffix;
+                }
+
+                function step(now) {
+                    const elapsed = now - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    // ease-out cubic
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    const current = Math.floor(eased * target);
+                    el.textContent = format(current);
+                    if (progress < 1) {
+                        requestAnimationFrame(step);
+                    } else {
+                        el.textContent = format(target);
+                    }
+                }
+                requestAnimationFrame(step);
+            }
+
+            const counters = document.querySelectorAll('.count-up');
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting && !entry.target.dataset.counted) {
+                        entry.target.dataset.counted = '1';
+                        animateCount(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            counters.forEach(function (el) { observer.observe(el); });
+        })();
+    </script>
+
+    <!-- Language Switcher -->
+    <script src="js/lang.js"></script>
+</body>
+
+</html>

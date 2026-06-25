@@ -690,6 +690,7 @@ img {
     line-height: 1.1;
     margin-bottom: 4px;
     letter-spacing: -1.5px;
+    max-width: 900px;
 }
 
 .hero-title .gradient-text {
@@ -704,9 +705,10 @@ img {
 .hero-description {
     font-size: 30px;
     color: white;
+    max-width: 900px;
 
-    margin-bottom: 10px;
-    line-height: 1.8;
+    margin-bottom: 20px;
+    line-height: 1.4;
 }
 
 .hero-buttons {
@@ -747,7 +749,7 @@ img {
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.5px;
-    padding: 8px 32px;
+    padding: 8px 20px;
 }
 
 .btn-hero-secondary:hover {
@@ -1164,6 +1166,7 @@ img {
     line-height: 1.2;
     letter-spacing: -0.4px;
     margin: 0;
+    padding-bottom: 13px;
 }
 
 .svc-card-desc {
@@ -1173,6 +1176,7 @@ img {
     line-height: 1.65;
     margin: 0;
     max-width: 320px;
+    padding-bottom: 15px;
 }
 
 .svc-card-btn {
@@ -1364,6 +1368,7 @@ img {
     text-decoration: none;
     transition: all 0.3s ease;
     letter-spacing: -0.2px;
+    width: fit-content;
 }
 
 .accredited-btn:hover {
@@ -1388,6 +1393,7 @@ img {
 @media (max-width: 991.98px) {
     .accredited-wrapper {
         flex-direction: column;
+        padding-top: 30px;
     }
 
     .accredited-left-inner {
@@ -1406,7 +1412,7 @@ img {
     }
 
     .accredited-left-inner {
-        padding: 32px 24px;
+        padding: 32px 24px !important;
     }
 
     .accredited-right {
@@ -1416,6 +1422,11 @@ img {
 
     .accredited-heading {
         font-size: 24px;
+    }
+
+    .certi-logo-item img {
+        max-height: 50px;
+        max-width: 100px;
     }
 }
 
@@ -1558,6 +1569,7 @@ img {
 
     .global-ops-heading {
         font-size: 26px;
+        line-height: 40px;
     }
 
     .global-ops-number {
@@ -4010,7 +4022,7 @@ img {
    ======================================== */
 @media (max-width: 991.98px) {
     .header-btn {
-        display: none;
+        display: none !important;
     }
 
     .header-nav-links a {
@@ -4067,7 +4079,7 @@ img {
     }
 
     .hero-buttons {
-        justify-content: center;
+        justify-content: left;
     }
 
     .hero-stats {
@@ -5166,13 +5178,26 @@ img {
 }
 
 .air-ambulance-hero {
-    position: relative;
+    /* position: relative;
     width: 100%;
     height: 100vh;
     min-height: 600px;
     overflow: hidden;
     display: flex;
+    align-items: flex-start; */
+
+
+    background: url('../images/air-new.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 150vh;
+    padding-top: 50px;
+    /* padding-bottom: 390px; */
+    display: flex;
     align-items: flex-start;
+    justify-content: start;
+    position: relative;
 }
 
 .aa-hero-bg {
@@ -5203,12 +5228,12 @@ img {
 }
 
 .hero-text-wrapper {
-    max-width: 640px;
+    max-width: 840px;
     padding-top: 140px;
 }
 
 .hero-title-main {
-    font-size: 58px;
+    font-size: 65px;
     font-weight: 400;
     color: #000000;
     margin-bottom: 16px;
@@ -5218,9 +5243,9 @@ img {
 }
 
 .hero-subtitle {
-    font-size: 18px;
+    font-size: 23px;
     color: rgba(0, 0, 0, 0.92);
-    max-width: 480px;
+    max-width: 580px;
     line-height: 1.5;
     margin-bottom: 28px;
     font-family: 'Aeonik', sans-serif;
@@ -5326,10 +5351,10 @@ img {
         font-size: 40px;
     }
 
-    .air-ambulance-hero {
+    /* .air-ambulance-hero {
         height: 80vh;
         min-height: 500px;
-    }
+    } */
 
     .aa-hero-content {
         padding-bottom: 48px;
@@ -6426,5 +6451,1316 @@ img {
 
     .umen-section {
         min-height: 400px;
+    }
+}
+
+@media (max-width: 575.98px) {}
+
+/* =====================================================
+   STATIC BILINGUAL CONTENT (EN / AR)
+   Show .ar-content only when Arabic is active.
+   Show .en-content only when English is active.
+   ===================================================== */
+
+/* Arabic content is hidden by default */
+.ar-content {
+    display: none !important;
+}
+
+/* English content is shown by default */
+.en-content {
+    display: block;
+}
+
+/* When Arabic language is active */
+html[dir="rtl"] .ar-content {
+    display: block !important;
+}
+
+html[dir="rtl"] .en-content {
+    display: none !important;
+}
+
+
+/* =====================================================
+   LANGUAGE SWITCHER DROPDOWN
+   ===================================================== */
+
+/* ── Shared base for both header & nav versions ── */
+.header-lang,
+.nav-lang {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    user-select: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background 0.2s;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.header-lang:hover,
+.nav-lang:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* The caret rotates when dropdown is open */
+.header-lang .fa-chevron-down,
+.nav-lang .fa-chevron-down {
+    font-size: 10px;
+    transition: transform 0.25s ease;
+    pointer-events: none;
+}
+
+.header-lang.open .fa-chevron-down,
+.nav-lang.open .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+/* ── Dropdown panel ── */
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 110px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+    z-index: 9999;
+}
+
+.header-lang.open .lang-dropdown,
+.nav-lang.open .lang-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* ── Individual option ── */
+.lang-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.15s;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.lang-option:hover {
+    background: #f0f6ff;
+    color: #0095D6;
+}
+
+.lang-option.active {
+    background: #e8f4fd;
+    color: #0095D6;
+}
+
+.lang-option .lang-flag {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.lang-option .lang-name {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+/* Separator between options */
+.lang-option+.lang-option {
+    border-top: 1px solid #f0f4f8;
+}
+
+/* ── Current label badge ── */
+.lang-current-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+/* ── Nav drawer lang (inside mobile menu) ── */
+.nav-lang .lang-dropdown {
+    right: auto;
+    left: 0;
+}
+
+
+/* =====================================================
+   RTL / ARABIC LAYOUT OVERRIDES
+   ===================================================== */
+
+html[dir="rtl"] body {
+    font-family: 'Noto Kufi Arabic', 'Tahoma', 'Arial', sans-serif;
+    text-align: right;
+}
+
+/* Load Arabic Google Font dynamically (added via JS) */
+
+/* ── Header ── */
+html[dir="rtl"] .header-inner {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .header-actions {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .header-lang .lang-dropdown,
+html[dir="rtl"] .nav-lang .lang-dropdown {
+    right: auto;
+    left: 0;
+}
+
+/* ── Nav Drawer ── */
+/* Keep drawer on the right side to prevent animation glitches when switching languages */
+html[dir="rtl"] .header-nav {
+    /* No left/right swap */
+}
+
+html[dir="rtl"] .header-nav.open {
+    transform: translateX(0);
+}
+
+html[dir="rtl"] .nav-menus-wrapper.show-submenu {
+    transform: translateX(50%);
+}
+
+html[dir="rtl"] .nav-drawer-header {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .nav-drawer-actions {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .nav-drawer-footer {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .header-nav-links {
+    text-align: right;
+}
+
+html[dir="rtl"] .nav-back-btn {
+    transform: scaleX(-1);
+}
+
+/* ── Hero Slide ── */
+html[dir="rtl"] .hero-slide-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .hero-buttons {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+/* ── Services Slider ── */
+html[dir="rtl"] .svc-card {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .svc-card-text {
+    text-align: right;
+}
+
+html[dir="rtl"] .services-slider-nav {
+    flex-direction: row-reverse;
+}
+
+/* ── Global Ops ── */
+html[dir="rtl"] .global-ops-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .global-ops-stats {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .global-ops-heading {
+    text-align: right;
+}
+
+/* ── Accredited ── */
+html[dir="rtl"] .accredited-wrapper {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .accredited-left-inner {
+    text-align: right;
+    border-left: none;
+    border-right: 4px solid #0095D6;
+    padding-left: 0;
+    padding-right: 32px;
+}
+
+/* ── Fleet ── */
+html[dir="rtl"] .fleet-header {
+    text-align: right;
+}
+
+html[dir="rtl"] .fleet-slide-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .fleet-slider-nav {
+    flex-direction: row-reverse;
+}
+
+/* ── News ── */
+html[dir="rtl"] .news-header-top {
+    text-align: right;
+}
+
+html[dir="rtl"] .news-header-filters-row {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .news-card-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .news-filters-left {
+    flex-direction: row-reverse;
+}
+
+/* ── Testimonials ── */
+html[dir="rtl"] .testi-layout {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .testi-quote-text {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .testi-heading {
+    text-align: right;
+}
+
+html[dir="rtl"] .testi-text {
+    text-align: right;
+}
+
+html[dir="rtl"] .testi-nav-row {
+    flex-direction: row-reverse;
+}
+
+/* ── Insights ── */
+html[dir="rtl"] .insights-heading {
+    text-align: right;
+}
+
+html[dir="rtl"] .insights-info {
+    text-align: right;
+}
+
+/* ── Footer ── */
+html[dir="rtl"] .footer-row1 {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .footer-row2 {
+    flex-direction: row-reverse;
+}
+
+/* html[dir="rtl"] .footer-links-sub {
+    flex-direction: row-reverse;
+} */
+
+html[dir="rtl"] .footer-links-main {
+    text-align: right;
+}
+
+html[dir="rtl"] .footer-col-left {
+    text-align: right;
+}
+
+/* html[dir="rtl"] .footer-flex {
+    flex-direction: row-reverse;
+} */
+
+html[dir="rtl"] .footer-socials {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .footer-bottom {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .footer-bottom-links {
+    flex-direction: row-reverse;
+}
+
+/* ── Enquiry Form ── */
+html[dir="rtl"] .enquiry-drawer-header {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .enquiry-header-right {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .enquiry-form .form-label {
+    text-align: right;
+    display: block;
+}
+
+html[dir="rtl"] .enquiry-form .form-control,
+html[dir="rtl"] .enquiry-form .form-select {
+    text-align: right;
+}
+
+html[dir="rtl"] .form-check {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .enquiry-drawer-footer {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .nav-socials {
+    flex-direction: row-reverse;
+}
+
+/* ── About Page ── */
+html[dir="rtl"] .about-banner-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .vision-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .value-box {
+    text-align: right;
+}
+
+html[dir="rtl"] .join-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .leader-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .profile-sec a {
+    flex-direction: row-reverse;
+}
+
+/* ── Service pages ── */
+html[dir="rtl"] .hero-text-wrapper {
+    text-align: right;
+}
+
+html[dir="rtl"] .aa-hero-content .container {
+    text-align: right;
+}
+
+html[dir="rtl"] .coordination-header {
+    text-align: right;
+}
+
+html[dir="rtl"] .coordination-card {
+    text-align: right;
+    align-items: flex-end;
+}
+
+html[dir="rtl"] .mission-stories-header {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .mission-card-white {
+    text-align: right;
+    align-items: flex-end;
+}
+
+html[dir="rtl"] .why-choose-grid {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .why-choose-title {
+    text-align: right;
+}
+
+html[dir="rtl"] .why-feature-item {
+    text-align: right;
+}
+
+/* ── Contact page ── */
+html[dir="rtl"] .contact-banner-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .offices-title {
+    text-align: right;
+}
+
+/* ── Roles/Careers page ── */
+html[dir="rtl"] .roles-hero-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .role-card {
+    text-align: right;
+}
+
+/* ── General utility ── */
+html[dir="rtl"] .text-start {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .text-end {
+    text-align: left !important;
+}
+
+html[dir="rtl"] .ms-auto {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+html[dir="rtl"] .me-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+
+/* Smooth RTL transition */
+html {
+    transition: direction 0.1s;
+}
+
+/* Arabic font loading hint - excluding font awesome icons */
+html[dir="rtl"] *:not(i):not([class*="fa-"]):not(.fas):not(.fab):not(.far) {
+    font-family: 'Noto Kufi Arabic', 'Tahoma', 'Arial Unicode MS', sans-serif;
+    letter-spacing: 0 !important;
+}
+
+/* Keep logo + images direction-neutral */
+html[dir="rtl"] img,
+html[dir="rtl"] svg {
+    font-family: inherit;
+}
+
+/* =====================================================
+   OMAN SERVICE - INTRO & STATS SECTION
+   ===================================================== */
+.oman-intro-section {
+    position: relative;
+    z-index: 10;
+    margin-top: -80px;
+    /* overlaps the hero slightly */
+    padding-bottom: 60px;
+}
+
+.oman-intro-top {
+    background-color: #ffffff;
+    padding: 60px 50px 80px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.oman-intro-text {
+    width: 60%;
+    font-size: 20px;
+    color: #022F43;
+    line-height: 1.6;
+    font-weight: 400;
+    text-align: left;
+    font-family: "Aeonik";
+}
+
+.oman-intro-bg-text {
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    font-size: 32px;
+    color: #0A3554;
+    font-weight: 600;
+    z-index: 1;
+    letter-spacing: -0.5px;
+}
+
+.oman-stats-box {
+    background-color: #0A3554;
+    border-radius: 8px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    z-index: 2;
+    margin-top: -20px;
+    /* overlaps the top box and big text */
+    box-shadow: 0 20px 40px rgba(10, 53, 84, 0.2);
+}
+
+.oman-stat-col {
+    padding: 0 35px;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.oman-stat-col:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.oman-stat-col:first-child {
+    padding-left: 0;
+}
+
+.oman-stat-val {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+    font-family: "Aeonik";
+
+}
+
+.oman-stat-desc {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 400;
+    font-family: "Aeonik";
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .oman-intro-top {
+        padding: 40px 30px 60px 30px;
+    }
+
+    .oman-intro-text {
+        width: 100%;
+    }
+
+    .oman-intro-bg-text {
+        font-size: 28px;
+        right: 30px;
+        bottom: 30px;
+    }
+
+    .oman-stats-box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 0;
+        padding: 40px 30px;
+    }
+
+    .oman-stat-col:nth-child(2) {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .oman-stat-col:nth-child(3) {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .oman-intro-section {
+        margin-top: -40px;
+    }
+
+    .oman-intro-top {
+        padding: 30px 20px 50px 20px;
+    }
+
+    .oman-intro-bg-text {
+        font-size: 22px;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .oman-stats-box {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 30px 0;
+        margin-top: -10px;
+    }
+
+    .oman-stat-col {
+        padding: 0 !important;
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        padding-bottom: 30px !important;
+    }
+
+    .oman-stat-col:last-child {
+        border-bottom: none;
+        padding-bottom: 0 !important;
+    }
+
+    .oman-stat-val {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+}
+
+/* =====================================================
+   OMAN SERVICE - WORLDWIDE SECTION
+   ===================================================== */
+.oman-worldwide-section {
+    padding: 60px 0;
+    padding-bottom: 0px;
+}
+
+.worldwide-box {
+    background-color: #D8E1E9;
+    /* Light blue-gray matching design */
+    border-radius: 10px;
+    padding: 60px 0 0 60px;
+    /* Padding top and left, zero right and bottom for image bleed */
+    overflow: hidden;
+    /* Ensures image respects bottom-right corner rounding */
+}
+
+.worldwide-content {
+    padding-bottom: 60px;
+    /* Replaces the missing bottom padding on the box for text */
+    padding-right: 40px;
+    /* Space between text and image */
+}
+
+.worldwide-content h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #022F43;
+    font-family: 'Aeonik', sans-serif;
+    margin-bottom: 30px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.worldwide-content p {
+    font-size: 16px;
+    color: #022F43;
+    font-family: 'Aeonik', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.worldwide-content p:last-child {
+    margin-bottom: 0;
+}
+
+.worldwide-img-wrapper {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    /* Small offset from top */
+    display: flex;
+    align-items: flex-end;
+    /* Align image to bottom */
+    justify-content: flex-end;
+    /* Align image to right */
+}
+
+.worldwide-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px 0 0 0;
+    /* Top left corner rounded, others bleed */
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .worldwide-box {
+        padding: 40px 0 0 40px;
+    }
+
+    .worldwide-content {
+        padding-right: 40px;
+        padding-bottom: 40px;
+    }
+
+    .worldwide-content h2 {
+        font-size: 32px;
+    }
+
+    .worldwide-img-wrapper {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .worldwide-box {
+        padding: 30px 0 0 30px;
+        border-radius: 16px;
+    }
+
+    .worldwide-content {
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+
+    .worldwide-content h2 {
+        font-size: 28px;
+    }
+
+    .worldwide-img-wrapper img {
+        border-radius: 16px 0 0 0;
+    }
+}
+
+/* =====================================================
+   OMAN SERVICE - CARDS & HOSPITALS SECTION
+   ===================================================== */
+.oman-cards-section {
+    padding: 80px 0;
+    background-color: #EEF3F6;
+}
+
+.oman-info-card {
+
+    border: 1px solid #A2B5C3;
+    border-radius: 12px;
+    padding: 40px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.oman-info-card:hover {
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.oman-info-card h3 {
+    font-size: 32px;
+    color: #022F43;
+    font-family: 'Aeonik', sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.oman-info-card p {
+    font-size: 15px;
+    color: #022F43;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.oman-hospitals-section {
+    background-color: #0B3C5D;
+    padding: 80px 0 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Wave graphic overlay approximation based on the screenshot */
+.oman-hospitals-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.03) 0%, transparent 60%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hospitals-tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.hospital-tab {
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-family: 'Aeonik', sans-serif;
+}
+
+.hospital-tab.active {
+    background: #ffffff;
+    color: #0F3A56;
+    border-color: #ffffff;
+}
+
+.hospital-tab:hover:not(.active) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.hospitals-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.hospital-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hospital-list li {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    padding-left: 15px;
+    position: relative;
+    font-weight: 300;
+}
+
+.ab-vec {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 796px;
+    height: 500px;
+}
+
+.hospital-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .hospitals-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .oman-info-card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hospitals-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hospitals-tabs {
+        flex-direction: column;
+    }
+
+    .hospital-tab {
+        text-align: center;
+    }
+
+    .oman-cards-section,
+    .oman-hospitals-section {
+        padding: 50px 0;
+    }
+}
+
+/* =====================================================
+   OMAN SERVICE - BACKGROUND IMAGE SECTION
+   ===================================================== */
+.oman-bg-section {
+    padding: 100px 0 350px 0;
+    /* Huge bottom padding so the airplanes in the bg image show through */
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: #F4F4F4;
+    /* Fallback */
+    position: relative;
+}
+
+.oman-bg-content {
+    background: transparent;
+    padding-right: 40px;
+}
+
+.oman-bg-content h2 {
+    font-size: 38px;
+    font-weight: 500;
+    color: #000000;
+    font-family: 'Aeonik', sans-serif;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.oman-bg-content p {
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Aeonik', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.oman-bg-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .oman-bg-section {
+        padding: 80px 0 250px 0;
+        background-position: left bottom;
+        /* Ensure airplanes don't get cut off weirdly */
+    }
+
+    .oman-bg-content {
+        padding-right: 0;
+    }
+
+    .oman-bg-content h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .oman-bg-section {
+        padding: 50px 0 150px 0;
+    }
+
+    .oman-bg-content h2 {
+        font-size: 28px;
+    }
+
+    .oman-bg-content p {
+        font-size: 15px;
+    }
+}
+
+/* =====================================================
+   OMAN SERVICE - UMeN SECTION
+   ===================================================== */
+.oman-umen-section {
+    background-color: #DEE6EB;
+    /* Light blue background matching design */
+    overflow: hidden;
+}
+
+.umen-content-box {
+    padding: 100px 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 1400px) {
+    .umen-content-box {
+        padding-left: 15%;
+        /* Keeps it from going too wide on huge screens */
+    }
+}
+
+.umen-content-box h2 {
+    font-size: 38px;
+    font-weight: 500;
+    color: #022F43;
+    font-family: 'Aeonik', sans-serif;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.umen-content-box p {
+    font-size: 16px;
+    color: #022F43;
+    font-family: 'Aeonik', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.umen-content-box p:last-child {
+    margin-bottom: 0;
+}
+
+.umen-content-box u {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: #022F43;
+}
+
+.umen-img-box {
+    height: 100%;
+    width: 100%;
+}
+
+.umen-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .umen-content-box {
+        padding: 60px 40px;
+    }
+
+    .umen-content-box h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .umen-content-box {
+        padding: 50px 20px;
+    }
+
+    .umen-content-box h2 {
+        font-size: 28px;
+    }
+
+    .umen-img-box {
+        min-height: 400px;
+    }
+}
+
+/* =====================================================
+   OMAN SERVICE - CONTACT FORM SECTION
+   ===================================================== */
+.oman-contact-section {
+    background-color: #EEF3F6;
+    /* Light blue-gray from screenshot */
+    padding: 100px 0;
+}
+
+.oman-contact-header {
+    margin-bottom: 50px;
+}
+
+.oman-contact-subtitle {
+    display: block;
+    font-family: 'Aeonik', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #0A3554;
+    margin-bottom: 24px;
+    letter-spacing: 0.2px;
+}
+
+.oman-contact-title {
+    color: #0A3554;
+    font-family: 'Aeonik', sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+.oman-form-wrapper {
+    background: #FFF;
+    border-radius: 12px;
+    padding: 50px;
+
+}
+
+.ab-down {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.oman-main-form .form-group {}
+
+.oman-main-form .form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 12px;
+    font-family: 'Aeonik', sans-serif;
+}
+
+.oman-main-form .form-group input,
+.oman-main-form .form-group select,
+.oman-main-form .form-group textarea {
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #000;
+    background-color: #FFF;
+    transition: all 0.3s ease;
+}
+
+.oman-main-form .form-group input::placeholder,
+.oman-main-form .form-group textarea::placeholder {
+    color: #A0A0A0;
+}
+
+.oman-main-form .form-group input:focus,
+.oman-main-form .form-group select:focus,
+.oman-main-form .form-group textarea:focus {
+    outline: none;
+    border-color: #000;
+}
+
+/* Custom select arrow */
+.oman-main-form .select-wrapper {
+    position: relative;
+}
+
+.oman-main-form .select-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    color: #A0A0A0;
+}
+
+.oman-main-form .select-wrapper select:valid,
+.oman-main-form .select-wrapper select option {
+    color: #000;
+}
+
+.oman-main-form .select-wrapper i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.oman-form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.oman-consent-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 600px;
+}
+
+.oman-consent-group input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    border: 2px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    accent-color: #0A3554;
+    margin-top: -2px;
+    -webkit-appearance: none;
+    appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.oman-consent-group input[type="checkbox"]:checked {
+    background-color: #000;
+}
+
+.oman-consent-group input[type="checkbox"]:checked::after {
+    content: '\2714';
+    color: #fff;
+    font-size: 14px;
+}
+
+.oman-consent-group label {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4;
+    max-width: 300px;
+}
+
+.oman-btn-submit {
+    background: #FFF;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Aeonik', sans-serif;
+}
+
+.oman-btn-submit:hover {
+    background: #000;
+    color: #FFF;
+}
+
+@media (max-width: 991px) {
+    .oman-contact-section {
+        padding: 80px 0;
+    }
+
+    .oman-contact-title {
+        font-size: 32px;
+    }
+
+    .oman-form-wrapper {
+        padding: 40px 30px;
+    }
+
+    .oman-form-footer {
+        flex-direction: column;
+        gap: 32px;
+        align-items: flex-start;
+    }
+
+    .oman-btn-submit {
+        width: 100%;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .oman-contact-title {
+        font-size: 28px;
+    }
+
+    .oman-form-wrapper {
+        padding: 30px 20px;
     }
 }

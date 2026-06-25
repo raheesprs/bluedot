@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
+    <!-- Arabic Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roles at Bluedot</title>
@@ -34,15 +38,27 @@
 
                     <!-- Right Side Actions -->
                     <div class="header-actions">
-                        <a href="tel:+1234567890" class="header-btn" id="btnGlobalAssistance">
+                        <a href="tel:+1234567890" class="header-btn" id="btnGlobalAssistance"
+                            data-i18n="nav.global_assistance">
                             24/7 Global Assistance
                         </a>
-                        <a href="javascript:void(0)" class="header-btn trigger-enquiry" id="btnEnquiry">
+                        <a href="javascript:void(0)" class="header-btn trigger-enquiry" id="btnEnquiry"
+                            data-i18n="nav.make_enquiry">
                             Make an Enquiry
                         </a>
                         <div class="header-lang" id="langSelector">
-                            <span>EN</span>
+                            <span class="lang-current-label">EN</span>
                             <i class="fas fa-chevron-down"></i>
+                            <div class="lang-dropdown">
+                                <span class="lang-option active" data-lang="en">
+                                    <span class="lang-flag">🇬🇧</span>
+                                    <span class="lang-name">EN</span>
+                                </span>
+                                <span class="lang-option" data-lang="ar">
+                                    <span class="lang-flag">🇸🇦</span>
+                                    <span class="lang-name">AR</span>
+                                </span>
+                            </div>
                         </div>
                         <button class="header-hamburger" id="headerHamburger" aria-label="Toggle menu">
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="12" viewBox="0 0 48 12"
@@ -61,11 +77,23 @@
         <nav class="header-nav" id="headerNav">
             <div class="nav-drawer-header">
                 <div class="nav-drawer-actions">
-                    <a href="tel:+1234567890" class="nav-outline-btn">24/7 Global Assistance</a>
-                    <a href="javascript:void(0)" class="nav-outline-btn trigger-enquiry">Make an Enquiry</a>
+                    <a href="tel:+1234567890" class="nav-outline-btn" data-i18n="nav.global_assistance">24/7 Global
+                        Assistance</a>
+                    <a href="javascript:void(0)" class="nav-outline-btn trigger-enquiry"
+                        data-i18n="nav.make_enquiry">Make an Enquiry</a>
                     <div class="nav-lang">
-                        <span>EN</span>
+                        <span class="lang-current-label">EN</span>
                         <i class="fas fa-chevron-down"></i>
+                        <div class="lang-dropdown">
+                            <span class="lang-option active" data-lang="en">
+                                <span class="lang-flag">🇬🇧</span>
+                                <span class="lang-name">EN</span>
+                            </span>
+                            <span class="lang-option" data-lang="ar">
+                                <span class="lang-flag">🇸🇦</span>
+                                <span class="lang-name">AR</span>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <button class="nav-close-btn" id="navCloseBtn" aria-label="Close menu">
@@ -81,12 +109,12 @@
                     <!-- Main Menu -->
                     <div class="nav-menu-main">
                         <ul class="header-nav-links">
-                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
                             <li><a href="#services" class="has-submenu" data-target="servicesMenu">Services</a></li>
-                            <li><a href="fleet.html">Fleet</a></li>
-                            <li><a href="news.html">News & Insights</a></li>
-                            <li><a href="roles.html">Careers</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="fleet-select.html" data-i18n="nav.fleet">Fleet</a></li>
+                            <li><a href="news.html" data-i18n="nav.news">News & Insights</a></li>
+                            <li><a href="roles.html" data-i18n="nav.careers">Careers</a></li>
+                            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
                         </ul>
                     </div>
 
@@ -99,10 +127,13 @@
                             </svg>
                         </button>
                         <ul class="header-nav-links">
-                            <li><a href="air-ambulance.html">Air Ambulance</a></li>
-                            <li><a href="Comercial-Airline-Transfer.html">Commercial Airline Transfer</a></li>
-                            <li><a href="Medical-Escort-Services.html">Medical Escorts</a></li>
-                            <li><a href="Helicopter-Air-Ambulance.html">Helicopter Air Ambulance</a></li>
+                            <li><a href="air-ambulance.html" data-i18n="nav.air_ambulance">Air Ambulance</a></li>
+                            <li><a href="Comercial-Airline-Transfer.html" data-i18n="nav.commercial_transfer">Commercial
+                                    Airline Transfer</a></li>
+                            <li><a href="Medical-Escort-Services.html" data-i18n="nav.medical_escorts">Medical
+                                    Escorts</a></li>
+                            <li><a href="Helicopter-Air-Ambulance.html" data-i18n="nav.helicopter">Helicopter Air
+                                    Ambulance</a></li>
 
                         </ul>
                     </div>
@@ -110,7 +141,7 @@
             </div>
 
             <div class="nav-drawer-footer">
-                <a href="roles.html" class="nav-outline-btn">Join the Team</a>
+                <a href="roles.html" class="nav-outline-btn" data-i18n="nav.join_team">Join the Team</a>
                 <div class="nav-socials">
                     <a href="#">LinkedIn</a>
                     <a href="#">Facebook</a>
@@ -263,11 +294,11 @@
                     <img src="images/bl-logo.svg" alt="Bluedot Logo" class="footer-logo-img">
                 </div>
                 <ul class="footer-links-sub footer-nav-center">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="fleet.html">Fleet</a></li>
-                    <li><a href="news.html">News &amp; Insights</a></li>
-                    <li><a href="roles.html">Careers</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+                    <li><a href="fleet-select.html" data-i18n="nav.fleet">Fleet</a></li>
+                    <li><a href="news.html" data-i18n="nav.news">News &amp; Insights</a></li>
+                    <li><a href="roles.html" data-i18n="nav.careers">Careers</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
                 </ul>
                 <div class="footer-badges">
                     <!-- <img src="images/certificate.png" alt="EURAMI Accredited Provider" class="footer-badge-img"> -->
@@ -293,11 +324,13 @@
             <!-- Row 2: Services | Social icons -->
             <div class="footer-row2">
                 <div class="footer-col-left">
-                    <span class="footer-title">Services</span>
+                    <span class="footer-title" data-i18n="footer.services">Services</span>
                     <ul class="footer-links-main">
-                        <li><a href="air-ambulance.html">Air Ambulance</a></li>
-                        <li><a href="Comercial-Airline-Transfer.html">Commercial Airline Transfer</a></li>
-                        <li><a href="Medical-Escort-Services.html">Medical Escorts</a></li>
+                        <li><a href="air-ambulance.html" data-i18n="nav.air_ambulance">Air Ambulance</a></li>
+                        <li><a href="Comercial-Airline-Transfer.html" data-i18n="nav.commercial_transfer">Commercial
+                                Airline Transfer</a></li>
+                        <li><a href="Medical-Escort-Services.html" data-i18n="nav.medical_escorts">Medical Escorts</a>
+                        </li>
                         <li><a href="#">HEMS</a></li>
                     </ul>
                 </div>
@@ -306,9 +339,9 @@
 
             <!-- Row 3: Copyright | Privacy -->
             <div class="footer-bottom">
-                <p class="copyright">2026 &copy; Bluedot Air Ambulance</p>
+                <p class="copyright" data-i18n="footer.copyright">2026 &copy; Bluedot Air Ambulance</p>
                 <div class="footer-bottom-links">
-                    <a href="contact.html">Privacy Policy</a>
+                    <a href="contact.html" data-i18n="nav.contact">Privacy Policy</a>
                 </div>
             </div>
         </div>
@@ -330,11 +363,22 @@
     <div class="enquiry-drawer-overlay" id="enquiryDrawerOverlay"></div>
     <div class="enquiry-drawer" id="enquiryDrawer">
         <div class="enquiry-drawer-header">
-            <a href="tel:+1234567890" class="nav-outline-btn">24/7 Global Assistance</a>
+            <a href="tel:+1234567890" class="nav-outline-btn" data-i18n="nav.global_assistance">24/7 Global
+                Assistance</a>
             <div class="enquiry-header-right">
                 <div class="nav-lang">
-                    <span>EN</span>
+                    <span class="lang-current-label">EN</span>
                     <i class="fas fa-chevron-down"></i>
+                    <div class="lang-dropdown">
+                        <span class="lang-option active" data-lang="en">
+                            <span class="lang-flag">🇬🇧</span>
+                            <span class="lang-name">EN</span>
+                        </span>
+                        <span class="lang-option" data-lang="ar">
+                            <span class="lang-flag">🇸🇦</span>
+                            <span class="lang-name">AR</span>
+                        </span>
+                    </div>
                 </div>
                 <button class="enquiry-close-btn" id="enquiryCloseBtn" aria-label="Close enquiry drawer">
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
@@ -393,7 +437,7 @@
         </div>
 
         <div class="enquiry-drawer-footer">
-            <a href="roles.html" class="nav-outline-btn">Join the Team</a>
+            <a href="roles.html" class="nav-outline-btn" data-i18n="nav.join_team">Join the Team</a>
             <div class="nav-socials">
                 <a href="#">LinkedIn</a>
                 <a href="#">Facebook</a>
@@ -403,6 +447,9 @@
     </div>
     <!-- ========== ENQUIRY DRAWER END ========== -->
 
+
+    <!-- Language Switcher -->
+    <script src="js/lang.js"></script>
 </body>
 
 </html>

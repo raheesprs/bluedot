@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
+        <!-- Arabic Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bluedot - Modern Creative Digital Solutions">
     <meta name="keywords" content="web design, digital solutions, creative agency">
@@ -37,15 +40,25 @@
 
                     <!-- Right Side Actions -->
                     <div class="header-actions">
-                        <a href="tel:+1234567890" class="header-btn" id="btnGlobalAssistance">
+                        <a href="tel:+1234567890" class="header-btn" id="btnGlobalAssistance" data-i18n="nav.global_assistance">
                             24/7 Global Assistance
                         </a>
                         <a href="#contact" class="header-btn" id="btnEnquiry">
                             Make an Enquiry
                         </a>
                         <div class="header-lang" id="langSelector">
-                            <span>EN</span>
+                            <span class="lang-current-label">EN</span>
                             <i class="fas fa-chevron-down"></i>
+                            <div class="lang-dropdown">
+                                <span class="lang-option active" data-lang="en">
+                                    <span class="lang-flag">🇬🇧</span>
+                                    <span class="lang-name">EN</span>
+                                </span>
+                                <span class="lang-option" data-lang="ar">
+                                    <span class="lang-flag">🇸🇦</span>
+                                    <span class="lang-name">AR</span>
+                                </span>
+                            </div>
                         </div>
                         <button class="header-hamburger" id="headerHamburger" aria-label="Toggle menu">
                             <span></span>

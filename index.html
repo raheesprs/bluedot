@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,11 @@
     <meta name="author" content="Bluedot">
 
     <title>Bluedot | </title>
+
+    <!-- Arabic Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -37,15 +42,31 @@
 
                     <!-- Right Side Actions -->
                     <div class="header-actions">
-                        <a href="tel:+1234567890" class="header-btn" id="btnGlobalAssistance">
+                        <a href="tel:+1234567890" class="header-btn en-content" id="btnGlobalAssistance">
                             24/7 Global Assistance
                         </a>
-                        <a href="javascript:void(0)" class="header-btn trigger-enquiry" id="btnEnquiry">
+                        <a href="tel:+1234567890" class="header-btn ar-content">
+                            المساعدة العالمية على مدار 24/7
+                        </a>
+                        <a href="javascript:void(0)" class="header-btn trigger-enquiry en-content" id="btnEnquiry">
                             Make an Enquiry
                         </a>
+                        <a href="javascript:void(0)" class="header-btn trigger-enquiry ar-content" id="btnEnquiry">
+                            تقديم استفسار
+                        </a>
                         <div class="header-lang" id="langSelector">
-                            <span>EN</span>
+                            <span class="lang-current-label">EN</span>
                             <i class="fas fa-chevron-down"></i>
+                            <div class="lang-dropdown">
+                                <span class="lang-option active" data-lang="en">
+                                    <span class="lang-flag">🇬🇧</span>
+                                    <span class="lang-name">EN</span>
+                                </span>
+                                <span class="lang-option" data-lang="ar">
+                                    <span class="lang-flag">🇸🇦</span>
+                                    <span class="lang-name">AR</span>
+                                </span>
+                            </div>
                         </div>
                         <button class="header-hamburger" id="headerHamburger" aria-label="Toggle menu">
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="12" viewBox="0 0 48 12"
@@ -64,11 +85,24 @@
         <nav class="header-nav" id="headerNav">
             <div class="nav-drawer-header">
                 <div class="nav-drawer-actions">
-                    <a href="tel:+1234567890" class="nav-outline-btn">24/7 Global Assistance</a>
-                    <a href="javascript:void(0)" class="nav-outline-btn trigger-enquiry">Make an Enquiry</a>
+                    <a href="tel:+1234567890" class="nav-outline-btn en-content">24/7 Global Assistance</a>
+                    <a href="tel:+1234567890" class="nav-outline-btn ar-content">المساعدة العالمية على مدار 24/7</a>
+
+                    <a href="javascript:void(0)" class="nav-outline-btn trigger-enquiry en-content">Make an Enquiry</a>
+                    <a href="javascript:void(0)" class="nav-outline-btn trigger-enquiry ar-content">تقديم استفسار</a>
                     <div class="nav-lang">
-                        <span>EN</span>
+                        <span class="lang-current-label">EN</span>
                         <i class="fas fa-chevron-down"></i>
+                        <div class="lang-dropdown">
+                            <span class="lang-option active" data-lang="en">
+                                <span class="lang-flag">🇬🇧</span>
+                                <span class="lang-name">EN</span>
+                            </span>
+                            <span class="lang-option" data-lang="ar">
+                                <span class="lang-flag">🇸🇦</span>
+                                <span class="lang-name">AR</span>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <button class="nav-close-btn" id="navCloseBtn" aria-label="Close menu">
@@ -83,13 +117,24 @@
                 <div class="nav-menus-wrapper" id="navMenusWrapper">
                     <!-- Main Menu -->
                     <div class="nav-menu-main">
-                        <ul class="header-nav-links">
+                        <ul class="header-nav-links en-content">
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="#services" class="has-submenu" data-target="servicesMenu">Services</a></li>
-                            <li><a href="fleet.html">Fleet</a></li>
-                            <li><a href="news.html">News & Insights</a></li>
+                            <li><a href="fleet-select.html">Fleet</a></li>
+                            <li><a href="news.html">News &amp; Insights</a></li>
                             <li><a href="roles.html">Careers</a></li>
                             <li><a href="contact.html">Contact</a></li>
+
+                        </ul>
+
+                        <ul class="header-nav-links ar-content">
+                            <li><a href="about.html">من نحن</a></li>
+                            <li><a href="#services" class="has-submenu" data-target="servicesMenu">خدماتنا</a></li>
+                            <li><a href="fleet-select.html">أسطولنا</a></li>
+                            <li><a href="news.html">آخر الأخبار</a></li>
+                            <li><a href="roles.html">وظائف</a></li>
+                            <li><a href="contact.html">تواصل معنا</a></li>
+
                         </ul>
                     </div>
 
@@ -101,23 +146,42 @@
                                     stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <ul class="header-nav-links">
-                            <li><a href="air-ambulance.html">Air Ambulance</a></li>
-                            <li><a href="Comercial-Airline-Transfer.html">Commercial Airline Transfer</a></li>
-                            <li><a href="Medical-Escort-Services.html">Medical Escorts</a></li>
-                            <li><a href="Helicopter-Air-Ambulance.html">Helicopter Air Ambulance</a></li>
+                        <ul class="header-nav-links ">
+                            <li class="en-content"><a href="air-ambulance.html">Air Ambulance</a></li>
+                            <li class="ar-content"><a href="air-ambulance.html">الإسعاف الجوي</a></li>
+                            <li class="en-content"><a href="Comercial-Airline-Transfer.html">Commercial Airline
+                                    Transfer</a></li>
+                            <li class="ar-content"><a href="Comercial-Airline-Transfer.html">نقل المرضى عبر الطيران
+                                    التجاري</a></li>
+
+                            <li class="en-content"><a href="Medical-Escort-Services.html">Medical Escorts</a></li>
+                            <li class="ar-content"><a href="Medical-Escort-Services.html">المرافقة الطبية</a></li>
+
+                            <li class="en-content"><a href="Helicopter-Air-Ambulance.html">Helicopter Air Ambulance</a>
+                            </li>
+                            <li class="ar-content"><a href="Helicopter-Air-Ambulance.html">الإسعاف الجوي بالمروحيات</a>
+                            </li>
 
                         </ul>
+
                     </div>
                 </div>
             </div>
 
-            <div class="nav-drawer-footer">
+            <div class="nav-drawer-footer en-content">
                 <a href="roles.html" class="nav-outline-btn">Join the Team</a>
                 <div class="nav-socials">
                     <a href="#">LinkedIn</a>
                     <a href="#">Facebook</a>
                     <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="nav-drawer-footer ar-content">
+                <a href="roles.html" class="nav-outline-btn">انضم إلى الفريق</a>
+                <div class="nav-socials">
+                    <a href="#">لينكدإن</a>
+                    <a href="#">فيسبوك</a>
+                    <a href="#">إنستغرام</a>
                 </div>
             </div>
         </nav>
@@ -134,16 +198,30 @@
                     <div class="hero-slide-overlay"></div>
                     <div class="hero-slide-content">
                         <div class="container">
-                            <h1 class="hero-title">
-                                Medical journeys that <br> puts patients first
+                            <!-- English Content -->
+                            <h1 class="hero-title en-content">
+                                International Air Ambulance & Critical Care Transport
                             </h1>
-                            <p class="hero-description">
-                                8800+ Worldwide Assists, 100% Success rate
+                            <p class="hero-description en-content">
+                                When patients are fit to fly commercially but still require medical support, we
+                                coordinate every stage of the journey with care and clinical oversight.
                             </p>
-                            <div class="hero-buttons">
-
+                            <div class="hero-buttons en-content">
                                 <a href="javascript:void(0)" class="btn-hero-secondary trigger-enquiry">
                                     Make an Inquiry
+                                </a>
+                            </div>
+                            <!-- Arabic Content -->
+                            <h1 class="hero-title ar-content">
+                                الإسعاف الجوي الدولي ونقل الحالات الحرجة
+                            </h1>
+                            <p class="hero-description ar-content">
+                                عندما تتطلب الحالات الحرجة نقلاً دولياً، يتولى فريقنا الطبي والجوي تنسيق كل تفاصيل
+                                الرحلة بأعلى مستويات الدقة والرعاية.
+                            </p>
+                            <div class="hero-buttons ar-content">
+                                <a href="javascript:void(0)" class="btn-hero-secondary trigger-enquiry">
+                                    تقديم استفسار
                                 </a>
                             </div>
                         </div>
@@ -151,20 +229,34 @@
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="swiper-slide hero-slide" style="background-image: url('images/s-1.png');">
+                <div class="swiper-slide hero-slide" style="background-image: url('images/banner-2.png');">
                     <div class="hero-slide-overlay"></div>
                     <div class="hero-slide-content">
                         <div class="container">
-                            <h1 class="hero-title">
-                                Medical journeys that <br> puts patients first
+                            <!-- English Content -->
+                            <h1 class="hero-title en-content">
+                                Commercial Airline Stretcher Transfers Worldwide
                             </h1>
-                            <p class="hero-description">
-                                8800+ Worldwide Assists, 100% Success rate
+                            <p class="hero-description en-content">
+                                When patients are fit to fly commercially but still require medical support, we
+                                coordinate every stage of the journey with care and clinical oversight.
                             </p>
-                            <div class="hero-buttons">
-
+                            <div class="hero-buttons en-content">
                                 <a href="javascript:void(0)" class="btn-hero-secondary trigger-enquiry">
                                     Make an Inquiry
+                                </a>
+                            </div>
+                            <!-- Arabic Content -->
+                            <h1 class="hero-title ar-content">
+                                خدمات نقل المرضى عبر نقالات الطيران التجاري
+                            </h1>
+                            <p class="hero-description ar-content">
+                                عندما تسمح الحالة الطبية بالسفر على الرحلات التجارية مع الحاجة إلى دعم طبي، نقوم بتنسيق
+                                الرحلة بالكامل بعناية وإشراف طبي متكامل.
+                            </p>
+                            <div class="hero-buttons ar-content">
+                                <a href="javascript:void(0)" class="btn-hero-secondary trigger-enquiry">
+                                    تقديم استفسار
                                 </a>
                             </div>
                         </div>
@@ -172,20 +264,35 @@
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="swiper-slide hero-slide" style="background-image: url('images/world-bg.png');">
+                <div class="swiper-slide hero-slide" style="background-image: url('images/banner-3-n.png');">
                     <div class="hero-slide-overlay"></div>
                     <div class="hero-slide-content">
                         <div class="container">
-                            <h1 class="hero-title">
-                                Medical journeys that <br> puts patients first
+                            <!-- English Content -->
+                            <h1 class="hero-title en-content">
+                                International Medical Escort Services 24/7
                             </h1>
-                            <p class="hero-description">
-                                8800+ Worldwide Assists, 100% Success rate
-                            </p>
-                            <div class="hero-buttons">
+                            <p class="hero-description en-content">
+                                When patients need medical supervision while travelling, our experienced escorts
+                                provide continuous care and reassurance throughout the journey.
 
+                            </p>
+                            <div class="hero-buttons en-content">
                                 <a href="javascript:void(0)" class="btn-hero-secondary trigger-enquiry">
                                     Make an Inquiry
+                                </a>
+                            </div>
+                            <!-- Arabic Content -->
+                            <h1 class="hero-title ar-content">
+                                خدمات المرافقة الطبية الدولية على مدار الساعة
+                            </h1>
+                            <p class="hero-description ar-content">
+                                عندما يحتاج المرضى إلى إشراف طبي أثناء السفر، يوفر فريق المرافقة الطبية لدينا الرعاية
+                                والمتابعة المستمرة طوال الرحلة.
+                            </p>
+                            <div class="hero-buttons ar-content">
+                                <a href="javascript:void(0)" class="btn-hero-secondary trigger-enquiry">
+                                    تقديم استفسار
                                 </a>
                             </div>
                         </div>
@@ -197,6 +304,7 @@
             <!-- Pill Pagination -->
             <div class="hero-banner-pagination swiper-pagination"></div>
         </div>
+
     </section>
 
 
@@ -204,7 +312,9 @@
     <!-- ========== OUR SERVICES SLIDER SECTION ========== -->
     <section class="services-slider-section" id="ourServices">
         <div class="container">
-            <h2 class="services-slider-title">Our Services</h2>
+            <h2 class="services-slider-title en-content">Our Services</h2>
+            <h2 class="services-slider-title ar-content">خدماتنا</h2>
+
 
             <!-- Swiper -->
             <div class="swiper servicesSwiper">
@@ -216,12 +326,19 @@
                             <!-- Left: teal panel -->
                             <div class="svc-card-left">
                                 <img src="images/service-vector.png" alt="" class="svc-vector-bg" aria-hidden="true">
-                                <div class="svc-card-text">
+                                <div class="svc-card-text en-content">
                                     <h3 class="svc-card-title">Air Ambulance</h3>
                                     <p class="svc-card-desc">Built for critical moments where time and specialised care
                                         matter most, our air ambulance missions connect patients to advanced medical
                                         support across borders.</p>
-                                    <a href="air-ambulance.html" class="svc-card-btn">Learn More <i
+                                    <a href="air-ambulance.html" class="svc-card-btn"><span>Learn More</span> <i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>
+                                <div class="svc-card-text ar-content">
+                                    <h3 class="svc-card-title">الإسعاف الجوي</h3>
+                                    <p class="svc-card-desc">ننقل المرضى للحالات الحرجة بطائرات مجهزة طبياً مع تنسيق
+                                        متكامل يضمن رعاية آمنة وسريعة من نقطة الانطلاق وحتى الوصول.</p>
+                                    <a href="air-ambulance.html" class="svc-card-btn"><span>اقرأ المزيد</span> <i
                                             class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -237,17 +354,23 @@
                         <div class="svc-card">
                             <div class="svc-card-left">
                                 <img src="images/service-vector.png" alt="" class="svc-vector-bg" aria-hidden="true">
-                                <div class="svc-card-text">
+                                <div class="svc-card-text en-content">
                                     <h3 class="svc-card-title">Commercial Airline Transfer</h3>
-                                    <p class="svc-card-desc">We arrange safe and dignified medical transport on
-                                        commercial flights, with trained escorts and full coordination from origin to
-                                        destination.</p>
-                                    <a href="Comercial-Airline-Transfer.html" class="svc-card-btn">Learn More <i
-                                            class="fas fa-arrow-right"></i></a>
+                                    <p class="svc-card-desc">Designed for medically stable patients who still require
+                                        assistance while travelling, with coordinated care throughout the journey.</p>
+                                    <a href="Comercial-Airline-Transfer.html" class="svc-card-btn"><span>Learn
+                                            More</span> <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                                <div class="svc-card-text ar-content">
+                                    <h3 class="svc-card-title">نقل المرضى عبر الطيران التجاري</h3>
+                                    <p class="svc-card-desc">نوفر حلول نقل طبي عبر الرحلات التجارية للحالات التي تحتاج
+                                        إلى متابعة ودعم طبي أثناء السفر لمسافات طويلة.</p>
+                                    <a href="Comercial-Airline-Transfer.html" class="svc-card-btn"><span>اقرأ
+                                            المزيد</span> <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                             <div class="svc-card-right">
-                                <img src="images/s-2.png" alt="Commercial Airline Transfer" class="svc-card-img">
+                                <img src="images/s-2-n.png" alt="Commercial Airline Transfer" class="svc-card-img">
                             </div>
                         </div>
                     </div>
@@ -257,17 +380,54 @@
                         <div class="svc-card">
                             <div class="svc-card-left">
                                 <img src="images/service-vector.png" alt="" class="svc-vector-bg" aria-hidden="true">
-                                <div class="svc-card-text">
+                                <div class="svc-card-text en-content">
                                     <h3 class="svc-card-title">Medical Escort</h3>
-                                    <p class="svc-card-desc">Our qualified medical professionals accompany patients
-                                        throughout their journey, ensuring continuous care and peace of mind every step
-                                        of the way.</p>
-                                    <a href="Medical-Escort-Services.html" class="svc-card-btn">Learn More <i
-                                            class="fas fa-arrow-right"></i></a>
+                                    <p class="svc-card-desc">Our medical escorts travel alongside patients worldwide,
+                                        providing reassurance, monitoring, and continuous support every step of the way.
+                                    </p>
+                                    <a href="Medical-Escort-Services.html" class="svc-card-btn"><span>Learn More</span>
+                                        <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                                <div class="svc-card-text ar-content">
+                                    <h3 class="svc-card-title">المرافقة الطبية</h3>
+                                    <p class="svc-card-desc">يرافق فريقنا الطبي المرضى خلال رحلاتهم الدولية لضمان
+                                        المتابعة المستمرة والرعاية الطبية طوال الرحلة.</p>
+                                    <a href="Medical-Escort-Services.html" class="svc-card-btn"><span>اقرأ المزيد</span>
+                                        <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                             <div class="svc-card-right">
-                                <img src="images/s-3.png" alt="Medical Escort" class="svc-card-img">
+                                <img src="images/s3-n.png" alt="Medical Escort" class="svc-card-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="svc-card">
+                            <div class="svc-card-left en-content">
+                                <img src="images/service-vector.png" alt="" class="svc-vector-bg" aria-hidden="true">
+                                <div class="svc-card-text">
+                                    <h3 class="svc-card-title">Helicopter Air Ambulance</h3>
+                                    <p class="svc-card-desc">Created for urgent response situations where rapid access
+                                        matters, connecting patients to hospitals and emergency care without delay.</p>
+                                    <a href="Helicopter-Air-Ambulance.html" class="svc-card-btn"><span>Learn More</span>
+                                        <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="svc-card-left ar-content">
+                                <img src="images/service-vector.png" alt="" class="svc-vector-bg" aria-hidden="true">
+                                <div class="svc-card-text">
+                                    <h3 class="svc-card-title">الإسعاف الجوي بالمروحيات</h3>
+                                    <p class="svc-card-desc">خدمات إسعاف جوي سريعة للحالات الطارئة التي تتطلب الوصول
+                                        الفوري إلى المستشفيات والمراكز الطبية المتخصصة.</p>
+                                    <a href="Helicopter-Air-Ambulance.html" class="svc-card-btn"><span>اقرأ
+                                            المزيد</span>
+                                        <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="svc-card-right">
+                                <img src="images/ss4.png" alt="Medical Escort" class="svc-card-img">
                             </div>
                         </div>
                     </div>
@@ -301,25 +461,37 @@
         </div>
         <div class="global-ops-overlay"></div>
         <div class="container global-ops-content">
-            <h2 class="global-ops-heading">Global Operations<br>Coordinated 24/7</h2>
-            <div class="global-ops-stats">
+            <h2 class="global-ops-heading en-content">Global Operations<br>Coordinated 24/7</h2>
+            <h2 class="global-ops-heading ar-content">عمليات عالمية منسقة<br> على مدار الساعة</h2>
+
+            <div class="global-ops-stats ">
                 <div class="global-ops-stat">
                     <span class="global-ops-number count-up" data-target="60" data-suffix="+">0+</span>
-                    <span class="global-ops-label">Countries Served</span>
+                    <span class="global-ops-label en-content">Countries Served</span>
+                    <span class="global-ops-label ar-content">الدول التي نخدمها</span>
                 </div>
                 <div class="global-ops-stat">
-                    <span class="global-ops-number count-up" data-target="140" data-suffix="+">0+</span>
-                    <span class="global-ops-label">Cities Covered</span>
+                    <span class="global-ops-number count-up" data-target="70" data-suffix="+">0+</span>
+                    <span class="global-ops-label en-content">Cities Covered</span>
+                    <span class="global-ops-label ar-content">المدن المشمولة بالخدمة</span>
+
                 </div>
                 <div class="global-ops-stat">
                     <span class="global-ops-number count-up" data-target="5500" data-suffix="+">0+</span>
-                    <span class="global-ops-label">World Wide Assists</span>
+                    <span class="global-ops-label en-content">World Wide Assists</span>
+                    <span class="global-ops-label ar-content">الحالات التي تم تنسيقها عالمياً</span>
+
                 </div>
                 <div class="global-ops-stat">
-                    <span class="global-ops-number count-up" data-target="32750" data-suffix="+" data-separator=",">0+</span>
-                    <span class="global-ops-label">Flight Hours</span>
+                    <span class="global-ops-number count-up" data-target="32750" data-suffix="+"
+                        data-separator=",">0+</span>
+                    <span class="global-ops-label en-content">Flight Hours</span>
+                    <span class="global-ops-label ar-content">ساعات الطيران</span>
+
                 </div>
             </div>
+
+
         </div>
     </section>
 
@@ -332,8 +504,10 @@
                 <!-- Left: White Card with accent border -->
                 <div class="col-md-6 accredited-left">
                     <div class="accredited-left-inner">
-                        <h2 class="accredited-heading">Accredited for Excellence</h2>
-                        <p class="accredited-desc">
+                        <h2 class="accredited-heading en-content">Accredited for Excellence</h2>
+                        <h2 class="accredited-heading ar-content">اعتمادات عالمية تعكس التميز</h2>
+
+                        <p class="accredited-desc en-content">
                             Bluedot is accredited by the European Aeromedical
                             Institute (EURAMI), an independent organization that
                             evaluates air ambulance providers against recognized
@@ -341,7 +515,15 @@
                             operations, safety management, and personnel
                             governance
                         </p>
-                        <a href="images/certificate.png" target="_blank" class="accredited-btn">Download certificate</a>
+
+                        <p class="accredited-desc ar-content">
+                            نحن معتمدون من المعهد الأوروبي للإخلاء الطبي الجوي (EURAMI)، وهو جهة دولية مستقلة تقيم مزودي
+                            خدمات الإسعاف الجوي وفق معايير تشغيلية وطبية عالمية.
+                        </p>
+                        <a href="images/certificate.png" target="_blank" class="accredited-btn en-content">Download
+                            certificate</a>
+                        <a href="images/certificate.png" target="_blank" class="accredited-btn ar-content">تحميل
+                            الشهادة</a>
                     </div>
                 </div>
                 <!-- Right: Gray wall background + Certificate image -->
@@ -358,7 +540,9 @@
     <!-- ========== Our partners SECTION ========== -->
     <section class="certifications-section" id="certifications">
         <div class="container">
-            <h2 class="certi-heading">Our partners</h2>
+            <h2 class="certi-heading en-content">Our partners</h2>
+            <h2 class="certi-heading ar-content">شركاؤنا</h2>
+
             <div class="certi-logos">
                 <div class="certi-logo-item">
                     <img src="images/partner-1.png" alt="ISO 9001:2015">
@@ -384,7 +568,8 @@
     <section class="fleet-section" id="fleet">
         <div class="container">
             <div class="fleet-header">
-                <h2 class="fleet-heading">Our Fleet</h2>
+                <h2 class="fleet-heading en-content">Our Fleet</h2>
+                <h2 class="fleet-heading ar-content">أسطولنا</h2>
             </div>
         </div>
 
@@ -397,10 +582,33 @@
                         <img src="images/flee-new-1.png" alt="Bombardier Challenger 605" class="fleet-slide-img">
                         <div class="fleet-slide-overlay"></div>
                         <div class="container fleet-slide-content-container">
-                            <div class="fleet-slide-content">
+                            <div class="fleet-slide-content en-content">
                                 <span class="fleet-slide-brand">Bombardier</span>
                                 <h3 class="fleet-slide-model">Challenger 605</h3>
-                                <a href="fleet.html" class="fleet-slide-btn">Explore</a>
+                                <a href="challenger-605.html" class="fleet-slide-btn">Explore</a>
+                            </div>
+                            <div class="fleet-slide-content ar-content">
+                                <span class="fleet-slide-brand">بومباردييه</span>
+                                <h3 class="fleet-slide-model">تشالنجر 605</h3>
+                                <a href="challenger-605.html" class="fleet-slide-btn">استكشف</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="fleet-slide-card">
+                        <img src="images/604-index.png" alt="Bombardier Challenger 605" class="fleet-slide-img">
+                        <div class="fleet-slide-overlay"></div>
+                        <div class="container fleet-slide-content-container">
+                            <div class="fleet-slide-content en-content">
+                                <span class="fleet-slide-brand">Bombardier</span>
+                                <h3 class="fleet-slide-model">Challenger 604</h3>
+                                <a href="challenger-604.html" class="fleet-slide-btn">Explore</a>
+                            </div>
+                            <div class="fleet-slide-content ar-content">
+                                <span class="fleet-slide-brand">بومباردييه</span>
+                                <h3 class="fleet-slide-model">تشالنجر 604</h3>
+                                <a href="challenger-604.html" class="fleet-slide-btn">استكشف</a>
                             </div>
                         </div>
                     </div>
@@ -408,17 +616,41 @@
                 <!-- Slide 2: Beechcraft King Air C90 -->
                 <div class="swiper-slide">
                     <div class="fleet-slide-card">
-                        <img src="images/fleet-1.png" alt="Beechcraft King Air C90" class="fleet-slide-img">
+                        <img src="images/B200-index.png" alt="Beechcraft King Air C90" class="fleet-slide-img">
                         <div class="fleet-slide-overlay"></div>
                         <div class="container fleet-slide-content-container">
-                            <div class="fleet-slide-content">
+                            <div class="fleet-slide-content en-content">
                                 <span class="fleet-slide-brand">Beechcraft</span>
-                                <h3 class="fleet-slide-model">King Air C90</h3>
-                                <a href="fleet.html" class="fleet-slide-btn">Explore</a>
+                                <h3 class="fleet-slide-model">King Air B200</h3>
+                                <a href="king-air-B200.html" class="fleet-slide-btn">Explore</a>
+                            </div>
+                            <div class="fleet-slide-content ar-content">
+                                <span class="fleet-slide-brand">بيتشكرافت</span>
+                                <h3 class="fleet-slide-model">كينغ إير B200</h3>
+                                <a href="king-air-B200.html" class="fleet-slide-btn">استكشف</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="fleet-slide-card">
+                        <img src="images/C90-index.png" alt="Beechcraft King Air C90" class="fleet-slide-img">
+                        <div class="fleet-slide-overlay"></div>
+                        <div class="container fleet-slide-content-container">
+                            <div class="fleet-slide-content en-content">
+                                <span class="fleet-slide-brand">Beechcraft</span>
+                                <h3 class="fleet-slide-model">King Air C90</h3>
+                                <a href="king-air-C90.html" class="fleet-slide-btn">Explore</a>
+                            </div>
+                            <div class="fleet-slide-content ar-content">
+                                <span class="fleet-slide-brand">بيتشكرافت</span>
+                                <h3 class="fleet-slide-model">كينغ إير C90</h3>
+                                <a href="king-air-C90.html" class="fleet-slide-btn">استكشف</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Navigation Controls (aligned with the container) -->
@@ -456,19 +688,30 @@
     <section class="news-section" id="news">
         <div class="container">
             <div class="news-header-top">
-                <h2 class="news-heading">News &amp; Stories</h2>
+                <h2 class="news-heading en-content">News &amp; Stories</h2>
+
+                <h2 class="news-heading ar-content">الأخبار والقصص</h2>
+
             </div>
 
             <!-- Filters Row -->
             <div class="news-header-filters-row">
-                <div class="news-filters-left">
+                <div class="news-filters-left en-content">
                     <button class="news-filter-btn active" data-filter="all">All Categories</button>
                     <button class="news-filter-btn" data-filter="news">News</button>
                     <button class="news-filter-btn" data-filter="mission">Mission Stories</button>
-                    <button class="news-filter-btn" data-filter="achievements">Achievments</button>
+                    <button class="news-filter-btn" data-filter="achievements">Achievements</button>
+                </div>
+                <div class="news-filters-left ar-content">
+                    <button class="news-filter-btn active" data-filter="all">كل الفئات</button>
+                    <button class="news-filter-btn" data-filter="news">أخبار</button>
+                    <button class="news-filter-btn" data-filter="mission">قصص مهمة</button>
+                    <button class="news-filter-btn" data-filter="achievements">الإنجازات</button>
                 </div>
                 <div class="news-filters-right">
-                    <a href="news.html" class="news-main-btn">News &amp; Stories</a>
+                    <a href="news.html" class="news-main-btn en-content">News &amp; Stories</a>
+                    <a href="news.html" class="news-main-btn ar-content">الأخبار والقصص</a>
+
                 </div>
             </div>
 
@@ -483,10 +726,16 @@
                         </div>
                         <div class="news-card-content">
                             <img src="images/service-vector.png" class="news-vector-bg" alt="">
-                            <span class="news-badge">NEWS</span>
-                            <h3 class="news-card-title">Bluedot Wins Marketing Campaign of the Year at the 2025 ITIJ
+                            <span class="news-badge en-content">NEWS</span>
+                            <h3 class="news-card-title en-content">Bluedot Wins Marketing Campaign of the Year at the
+                                2025 ITIJ
                                 Awards</h3>
-                            <p class="news-card-meta">Published on 18 Dec 2025 - 1.20 min read</p>
+                            <p class="news-card-meta en-content">Published on 18 Dec 2025 - 1.20 min read</p>
+
+                            <span class="news-badge ar-content">أخبار</span>
+                            <h3 class="news-card-title ar-content">بلودوت تحصد جائزة أفضل حملة تسويقية ضمن جوائز ITIJ
+                                لعام 2025</h3>
+                            <p class="news-card-meta ar-content">نُشر بتاريخ ١٨ ديسمبر ٢٠٢٥ ·</p>
                         </div>
                     </a>
                 </div>
@@ -499,9 +748,13 @@
                         </div>
                         <div class="news-card-content">
                             <img src="images/service-vector.png" class="news-vector-bg" alt="">
-                            <span class="news-badge">NEWS</span>
-                            <h3 class="news-card-title">The New Bluedot Partnership</h3>
-                            <p class="news-card-meta">Published on 18 Dec 2025 - 1.20 min read</p>
+                            <span class="news-badge en-content">Signups</span>
+                            <h3 class="news-card-title en-content">The New Bluedot Partnership</h3>
+                            <p class="news-card-meta en-content">Published on 18 Dec 2025 - 1.20 min read</p>
+
+                            <span class="news-badge ar-content">الشراكات والانضمامات</span>
+                            <h3 class="news-card-title ar-content">شراكة جديدة تعزز شبكة بلودوت العالمية</h3>
+                            <p class="news-card-meta ar-content">نُشر بتاريخ ١٨ ديسمبر ٢٠٢٥</p>
                         </div>
                     </a>
                 </div>
@@ -514,9 +767,15 @@
                         </div>
                         <div class="news-card-content">
                             <img src="images/service-vector.png" class="news-vector-bg" alt="">
-                            <span class="news-badge">MISSION STORY</span>
-                            <h3 class="news-card-title">Lifesaving Burn Evacuation from the Maldives to Bangkok</h3>
-                            <p class="news-card-meta">Published on 18 Dec 2025 - 1.20 min read</p>
+                            <span class="news-badge en-content">MISSION STORY</span>
+                            <h3 class="news-card-title en-content">Lifesaving Burn Evacuation from the Maldives to
+                                Bangkok</h3>
+                            <p class="news-card-meta en-content">Published on 18 Dec 2025 - 1.20 min read</p>
+
+                            <span class="news-badge ar-content">البعثات الطبية</span>
+                            <h3 class="news-card-title ar-content">إخلاء طبي عاجل لمصاب بحروق من المالديف إلى بانكوك
+                            </h3>
+                            <p class="news-card-meta ar-content">نُشر بتاريخ ١٨ ديسمبر ٢٠٢٥</p>
                         </div>
                     </a>
                 </div>
@@ -532,7 +791,9 @@
             <div class="testi-layout">
                 <!-- Left: Heading -->
                 <div class="testi-left">
-                    <h2 class="testi-heading">What our<br>customers say</h2>
+                    <h2 class="testi-heading en-content">What our<br>customers say</h2>
+                    <h2 class="testi-heading ar-content">تجارب من وثقوا<br>بخدماتنا</h2>
+
                 </div>
 
                 <!-- Right: Slider -->
@@ -555,7 +816,8 @@
                                             </svg>
                                         </div>
                                         <div>
-                                            <p class="testi-text">Umm al houl power co. would like to thank universal
+                                            <p class="testi-text en-content">Umm al houl power co. would like to thank
+                                                universal
                                                 air
                                                 ambulance for their professional service that was provided to our
                                                 employee
@@ -564,12 +826,19 @@
                                                 were quick and well planned and the team was very supportive, they
                                                 provided
                                                 great health care and moral support for our employee.</p>
+
+                                            <p class="testi-text ar-content">"نتقدم بالشكر لفريق يونيفرسال للإسعاف الجوي
+                                                على الدعم الاحترافي الذي تم تقديمه خلال نقل أحد موظفينا من قطر إلى
+                                                تشيناي، حيث تم التعامل مع الرحلة بكفاءة عالية وتنظيم دقيق ورعاية
+                                                متكاملة."</p>
                                             <div class="testi-stars">
                                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                     class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                     class="fas fa-star"></i>
                                             </div>
-                                            <span class="testi-author">Raya Al Qahtani, Qatar</span>
+                                            <span class="testi-author en-content">Raya Al Qahtani, Qatar</span>
+                                            <span class="testi-author ar-content">ريا القحطاني، قطر</span>
+
                                         </div>
 
                                     </div>
@@ -577,7 +846,7 @@
                                 </div>
                             </div>
                             <!-- Slide 2 -->
-                             <div class="swiper-slide">
+                            <div class="swiper-slide">
                                 <div class="testi-slide-inner">
                                     <div class="testi-quote-text">
                                         <div class="testi-icon">
@@ -592,21 +861,22 @@
                                             </svg>
                                         </div>
                                         <div>
-                                            <p class="testi-text">Umm al houl power co. would like to thank universal
-                                                air
-                                                ambulance for their professional service that was provided to our
-                                                employee
-                                                from qatar to chennai, everything was handled well, the transfers
-                                                service
-                                                were quick and well planned and the team was very supportive, they
-                                                provided
-                                                great health care and moral support for our employee.</p>
+                                            <p class="testi-text en-content">From the initial approval process until the
+                                                patient
+                                                safely arrived in India, the team handled every medical and travel
+                                                arrangement seamlessly, including coordination with hospitals and
+                                                airlines.</p>
+                                            <p class="testi-text ar-content">"تمت إدارة جميع ترتيبات النقل الطبي والسفر
+                                                بسلاسة تامة منذ الموافقة الأولية وحتى وصول المريض إلى الهند بأمان، بما
+                                                في ذلك التنسيق مع المستشفيات وشركات الطيران."</p>
                                             <div class="testi-stars">
                                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                     class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                     class="fas fa-star"></i>
                                             </div>
-                                            <span class="testi-author">Raya Al Qahtani, Qatar</span>
+                                            <span class="testi-author en-content">Rajani Jayan, India</span>
+                                            <span class="testi-author ar-content">رجاني جاين، الهند</span>
+
                                         </div>
 
                                     </div>
@@ -614,7 +884,7 @@
                                 </div>
                             </div>
                             <!-- Slide 3 -->
-                          <div class="swiper-slide">
+                            <div class="swiper-slide">
                                 <div class="testi-slide-inner">
                                     <div class="testi-quote-text">
                                         <div class="testi-icon">
@@ -629,29 +899,31 @@
                                             </svg>
                                         </div>
                                         <div>
-                                            <p class="testi-text">Umm al houl power co. would like to thank universal
-                                                air
-                                                ambulance for their professional service that was provided to our
-                                                employee
-                                                from qatar to chennai, everything was handled well, the transfers
-                                                service
-                                                were quick and well planned and the team was very supportive, they
-                                                provided
-                                                great health care and moral support for our employee.</p>
+                                            <p class="testi-text en-content">Thank you for everything you did for my
+                                                father. Your
+                                                medical team’s care, support, and coordination during such a critical
+                                                time made a meaningful difference to our family.</p>
+                                            <p class="testi-text ar-content">"شكراً لكم على كل ما قدمتموه لوالدي، فقد
+                                                كان لدعمكم الطبي واهتمامكم ومتابعتكم خلال هذه المرحلة الحرجة أثر كبير
+                                                على عائلتنا."</p>
+
                                             <div class="testi-stars">
                                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                     class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                     class="fas fa-star"></i>
                                             </div>
-                                            <span class="testi-author">Raya Al Qahtani, Qatar</span>
+                                            <span class="testi-author en-content">Mr. Renold Jackson, USA</span>
+                                            <span class="testi-author ar-content">رينولد جاكسون - الولايات المتحدة
+                                                الأمريكية</span>
+
                                         </div>
 
                                     </div>
 
                                 </div>
                             </div>
-                          
-                          
+
+
                         </div>
                     </div>
                     <!-- Nav buttons below slider -->
@@ -673,87 +945,145 @@
     <!-- ========== OPERATIONAL INSIGHTS SECTION ========== -->
     <section class="insights-section" id="insights">
         <div class="container">
-            <h2 class="insights-heading">Operational Insights</h2>
+            <h2 class="insights-heading en-content">Operational Insights</h2>
+            <h2 class="insights-heading  ar-content">رؤى من خلف العمليات</h2>
+
             <div class="insights-grid">
                 <!-- Card 1 -->
-                <div class="insights-card" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank')">
+                <div class="insights-card"
+                    onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank')">
                     <div class="insights-thumb">
                         <img src="images/news-1.png" alt="The Flying Doctor">
                         <div class="insights-overlay">
                             <div class="insights-play">
-                                <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7c-.8-2.9-2.9-5-5.8-5.8C55.3 0 34 0 34 0S12.7 0 7.3 1.9C4.4 2.7 2.3 4.8 1.5 7.7 0 13.1 0 24 0 24s0 10.9 1.5 16.3c.8 2.9 2.9 5 5.8 5.8C12.7 48 34 48 34 48s21.3 0 26.7-1.9c2.9-.8 5-2.9 5.8-5.8C68 34.9 68 24 68 24s0-10.9-1.5-16.3z" fill="#f00"/><path d="M45 24 27 14v20" fill="#fff"/></svg>
+                                <svg viewBox="0 0 68 48" width="68" height="48">
+                                    <path
+                                        d="M66.5 7.7c-.8-2.9-2.9-5-5.8-5.8C55.3 0 34 0 34 0S12.7 0 7.3 1.9C4.4 2.7 2.3 4.8 1.5 7.7 0 13.1 0 24 0 24s0 10.9 1.5 16.3c.8 2.9 2.9 5 5.8 5.8C12.7 48 34 48 34 48s21.3 0 26.7-1.9c2.9-.8 5-2.9 5.8-5.8C68 34.9 68 24 68 24s0-10.9-1.5-16.3z"
+                                        fill="#f00" />
+                                    <path d="M45 24 27 14v20" fill="#fff" />
+                                </svg>
                             </div>
                         </div>
                         <span class="insights-yt-icon">
-                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M23 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.2 2.8 12 2.8 12 2.8s-4.2 0-6.8.1c-.6.1-1.9.1-3 1.3C1.3 5 1 7 1 7S.8 9.2.8 11.5v2.1C.8 16 1 18 1 18s.3 2 1.2 2.8c1.1 1.2 2.6 1.2 3.3 1.2C7.6 22.1 12 22.1 12 22.1s4.2 0 6.8-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.2-2.2.2-4.5v-2.1C23.2 9.2 23 7 23 7zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z" fill="#fff"/></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M23 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.2 2.8 12 2.8 12 2.8s-4.2 0-6.8.1c-.6.1-1.9.1-3 1.3C1.3 5 1 7 1 7S.8 9.2.8 11.5v2.1C.8 16 1 18 1 18s.3 2 1.2 2.8c1.1 1.2 2.6 1.2 3.3 1.2C7.6 22.1 12 22.1 12 22.1s4.2 0 6.8-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.2-2.2.2-4.5v-2.1C23.2 9.2 23 7 23 7zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z"
+                                    fill="#fff" />
+                            </svg>
                         </span>
                     </div>
-                    <div class="insights-info">
+                    <div class="insights-info en-content">
                         <span class="insights-num">#01</span>
                         <h3 class="insights-title">The Flying Doctor</h3>
                     </div>
+                    <div class="insights-info ar-content">
+                        <span class="insights-num">٠١ #</span>
+                        <h3 class="insights-title">الطبيب الطائر</h3>
+                    </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="insights-card" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank')">
+                <div class="insights-card"
+                    onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank')">
                     <div class="insights-thumb">
                         <img src="images/news-2.png" alt="Airline Partnerships">
                         <div class="insights-overlay">
                             <div class="insights-play">
-                                <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7c-.8-2.9-2.9-5-5.8-5.8C55.3 0 34 0 34 0S12.7 0 7.3 1.9C4.4 2.7 2.3 4.8 1.5 7.7 0 13.1 0 24 0 24s0 10.9 1.5 16.3c.8 2.9 2.9 5 5.8 5.8C12.7 48 34 48 34 48s21.3 0 26.7-1.9c2.9-.8 5-2.9 5.8-5.8C68 34.9 68 24 68 24s0-10.9-1.5-16.3z" fill="#f00"/><path d="M45 24 27 14v20" fill="#fff"/></svg>
+                                <svg viewBox="0 0 68 48" width="68" height="48">
+                                    <path
+                                        d="M66.5 7.7c-.8-2.9-2.9-5-5.8-5.8C55.3 0 34 0 34 0S12.7 0 7.3 1.9C4.4 2.7 2.3 4.8 1.5 7.7 0 13.1 0 24 0 24s0 10.9 1.5 16.3c.8 2.9 2.9 5 5.8 5.8C12.7 48 34 48 34 48s21.3 0 26.7-1.9c2.9-.8 5-2.9 5.8-5.8C68 34.9 68 24 68 24s0-10.9-1.5-16.3z"
+                                        fill="#f00" />
+                                    <path d="M45 24 27 14v20" fill="#fff" />
+                                </svg>
                             </div>
                         </div>
                         <span class="insights-yt-icon">
-                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M23 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.2 2.8 12 2.8 12 2.8s-4.2 0-6.8.1c-.6.1-1.9.1-3 1.3C1.3 5 1 7 1 7S.8 9.2.8 11.5v2.1C.8 16 1 18 1 18s.3 2 1.2 2.8c1.1 1.2 2.6 1.2 3.3 1.2C7.6 22.1 12 22.1 12 22.1s4.2 0 6.8-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.2-2.2.2-4.5v-2.1C23.2 9.2 23 7 23 7zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z" fill="#fff"/></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M23 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.2 2.8 12 2.8 12 2.8s-4.2 0-6.8.1c-.6.1-1.9.1-3 1.3C1.3 5 1 7 1 7S.8 9.2.8 11.5v2.1C.8 16 1 18 1 18s.3 2 1.2 2.8c1.1 1.2 2.6 1.2 3.3 1.2C7.6 22.1 12 22.1 12 22.1s4.2 0 6.8-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.2-2.2.2-4.5v-2.1C23.2 9.2 23 7 23 7zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z"
+                                    fill="#fff" />
+                            </svg>
                         </span>
                     </div>
-                    <div class="insights-info">
+                    <div class="insights-info en-content">
                         <span class="insights-num">#04</span>
                         <h3 class="insights-title">Airline Partnerships</h3>
                     </div>
+                    <div class="insights-info ar-content">
+                        <span class="insights-num">٠٤ #</span>
+                        <h3 class="insights-title">شراكات الطيران الطبي</h3>
+                    </div>
                 </div>
                 <!-- Card 3 -->
-                <div class="insights-card" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank')">
+                <div class="insights-card"
+                    onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank')">
                     <div class="insights-thumb">
                         <img src="images/news-3.png" alt="Planning & Execution">
                         <div class="insights-overlay">
                             <div class="insights-play">
-                                <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7c-.8-2.9-2.9-5-5.8-5.8C55.3 0 34 0 34 0S12.7 0 7.3 1.9C4.4 2.7 2.3 4.8 1.5 7.7 0 13.1 0 24 0 24s0 10.9 1.5 16.3c.8 2.9 2.9 5 5.8 5.8C12.7 48 34 48 34 48s21.3 0 26.7-1.9c2.9-.8 5-2.9 5.8-5.8C68 34.9 68 24 68 24s0-10.9-1.5-16.3z" fill="#f00"/><path d="M45 24 27 14v20" fill="#fff"/></svg>
+                                <svg viewBox="0 0 68 48" width="68" height="48">
+                                    <path
+                                        d="M66.5 7.7c-.8-2.9-2.9-5-5.8-5.8C55.3 0 34 0 34 0S12.7 0 7.3 1.9C4.4 2.7 2.3 4.8 1.5 7.7 0 13.1 0 24 0 24s0 10.9 1.5 16.3c.8 2.9 2.9 5 5.8 5.8C12.7 48 34 48 34 48s21.3 0 26.7-1.9c2.9-.8 5-2.9 5.8-5.8C68 34.9 68 24 68 24s0-10.9-1.5-16.3z"
+                                        fill="#f00" />
+                                    <path d="M45 24 27 14v20" fill="#fff" />
+                                </svg>
                             </div>
                         </div>
                         <span class="insights-yt-icon">
-                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M23 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.2 2.8 12 2.8 12 2.8s-4.2 0-6.8.1c-.6.1-1.9.1-3 1.3C1.3 5 1 7 1 7S.8 9.2.8 11.5v2.1C.8 16 1 18 1 18s.3 2 1.2 2.8c1.1 1.2 2.6 1.2 3.3 1.2C7.6 22.1 12 22.1 12 22.1s4.2 0 6.8-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.2-2.2.2-4.5v-2.1C23.2 9.2 23 7 23 7zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z" fill="#fff"/></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M23 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.2 2.8 12 2.8 12 2.8s-4.2 0-6.8.1c-.6.1-1.9.1-3 1.3C1.3 5 1 7 1 7S.8 9.2.8 11.5v2.1C.8 16 1 18 1 18s.3 2 1.2 2.8c1.1 1.2 2.6 1.2 3.3 1.2C7.6 22.1 12 22.1 12 22.1s4.2 0 6.8-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.2-2.2.2-4.5v-2.1C23.2 9.2 23 7 23 7zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z"
+                                    fill="#fff" />
+                            </svg>
                         </span>
                     </div>
-                    <div class="insights-info">
+                    <div class="insights-info en-content">
                         <span class="insights-num">#02</span>
                         <h3 class="insights-title">Planning & Execution</h3>
                     </div>
+                    <div class="insights-info ar-content">
+                        <span class="insights-num">٠٢ #</span>
+                        <h3 class="insights-title">التخطيط وإدارة العمليات</h3>
+                    </div>
                 </div>
                 <!-- Card 4 -->
-                <div class="insights-card" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank')">
+                <div class="insights-card"
+                    onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank')">
                     <div class="insights-thumb">
                         <img src="images/blog1.png" alt="Airline Partnerships">
                         <div class="insights-overlay">
                             <div class="insights-play">
-                                <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7c-.8-2.9-2.9-5-5.8-5.8C55.3 0 34 0 34 0S12.7 0 7.3 1.9C4.4 2.7 2.3 4.8 1.5 7.7 0 13.1 0 24 0 24s0 10.9 1.5 16.3c.8 2.9 2.9 5 5.8 5.8C12.7 48 34 48 34 48s21.3 0 26.7-1.9c2.9-.8 5-2.9 5.8-5.8C68 34.9 68 24 68 24s0-10.9-1.5-16.3z" fill="#f00"/><path d="M45 24 27 14v20" fill="#fff"/></svg>
+                                <svg viewBox="0 0 68 48" width="68" height="48">
+                                    <path
+                                        d="M66.5 7.7c-.8-2.9-2.9-5-5.8-5.8C55.3 0 34 0 34 0S12.7 0 7.3 1.9C4.4 2.7 2.3 4.8 1.5 7.7 0 13.1 0 24 0 24s0 10.9 1.5 16.3c.8 2.9 2.9 5 5.8 5.8C12.7 48 34 48 34 48s21.3 0 26.7-1.9c2.9-.8 5-2.9 5.8-5.8C68 34.9 68 24 68 24s0-10.9-1.5-16.3z"
+                                        fill="#f00" />
+                                    <path d="M45 24 27 14v20" fill="#fff" />
+                                </svg>
                             </div>
                         </div>
                         <span class="insights-yt-icon">
-                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M23 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.2 2.8 12 2.8 12 2.8s-4.2 0-6.8.1c-.6.1-1.9.1-3 1.3C1.3 5 1 7 1 7S.8 9.2.8 11.5v2.1C.8 16 1 18 1 18s.3 2 1.2 2.8c1.1 1.2 2.6 1.2 3.3 1.2C7.6 22.1 12 22.1 12 22.1s4.2 0 6.8-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.2-2.2.2-4.5v-2.1C23.2 9.2 23 7 23 7zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z" fill="#fff"/></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M23 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.2 2.8 12 2.8 12 2.8s-4.2 0-6.8.1c-.6.1-1.9.1-3 1.3C1.3 5 1 7 1 7S.8 9.2.8 11.5v2.1C.8 16 1 18 1 18s.3 2 1.2 2.8c1.1 1.2 2.6 1.2 3.3 1.2C7.6 22.1 12 22.1 12 22.1s4.2 0 6.8-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.2-2.2.2-4.5v-2.1C23.2 9.2 23 7 23 7zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z"
+                                    fill="#fff" />
+                            </svg>
                         </span>
                     </div>
-                    <div class="insights-info">
-                        <span class="insights-num">#04</span>
-                        <h3 class="insights-title">Airline Partnerships</h3>
+                    <div class="insights-info en-content">
+                        <span class="insights-num">#03</span>
+                        <h3 class="insights-title">Behind the Mission</h3>
+                    </div>
+                    <div class="insights-info ar-content">
+                        <span class="insights-num">٠٣ #</span>
+                        <h3 class="insights-title">ما وراء المهمة</h3>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
- 
 
-   
+
+
 
     <!-- ========== FOOTER ========== -->
     <footer class="site-footer">
@@ -763,34 +1093,45 @@
                 <div class="footer-logo">
                     <img src="images/bl-logo.svg" alt="Bluedot Logo" class="footer-logo-img">
                 </div>
-                <ul class="footer-links-sub footer-nav-center">
+                <ul class="footer-links-sub footer-nav-center en-content">
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="fleet.html">Fleet</a></li>
+                    <li><a href="fleet-select.html">Fleet</a></li>
                     <li><a href="news.html">News &amp; Insights</a></li>
                     <li><a href="roles.html">Careers</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+
+                <ul class="footer-links-sub footer-nav-center ar-content">
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="fleet-select.html">الأسطول</a></li>
+                    <li><a href="news.html">الأخبار و الرؤى</a></li>
+                    <li><a href="roles.html">الوظائف</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
                 <div class="footer-badges">
                     <!-- <img src="images/certificate.png" alt="EURAMI Accredited Provider" class="footer-badge-img"> -->
-                  
-                  <div class="footer-flex">
-                    <img src="images/new-ft.png" alt="ITIJ Awards 2025 Winner" class="footer-award-img">
-  <div class="footer-socials">
-                    <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+
+                    <div class="footer-flex">
+                        <img src="images/new-ft.png" alt="ITIJ Awards 2025 Winner" class="footer-award-img">
+                        <div class="footer-socials">
+                            <a href="#" class="footer-social-btn" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="footer-social-btn" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+
+
+
                 </div>
-                  </div>
-               
-               
-               
-               
-             </div>
             </div>
 
             <!-- Row 2: Services | Social icons -->
             <div class="footer-row2">
-                <div class="footer-col-left">
+                <div class="footer-col-left en-content">
                     <span class="footer-title">Services</span>
                     <ul class="footer-links-main">
                         <li><a href="air-ambulance.html">Air Ambulance</a></li>
@@ -799,16 +1140,33 @@
                         <li><a href="#">HEMS</a></li>
                     </ul>
                 </div>
-              
+
+
+                <div class="footer-col-left  ar-content">
+                    <span class="footer-title">خدماتنا</span>
+                    <ul class="footer-links-main">
+                        <li><a href="air-ambulance.html">الإسعاف الجوي</a></li>
+                        <li><a href="Comercial-Airline-Transfer.html">نقل المرضى عبر الطيران التجاري</a></li>
+                        <li><a href="Medical-Escort-Services.html">المرافقة الطبية</a></li>
+                        <li><a href="Helicopter-Air-Ambulance.html">الإسعاف الجوي بالمروحيات</a></li>
+                    </ul>
+                </div>
+
+
+
             </div>
 
             <!-- Row 3: Copyright | Privacy -->
-            <div class="footer-bottom">
-                <p class="copyright">2026 &copy; Bluedot Air Ambulance</p>
-                <div class="footer-bottom-links">
-                    <a href="contact.html">Privacy Policy</a>
+            <div class="footer-bottom ">
+                <p class="copyright en-content">2026 &copy; Bluedot Air Ambulance</p>
+                <p class="copyright ar-content">٢٠٢٦ &copy; بلو دوت للإسعاف الجوي
+                </p>
+                <div class="footer-bottom-links ">
+                    <a href="contact.html" class="en-content">Privacy Policy</a>
+                    <a href="contact.html" class="ar-content">سياسة الخصوصية</a>
                 </div>
             </div>
+
         </div>
     </footer>
     <!-- ========== FOOTER END ========== -->
@@ -825,8 +1183,18 @@
             <a href="tel:+1234567890" class="nav-outline-btn">24/7 Global Assistance</a>
             <div class="enquiry-header-right">
                 <div class="nav-lang">
-                    <span>EN</span>
+                    <span class="lang-current-label">EN</span>
                     <i class="fas fa-chevron-down"></i>
+                    <div class="lang-dropdown">
+                        <span class="lang-option active" data-lang="en">
+                            <span class="lang-flag">🇬🇧</span>
+                            <span class="lang-name">EN</span>
+                        </span>
+                        <span class="lang-option" data-lang="ar">
+                            <span class="lang-flag">🇸🇦</span>
+                            <span class="lang-name">AR</span>
+                        </span>
+                    </div>
                 </div>
                 <button class="enquiry-close-btn" id="enquiryCloseBtn" aria-label="Close enquiry drawer">
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
@@ -907,30 +1275,33 @@
     <!-- Custom JS -->
     <script src="js/main.js"></script>
 
+    <!-- Language Switcher -->
+    <script src="js/lang.js"></script>
+
     <!-- Swiper Initialization -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
 
-           // Hero Banner Slider
-const heroBannerSwiper = new Swiper('.heroBannerSwiper', {
-    slidesPerView: 1,
-    loop: true,
-    speed: 1500, // increase for slower sliding
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: '.hero-banner-pagination',
-        clickable: true,
-        bulletClass: 'hero-bullet',
-        bulletActiveClass: 'hero-bullet-active',
-        renderBullet: function (index, className) {
-            return '<span class="' + className + '"></span>';
-        },
-    },
-    effect: 'slide', // left-right sliding
-});
+            // Hero Banner Slider
+            const heroBannerSwiper = new Swiper('.heroBannerSwiper', {
+                slidesPerView: 1,
+                loop: true,
+                speed: 1500, // increase for slower sliding
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.hero-banner-pagination',
+                    clickable: true,
+                    bulletClass: 'hero-bullet',
+                    bulletActiveClass: 'hero-bullet-active',
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '"></span>';
+                    },
+                },
+                effect: 'slide', // left-right sliding
+            });
             // Our Services Swiper
             const servicesSwiper = new Swiper('.servicesSwiper', {
                 slidesPerView: 1,
