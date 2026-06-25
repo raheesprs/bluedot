@@ -5238,7 +5238,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 150vh;
+    height: 130vh;
     padding-top: 50px;
     /* padding-bottom: 390px; */
     display: flex;
@@ -5276,11 +5276,11 @@ img {
 
 .hero-text-wrapper {
     max-width: 840px;
-    padding-top: 140px;
+    padding-top: 250px;
 }
 
 .hero-title-main {
-    font-size: 65px;
+    font-size: 68px;
     font-weight: 400;
     color: #000000;
     margin-bottom: 16px;
@@ -5291,27 +5291,26 @@ img {
 }
 
 .hero-subtitle {
-    font-size: 23px;
+    font-size: 26px;
     color: rgba(0, 0, 0, 0.92);
-    max-width: 580px;
+    max-width: 630px;
     line-height: 1.5;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
     font-family: 'Aeonik', sans-serif;
 }
 
 .btn-talk-advisor {
     display: inline-block;
     padding: 12px 32px;
-    border: 1.5px solid rgba(0, 0, 0, 0.85);
+    border: 2px solid rgba(0, 0, 0, 0.85);
     border-radius: 999px;
     color: #000000;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
     transition: all 0.3s ease;
     text-decoration: none;
     font-family: 'Aeonik', sans-serif;
-    backdrop-filter: blur(4px);
-    background: rgba(255, 255, 255, 0.08);
+
 }
 
 .btn-talk-advisor:hover {
