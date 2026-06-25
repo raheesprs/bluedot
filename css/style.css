@@ -1604,7 +1604,7 @@ img {
    FLEET SECTION
    ======================================== */
 .fleet-section {
-    padding: 0px 0 80px;
+    /* padding: 0px 0 80px; */
     background: #EDF2F6;
     overflow: hidden;
 }
@@ -1632,7 +1632,7 @@ img {
 .fleet-slide-card {
     position: relative;
     width: 100%;
-    height: 620px;
+    height: 700px;
     overflow: hidden;
     clip-path: url(#fleetCurveClip);
     background: #000000;
@@ -1673,16 +1673,16 @@ img {
 }
 
 .fleet-slide-brand {
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 42px;
+    font-weight: 500;
     color: #ffffff;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
     display: block;
 }
 
 .fleet-slide-model {
     color: #ffffff;
-    font-size: 48px;
+    font-size: 52px;
     font-weight: 500;
     margin: 0 0 24px 0;
     letter-spacing: -0.5px;
@@ -1695,7 +1695,7 @@ img {
     border: 1.5px solid #ffffff;
     border-radius: 999px;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 22px;
     font-weight: 500;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -1722,13 +1722,13 @@ img {
 /* Navigation Controls */
 .fleet-slider-nav {
     display: flex;
-    gap: 12px;
+    gap: 6px;
     pointer-events: auto;
 }
 
 .fleet-nav-btn {
-    width: 54px;
-    height: 54px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     border: 1.5px solid rgba(255, 255, 255, 0.4);
     background: transparent;
@@ -1871,8 +1871,8 @@ img {
 .testi-heading {
     color: #022F43;
     font-size: 36px;
-    font-weight: 400;
-    line-height: 44px;
+    font-weight: 500;
+    line-height: 40px;
     letter-spacing: -0.72px;
     margin: 0;
 }
@@ -1898,9 +1898,9 @@ img {
 
 .testi-text {
     color: #022F43;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 26px;
     letter-spacing: -0.085px;
     margin: 0;
 }
@@ -1929,8 +1929,9 @@ img {
 /* Nav buttons row */
 .testi-nav-row {
     display: flex;
-    gap: 10px;
+    gap: 6px;
     margin-top: 28px;
+    margin-left: 160px;
 }
 
 .testi-nav-btn {
@@ -2449,7 +2450,7 @@ img {
     border-radius: 999px;
     background: transparent;
     color: #022F43;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -2473,7 +2474,7 @@ img {
     align-items: center;
     justify-content: center;
     color: #022F43;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     padding: 10px 28px;
     border: 1.5px solid #022F43;
@@ -2573,10 +2574,10 @@ img {
 .news-vector-bg {
     position: absolute;
     right: -30px;
-    bottom: -5px;
-    width: 300px;
-    height: auto;
-    opacity: 0.15;
+    bottom: -75px;
+    width: 320px;
+    height: 270px;
+    opacity: 1;
     pointer-events: none;
     user-select: none;
     z-index: 1;
@@ -2670,8 +2671,8 @@ img {
 .insights-heading {
     color: #022F43;
     font-size: 36px;
-    font-weight: 400;
-    line-height: 44px;
+    font-weight: 500;
+    line-height: 40px;
     letter-spacing: -0.72px;
     margin: 0;
 }
@@ -2759,6 +2760,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
 }
 
 /* Number + Title overlay at bottom-left */
@@ -2774,7 +2776,7 @@ img {
 .insights-num {
     display: block;
     color: rgba(255, 255, 255, 0.85);
-    font-size: 13px;
+    font-size: 28px;
     font-weight: 500;
     margin-bottom: 4px;
     letter-spacing: 0.3px;
@@ -2782,8 +2784,8 @@ img {
 
 .insights-title {
     color: #fff;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 500;
     line-height: 1.2;
     margin: 0;
 }
