@@ -4452,10 +4452,18 @@ img {
 
 .join-blue {
     background: #0B3C5D;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     margin-bottom: 50px;
+}
+
+.join-blue img {
+    border-radius: 0px 20px 20px 0px;
+}
+
+.join-content {
+    padding-top: 70px;
 }
 
 .join-content a,
