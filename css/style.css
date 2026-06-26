@@ -1315,7 +1315,7 @@ img {
     }
 
     .svc-card-desc {
-        font-size: 13px;
+        font-size: 17px;
     }
 
     .svc-card-right {
@@ -1437,10 +1437,11 @@ img {
 
     .accredited-section {
         padding: 32px 0;
+        padding-bottom: 0px;
     }
 
     .accredited-left-inner {
-        padding: 20px 26px;
+        padding: 20px 0px;
     }
 
     .accredited-left {
@@ -1861,11 +1862,12 @@ img {
     }
 
     .fleet-slide-card {
-        height: 280px;
+        height: 400px;
     }
 
     .fleet-slide-content {
-        padding-bottom: 30px;
+        padding-bottom: 70px;
+        padding-left: 30px;
     }
 
     .fleet-slide-model {
@@ -2027,7 +2029,7 @@ img {
 
 @media (max-width: 575.98px) {
     .testimonials-section {
-        padding: 60px 0;
+        padding: 30px 0;
     }
 
     .testi-heading {
@@ -2040,6 +2042,14 @@ img {
 
     .testi-card {
         padding: 24px;
+    }
+
+    .insights-section {
+        padding-top: 0px;
+    }
+
+    .certifications-section {
+        padding: 20px 0 20px;
     }
 }
 
@@ -2870,7 +2880,34 @@ img {
     .insights-title {
         font-size: 16px;
     }
+
+    .certifications-section {
+        padding: 20px 0 20px;
+    }
+
+    .news-section {
+        padding: 0px 0;
+    }
+
+    .news-filters-left {
+        display: flex !important;
+        flex-direction: row;
+        overflow: auto;
+        flex-wrap: nowrap;
+        gap: 6px;
+    }
+
+    .testi-icon {
+        display: none;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
+
+
+
 
 /* ========================================
    CERTIFICATIONS SECTION
@@ -3310,6 +3347,18 @@ img {
         padding-bottom: 50px;
         min-height: 500px;
     }
+
+    .certifications-section {
+        padding: 20px 0 20px;
+    }
+
+    .res-none {
+        display: none;
+    }
+}
+
+.desk-none {
+    display: none;
 }
 
 /* ========================================
