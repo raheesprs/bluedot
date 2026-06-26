@@ -2432,7 +2432,10 @@ img {
 .news-filters {
     padding-top: 15px;
 }
-
+.join-us-text{
+        width: 90%;
+    margin-left: auto;
+}
 .news-header-top {
     margin-bottom: 24px;
 }
