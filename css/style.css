@@ -1631,7 +1631,7 @@ img {
     }
 
     .global-ops-heading {
-        font-size: 28px;
+        font-size: 32px;
         line-height: 30px;
     }
 
@@ -2054,7 +2054,7 @@ img {
     }
 
     .testi-heading {
-        font-size: 28px;
+        font-size: 32px;
         line-height: 30px;
     }
 
@@ -2762,7 +2762,7 @@ img {
 
 .insights-heading {
     color: #022F43;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 500;
     line-height: 40px;
     letter-spacing: -0.72px;
@@ -6462,13 +6462,14 @@ img {
     }
 
     .about-banner-content h2 {
-        font-size: 24px;
+        font-size: 28px;
         margin-bottom: 30px;
         letter-spacing: -0.01em;
+        line-height: 1.1;
     }
 
     .about-banner-content p {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 24px;
         margin-bottom: 20px;
         letter-spacing: -0.3px;
@@ -6600,6 +6601,10 @@ img {
     /* Common section padding */
     .common-padding {
         padding: 40px 0;
+    }
+
+    .about-banner-content br {
+        display: none;
     }
 }
 
@@ -8138,5 +8143,21 @@ html[dir="rtl"] svg {
 
     .testi-nav-row {
         margin-left: 0;
+    }
+
+    .fleet-header {
+        margin-bottom: 0px;
+    }
+
+    .insights-section {
+        padding-bottom: 50px;
+    }
+
+    .insights-grid {
+        padding-top: 30px;
+    }
+
+    .about-banner {
+        height: 100vh;
     }
 }
