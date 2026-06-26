@@ -1311,16 +1311,26 @@ img {
     }
 
     .svc-card-title {
-        font-size: 22px;
+        font-size: 26px;
+        padding-top: 20px;
     }
 
     .svc-card-desc {
-        font-size: 17px;
+        font-size: 18px;
+        padding-bottom: 20px;
     }
 
     .svc-card-right {
         height: 200px;
         padding: 0;
+    }
+
+    .svc-card-btn {
+        margin-bottom: 20px;
+    }
+
+    .svc-vector-bg {
+        top: 80%;
     }
 }
 
