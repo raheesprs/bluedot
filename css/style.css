@@ -1670,6 +1670,7 @@ img {
     flex-direction: column;
     align-items: flex-start;
     pointer-events: auto;
+    padding-left: 50px;
 }
 
 .fleet-slide-brand {
@@ -1724,6 +1725,7 @@ img {
     display: flex;
     gap: 6px;
     pointer-events: auto;
+    padding-right: 50px;
 }
 
 .fleet-nav-btn {
@@ -1765,6 +1767,7 @@ img {
 
     .fleet-slide-content {
         padding-bottom: 50px;
+        padding-left: 0px;
     }
 
     .fleet-slide-model {
@@ -1779,6 +1782,10 @@ img {
     .fleet-nav-btn {
         width: 44px;
         height: 44px;
+    }
+
+    .fleet-slider-nav {
+        padding-right: 0px;
     }
 }
 
@@ -2578,7 +2585,7 @@ img {
     bottom: -75px;
     width: 320px;
     height: 270px;
-    opacity: 1;
+    opacity: 0.5;
     pointer-events: none;
     user-select: none;
     z-index: 1;
@@ -2840,9 +2847,14 @@ img {
 }
 
 .certi-logo-item img {
-    max-height: 90px;
+    max-height: 100px;
     max-width: 180px;
     object-fit: contain;
+}
+
+/* Continuous scroll for partners */
+.partnersSwiper .swiper-wrapper {
+    transition-timing-function: linear !important;
 }
 
 /* ========================================
@@ -4801,6 +4813,7 @@ img {
 
 .leadership {
     padding-top: 100px;
+    padding-bottom: 30px;
 }
 
 .main-team {
@@ -5376,17 +5389,22 @@ img {
 }
 
 .info-tagline {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 500;
-    color: #01284F;
+    color: #022F43;
     line-height: 1.2;
     margin-bottom: 30px;
     font-family: 'Aeonik', sans-serif;
 }
 
+.info-description {
+    width: 80%;
+    margin-left: auto;
+}
+
 .info-description p {
-    font-size: 18px;
-    color: #01284F;
+    font-size: 20px;
+    color: #022F43;
     line-height: 1.5;
     margin-bottom: 24px;
     opacity: 0.9;
@@ -5437,13 +5455,12 @@ img {
 }
 
 .coordination-title {
-    color: #022F43;
-    font-size: 28px;
-    font-style: normal;
+    font-size: 30px;
     font-weight: 500;
-    line-height: 28px;
-    /* 93.333% */
-    letter-spacing: -0.6px;
+    color: #022F43;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-family: 'Aeonik', sans-serif;
     margin-bottom: 15px;
 }
 
@@ -5552,16 +5569,18 @@ img {
 
 .mission-stories-title {
     flex: 1;
-    color: #01284F;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 500;
+    color: #022F43;
+    line-height: 1.2;
+    margin-bottom: 30px;
     font-family: 'Aeonik', sans-serif;
-    letter-spacing: -0.6px;
+
 }
 
 .mission-stories-desc {
     flex: 1;
-    color: #01284F;
+    color: #022F43;
     font-size: 20px;
     line-height: 1.4;
     opacity: 0.9;
@@ -5631,6 +5650,17 @@ img {
     text-decoration: none;
     transition: all 0.3s ease;
     align-self: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.custom-list li {
+    font-size: 17px;
+    color: #022F43;
+    line-height: 1.5;
+    margin-bottom: 0px;
+    opacity: 0.9;
+    font-family: 'Aeonik', sans-serif;
 }
 
 .btn-mission-story:hover {
