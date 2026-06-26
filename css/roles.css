@@ -507,6 +507,14 @@
     .apply-form-wrapper {
         padding: 30px 20px;
     }
+
+    .roles-learn-more {
+        padding: 80px 0 50px;
+    }
+
+    .roles-hero {
+        padding: 150px 0 40px;
+    }
 }
 
 .jobs-grid-wrapper .col-lg-4 {

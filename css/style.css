@@ -8376,4 +8376,14 @@ html[dir="rtl"] svg {
     .contact-hero-content {
         padding-top: 190px;
     }
+
+    .roles-hero {
+        padding: 140px 0 40px;
+    }
+
+    .roles-learn-more {
+        padding: 80px 0 50px;
+    }
+
+ 
 }
