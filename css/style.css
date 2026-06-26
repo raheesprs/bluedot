@@ -3735,15 +3735,15 @@ img {
 }
 
 .fbs-subtitle {
-    font-size: 27px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 500;
     color: #022F43;
-    margin: 0 0 4px;
+    margin: 0 0 0px;
     letter-spacing: 0.2px;
 }
 
 .fbs-name {
-    font-size: 42px;
+    font-size: 52px;
     font-weight: 500;
     color: #022F43;
     letter-spacing: -0.8px;
@@ -3757,7 +3757,7 @@ img {
     border: 1.5px solid #022F43;
     border-radius: 999px;
     color: #022F43;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
     text-decoration: none;
     transition: background 0.25s ease, color 0.25s ease;
@@ -3765,26 +3765,26 @@ img {
 }
 
 .fbs-learn-btn:hover {
-    background: #022F43;
+    background: #009BE0;
     color: #fff;
 }
 
 /* ---- Navigation arrows ---- */
 .fbs-nav {
     position: absolute;
-    bottom: 36px;
+    bottom: 60px;
     right: 48px;
     z-index: 3;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 6px;
 }
 
 .fbs-arrow {
-    width: 68px;
-    height: 68px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    border: 1.5px solid rgba(2, 47, 67, 0.35);
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
     background: rgb(255 255 255 / 4%);
     backdrop-filter: blur(4px);
     color: #022F43;
@@ -3795,7 +3795,9 @@ img {
     transition: background 0.2s ease, border-color 0.2s ease;
     padding: 0;
 }
-
+.fbs-arrow svg path{
+    stroke: white;
+}
 .fbs-arrow:hover {
     background: rgba(255, 255, 255, 0.55);
     border-color: rgba(2, 47, 67, 0.6);
