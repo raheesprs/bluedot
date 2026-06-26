@@ -1875,10 +1875,7 @@ img {
         font-size: 24px;
     }
 
-    .fleet-nav-container {
-        display: none;
-        /* Hide nav arrows on small mobile devices to avoid overlap */
-    }
+
 }
 
 /* ========================================
