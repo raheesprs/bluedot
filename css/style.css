@@ -436,7 +436,7 @@ img {
 }
 
 .nav-outline-btn:hover {
-    background: #000;
+    background: #009BE0;
     color: #fff;
 }
 
@@ -1298,6 +1298,10 @@ img {
 }
 
 @media (max-width: 575.98px) {
+    .hero-description br {
+        display: none
+    }
+
     .services-slider-section {
         padding: 40px 0 60px;
     }
@@ -6071,7 +6075,7 @@ img {
 
 @media (max-width: 767.98px) {
     .hero-title {
-        font-size: 36px;
+        font-size: 34px;
 
     }
 
