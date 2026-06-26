@@ -1303,7 +1303,7 @@ img {
     }
 
     .services-slider-section {
-        padding: 40px 0 60px;
+        padding: 40px 0 40px;
     }
 
     .svc-card-text {
@@ -1421,6 +1421,7 @@ img {
 
     .accredited-left-inner {
         padding: 40px 36px;
+
     }
 
     .accredited-right {
@@ -1430,21 +1431,40 @@ img {
 }
 
 @media (max-width: 575.98px) {
+    .services-slider-nav {
+        margin-top: 0;
+    }
+
     .accredited-section {
         padding: 32px 0;
     }
 
     .accredited-left-inner {
+        padding: 20px 26px;
+    }
+
+    .accredited-left {
         padding: 32px 24px !important;
+        border-radius: 20px 20px 0px 0px !important;
     }
 
     .accredited-right {
         min-height: 240px;
-        padding: 24px 24px 0;
+        padding: 0;
+    }
+
+    .accredited-img {
+        border-radius: 0px 0px 20px 20px !important;
     }
 
     .accredited-heading {
-        font-size: 24px;
+        font-size: 34px;
+        line-height: 1.2
+    }
+
+    .accredited-desc {
+        font-size: 20px;
+        line-height: 28px;
     }
 
     .certi-logo-item img {
@@ -1576,7 +1596,7 @@ img {
 @media (max-width: 767.98px) {
     .global-ops-stats {
         grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+        gap: 6px;
     }
 }
 
@@ -1586,21 +1606,26 @@ img {
     }
 
     .global-ops-content {
-        min-height: 520px;
+        min-height: 700px;
         padding-top: 40px;
     }
 
     .global-ops-heading {
-        font-size: 26px;
-        line-height: 40px;
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .global-ops-label {
+        text-align: left;
+        padding-bottom: 20px;
     }
 
     .global-ops-number {
-        font-size: 30px;
+        font-size: 36px;
     }
 
     .global-ops-stat {
-        padding: 24px 20px;
+        padding: 4px 10px;
     }
 }
 
