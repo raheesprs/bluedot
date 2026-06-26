@@ -2581,11 +2581,20 @@ img {
 
 /* Decorative vector background image */
 .news-vector-bg {
-    position: absolute;
+    /* position: absolute;
     right: -30px;
     bottom: -75px;
     width: 320px;
     height: 270px;
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+    z-index: 1; */
+    position: absolute;
+    right: -70px;
+    bottom: -195px;
+    width: 380px;
+    height: 400px;
     opacity: 0.5;
     pointer-events: none;
     user-select: none;
