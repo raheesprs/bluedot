@@ -4449,7 +4449,7 @@ img {
 }
 
 .vision .col-lg-6 {
-    padding-bottom: 15px;
+    padding-bottom: 6px;
     padding-right: 5px !important;
     padding-left: 10px !important;
 }
@@ -4486,7 +4486,7 @@ img {
 .leadership h3 {
     font-weight: 500;
     font-style: Medium;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 48px;
     letter-spacing: -2%;
 }
@@ -6278,7 +6278,7 @@ img {
     }
 
     .leadership h3 {
-        font-size: 24px;
+        font-size: 32px;
         line-height: 32px;
     }
 
@@ -6384,7 +6384,7 @@ img {
 
     /* Our Values */
     .value-box-header h4 {
-        font-size: 24px;
+        font-size: 26px;
         line-height: 32px;
     }
 
@@ -6399,12 +6399,13 @@ img {
     }
 
     .leadership h3 {
-        font-size: 22px;
+        font-size: 32px;
         line-height: 30px;
+        padding-bottom: 10px;
     }
 
     .leadership p {
-        font-size: 15px;
+        font-size: 18px;
         line-height: 24px;
     }
 
@@ -6481,18 +6482,18 @@ img {
     }
 
     .vision h3 {
-        font-size: 22px;
+        font-size: 32px;
         line-height: 28px;
     }
 
     .vision p {
-        font-size: 15px;
+        font-size: 18px;
         line-height: 22px;
     }
 
     /* Our Values heading */
     .vision .col-12 h3 {
-        font-size: 22px;
+        font-size: 32px;
     }
 
     /* Our Values cards */
@@ -6501,13 +6502,13 @@ img {
     }
 
     .value-box-header h4 {
-        font-size: 20px;
+        font-size: 26px;
         line-height: 28px;
     }
 
     .value-box-content p {
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 20px;
     }
 
     /* Leadership */
@@ -6516,12 +6517,13 @@ img {
     }
 
     .leadership h3 {
-        font-size: 20px;
+        font-size: 32px;
+        padding-bottom: 10px;
         line-height: 28px;
     }
 
     .leadership p {
-        font-size: 14px;
+        font-size: 18px;
         line-height: 22px;
     }
 
@@ -8159,5 +8161,31 @@ html[dir="rtl"] svg {
 
     .about-banner {
         height: 100vh;
+    }
+
+    .pt-40 {
+        padding-top: 30px;
+    }
+
+    .vision-content {
+        margin-bottom: 30px;
+    }
+
+    .pb-30 {
+        padding-bottom: 20px;
+    }
+
+    .main-team .col-lg-6 {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .leader-modal-img-col {
+        padding-top: 60px;
+    }
+
+    .leader-modal-bio-col {
+        padding-left: 30px;
+        padding-top: 0px;
     }
 }
