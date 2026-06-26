@@ -1864,9 +1864,11 @@ img {
     .fleet-nav-container {
         bottom: 60px;
     }
-.fleet-slider-nav{
-    padding-right: 20px;
-}
+
+    .fleet-slider-nav {
+        padding-right: 20px;
+    }
+
     .fleet-slider-nav {
         gap: 4px;
     }
@@ -1879,7 +1881,7 @@ img {
 
 @media (max-width: 575.98px) {
     .fleet-section {
-        padding: 40px 0 60px;
+        padding: 40px 0 30px;
     }
 
     .fleet-slide-card {
@@ -8105,5 +8107,17 @@ html[dir="rtl"] svg {
 @media (max-width: 575.98px) {
     .footer-logo-img {
         height: 50px;
+    }
+
+    .news-filter-btn {
+        font-size: 15px;
+    }
+
+    .news-card-col {
+        padding: 0px 14px;
+    }
+
+    .news-cards-row {
+        --bs-gutter-y: 0.8rem;
     }
 }
