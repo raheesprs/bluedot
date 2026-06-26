@@ -2753,7 +2753,7 @@ img {
 .insights-play {
     opacity: 0.92;
     transition: transform 0.2s ease, opacity 0.2s ease;
-    display: none;
+    /* display: none; */
 }
 
 .insights-card:hover .insights-play {
@@ -2780,7 +2780,7 @@ img {
 /* Number + Title overlay at bottom-left */
 .insights-info {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
     padding: 16px 16px 18px;
