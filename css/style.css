@@ -3275,12 +3275,12 @@ img {
    ======================================== */
 .mission-capability-section {
     background: #F4F7F9;
-    padding: 40px 0 0;
+    padding: 80px 0 0;
     /* Let background flow into the image section */
 }
 
 .mission-content {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .mission-title {
@@ -3436,6 +3436,7 @@ img {
     font-size: 30px;
     font-weight: 500;
     font-family: "Aeonik";
+    line-height: 1.2;
 
 }
 
@@ -3795,9 +3796,11 @@ img {
     transition: background 0.2s ease, border-color 0.2s ease;
     padding: 0;
 }
-.fbs-arrow svg path{
+
+.fbs-arrow svg path {
     stroke: white;
 }
+
 .fbs-arrow:hover {
     background: rgba(255, 255, 255, 0.55);
     border-color: rgba(2, 47, 67, 0.6);
