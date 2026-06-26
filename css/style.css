@@ -8318,4 +8318,25 @@ html[dir="rtl"] svg {
     .blog-detail h3 {
         line-height: 50px;
     }
+
+    .roles-hero {
+        padding-top: 140px;
+    }
+
+    .roles-title {
+        font-size: 32px;
+    }
+
+    .join-us-title {
+        font-size: 32px;
+
+    }
+
+    .join-us-text {
+        width: 100%;
+    }
+
+    .learn-more-img-wrapper {
+        min-height: 330px !important;
+    }
 }
