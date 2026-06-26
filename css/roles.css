@@ -262,6 +262,7 @@
     line-height: 38px;
     /* 105.556% */
     letter-spacing: -0.72px;
+    padding-bottom: 10px;
 }
 
 .learn-more-text {
@@ -273,6 +274,7 @@
     line-height: 28px;
     /* 140% */
     letter-spacing: -0.08px;
+    padding-bottom: 10px;
 }
 
 .btn-learn-more {
@@ -288,7 +290,7 @@
 }
 
 .btn-learn-more:hover {
-    background: #000;
+    background: #009BE0;
     color: #fff;
 }
 
@@ -364,7 +366,7 @@
     font-size: 14px;
     color: #333;
     line-height: 1.6;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .role-section {
@@ -481,9 +483,9 @@
 }
 
 .btn-submit {
-    background: #0095D6;
-    color: #fff;
-    border: none;
+    background: #0096d600;
+    color: #000000;
+    border: 1px solid black;
     border-radius: 999px;
     padding: 10px 40px;
     font-size: 14px;
@@ -494,6 +496,7 @@
 .btn-submit:hover {
     background: #007bb1;
     transform: translateY(-2px);
+    color: white;
 }
 
 @media (max-width: 991px) {

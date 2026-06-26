@@ -2432,10 +2432,12 @@ img {
 .news-filters {
     padding-top: 15px;
 }
-.join-us-text{
-        width: 90%;
+
+.join-us-text {
+    width: 90%;
     margin-left: auto;
 }
+
 .news-header-top {
     margin-bottom: 24px;
 }
@@ -4913,6 +4915,7 @@ img {
     z-index: 2;
     max-width: 1000px;
     padding-bottom: 0px;
+    padding-top: 200px;
     /* Offset to push text higher up */
 }
 
@@ -4932,7 +4935,7 @@ img {
     font-size: 43.381px;
     font-style: normal;
     font-weight: 500;
-    line-height: 52.057px;
+    line-height: 46px;
     letter-spacing: -0.737px;
     margin: 0;
 }
@@ -5153,8 +5156,8 @@ img {
 .marker-pin i {
     color: #ffffff;
     font-size: 12px;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -5240,7 +5243,7 @@ img {
 .marker-contact {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
 }
 
 .marker-contact span {
@@ -7185,6 +7188,7 @@ html[dir="rtl"] svg {
 
 /* Responsive */
 @media (max-width: 991.98px) {
+
     .oman-intro-top {
         padding: 40px 30px 60px 30px;
     }
@@ -7216,6 +7220,10 @@ html[dir="rtl"] svg {
 }
 
 @media (max-width: 767.98px) {
+    .hero-slide-content {
+        padding: 197px 10px 100px;
+    }
+
     .oman-intro-section {
         margin-top: -40px;
     }
