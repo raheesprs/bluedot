@@ -6712,12 +6712,27 @@ img {
     .umen-description {
         font-size: 16px;
         width: 100%;
-                padding-bottom: 30px;
+        padding-bottom: 30px;
     }
 
     .umen-section {
         min-height: 400px;
     }
+
+    .mission-stories-header {
+        margin-bottom: 35px;
+    }
+
+    .fbs-title {}
+
+    .fbs-swiper-slide {
+        height: 280px;
+    }
+
+    .fbs-title-wrap {
+        margin-top: 30px;
+    }
+
 }
 
 @media (max-width: 575.98px) {}
@@ -8260,5 +8275,17 @@ html[dir="rtl"] svg {
     .faq-section {
         padding-top: 50px;
         padding-bottom: 20px;
+    }
+
+    .fbs-caption-wrap {
+        padding-bottom: 220px;
+    }
+
+    .fbs-subtitle {
+        font-size: 28px;
+    }
+
+    .fbs-name {
+        font-size: 40px;
     }
 }
