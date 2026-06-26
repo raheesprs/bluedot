@@ -4274,10 +4274,37 @@ img {
         display: none;
     }
 
+    .site-footer .container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-row1, .footer-row2 {
+        display: contents;
+    }
+
+    .footer-logo {
+        order: 1;
+    }
+
+    .footer-col-left {
+        order: 2;
+    }
+
+    .footer-links-sub {
+        order: 3;
+    }
+
+    .footer-badges {
+        order: 4;
+    }
+
     .footer-bottom {
         flex-direction: column;
         align-items: flex-start;
         gap: 24px;
+        order: 5;
     }
 
     .fleet-stats-grid {
