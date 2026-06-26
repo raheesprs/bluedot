@@ -4752,7 +4752,7 @@ img {
 }
 
 .blog-detail-content-section {
-    background: url('../images/abt-Vector.png');
+    /* background: url('../images/abt-Vector.png'); */
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: contain;
@@ -8298,7 +8298,24 @@ html[dir="rtl"] svg {
     .news-heading {
         padding-top: 20px;
     }
+
     .news-title br {
         display: none;
+    }
+
+    .news-section {
+        padding-bottom: 50px;
+    }
+
+    .blog-detail {
+        padding-top: 140px;
+    }
+
+    .blog-contant {
+        padding-top: 0px;
+    }
+
+    .blog-detail h3 {
+        line-height: 50px;
     }
 }
