@@ -8202,4 +8202,58 @@ html[dir="rtl"] svg {
     .join-blue img {
         border-radius: 0px 0px 20px 20px !important;
     }
+
+    .air-ambulance-hero {
+        height: 90vh;
+    }
+
+    .hero-text-wrapper {
+        padding-top: 180px;
+    }
+
+    .btn-talk-advisor {
+        font-size: 16px;
+    }
+
+    .service-counter .global-ops-stat {
+        padding: 11px 10px;
+    }
+
+    .service-counter .global-ops-label {
+        text-align: left;
+    }
+
+    .service-counter .global-ops-stats {
+        border-radius: 0px 0px 16px 16px;
+    }
+
+    .service-counter .global-ops-number {
+        font-size: 44px;
+    }
+
+    .info-description {
+        width: 100%;
+    }
+
+    .info-tagline {
+        font-size: 26px;
+    }
+
+    .coordination-section {
+        padding: 50px 0;
+    }
+
+    .coordination-subtitle {
+        font-size: 18px;
+    }
+
+    .mission-stories-title {
+        margin-bottom: 0px;
+        padding-top: 20px;
+    }
+
+    .faq-section {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
 }
