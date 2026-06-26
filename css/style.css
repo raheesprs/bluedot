@@ -8288,4 +8288,14 @@ html[dir="rtl"] svg {
     .fbs-name {
         font-size: 40px;
     }
+
+    .news-filters {
+        display: flex;
+        gap: 6px;
+        overflow: auto;
+    }
+
+    .news-heading {
+        padding-top: 20px;
+    }
 }
