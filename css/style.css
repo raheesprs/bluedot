@@ -8298,4 +8298,7 @@ html[dir="rtl"] svg {
     .news-heading {
         padding-top: 20px;
     }
+    .news-title br {
+        display: none;
+    }
 }
