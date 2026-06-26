@@ -4359,6 +4359,11 @@ img {
 
 .profile-sec a {
     text-decoration: none;
+
+}
+
+.profile-sec a:hover {
+    background-color: transparent !important;
 }
 
 .profile-sec h5 {
@@ -5972,7 +5977,7 @@ img {
 
 /* Global Button Hover Styles */
 [class*="btn"]:not(.nav-close-btn):not(.nav-back-btn):hover {
-    background-color: #1D96D4 !important;
+    /* background-color: #1D96D4 !important; */
     color: #ffffff !important;
     border-color: #1D96D4 !important;
 }
@@ -7839,5 +7844,100 @@ html[dir="rtl"] svg {
 
     .oman-form-wrapper {
         padding: 30px 20px;
+    }
+}
+
+/* Leader Profile Modal */
+.leader-modal .modal-content {
+    border-radius: 12px;
+    border: none;
+    overflow: hidden;
+}
+
+.leader-modal .modal-body {
+    padding: 0;
+    position: relative;
+}
+
+.leader-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    line-height: 1;
+    z-index: 10;
+    cursor: pointer;
+    color: #000;
+}
+
+.leader-modal-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.leader-modal-img-col {
+    padding: 30px;
+    background: #fff;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.leader-modal-img-wrap {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.leader-modal-img-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.leader-modal-name {
+    color: #022F43;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.leader-modal-title {
+    color: #022F43;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.leader-modal-bio-col {
+    padding: 30px;
+    padding-left: 0;
+    background: #fff;
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: self-start;
+}
+
+.leader-modal-bio {
+    color: #022F43;
+    font-size: 19px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .leader-modal-img-col {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+
+    .leader-modal-bio-col {
+        flex: 0 0 60%;
+        max-width: 60%;
+        padding: 50px 50px 50px 10px;
     }
 }
