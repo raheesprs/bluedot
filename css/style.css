@@ -6321,12 +6321,12 @@ img {
     }
 
     .join-content h3 {
-        font-size: 28px;
+        font-size: 32px;
         line-height: 36px;
     }
 
     .join-content p {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 24px;
     }
 
@@ -6417,12 +6417,12 @@ img {
 
     /* Join */
     .join-content h3 {
-        font-size: 24px;
+        font-size: 32px;
         line-height: 32px;
     }
 
     .join-content p {
-        font-size: 15px;
+        font-size: 18px;
         line-height: 24px;
     }
 
@@ -6563,13 +6563,14 @@ img {
     }
 
     .join-content h3 {
-        font-size: 22px;
+        font-size: 32px;
         line-height: 28px;
     }
 
     .join-content p {
-        font-size: 14px;
+        font-size: 18px;
         line-height: 22px;
+        padding-top: 10px;
     }
 
     .join-blue {
@@ -8187,5 +8188,18 @@ html[dir="rtl"] svg {
     .leader-modal-bio-col {
         padding-left: 30px;
         padding-top: 0px;
+    }
+
+    .join-content {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    .pl-7 {
+        padding-left: 50px !important;
+    }
+
+    .join-blue img {
+        border-radius: 0px 0px 20px 20px !important;
     }
 }
