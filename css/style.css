@@ -4280,7 +4280,8 @@ img {
         gap: 32px;
     }
 
-    .footer-row1, .footer-row2 {
+    .footer-row1,
+    .footer-row2 {
         display: contents;
     }
 
@@ -8365,5 +8366,14 @@ html[dir="rtl"] svg {
 
     .learn-more-img-wrapper {
         min-height: 330px !important;
+    }
+
+    .contact-title {
+        font-size: 28px;
+        line-height: 1.1;
+    }
+
+    .contact-hero-content {
+        padding-top: 190px;
     }
 }
