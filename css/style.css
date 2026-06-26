@@ -2524,6 +2524,7 @@ img {
 .news-card-col {
     display: flex;
     transition: all 0.4s ease;
+    padding: 0px 5px;
 }
 
 /* New Card Base */
@@ -2568,7 +2569,7 @@ img {
 /* Dark Blue card content panel */
 .news-card-content {
     background: #0B3C5D;
-    padding: 32px 30px;
+    padding: 32px 70px 32px 32px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -2688,8 +2689,12 @@ img {
 .insights-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
+    gap: 6px;
     padding-top: 45px;
+}
+
+.pl-7 {
+    padding-left: 80px !important;
 }
 
 .insights-card {
@@ -2748,6 +2753,7 @@ img {
 .insights-play {
     opacity: 0.92;
     transition: transform 0.2s ease, opacity 0.2s ease;
+    display: none;
 }
 
 .insights-card:hover .insights-play {
@@ -5312,7 +5318,7 @@ img {
     font-size: 26px;
     color: rgba(0, 0, 0, 0.92);
     max-width: 630px;
-    line-height: 1.5;
+    line-height: 1.3;
     margin-bottom: 30px;
     font-family: 'Aeonik', sans-serif;
 }
@@ -5332,9 +5338,9 @@ img {
 }
 
 .btn-talk-advisor:hover {
-    background: #ffffff;
-    color: #01284F;
-    border-color: #ffffff;
+    background: #0095D6;
+    color: #ffffff;
+    border-color: #000000;
 }
 
 .air-ambulance-info {
@@ -6447,7 +6453,7 @@ img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 480px;
+    min-height: 600px;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
@@ -6472,24 +6478,25 @@ img {
 }
 
 .umen-title {
-    font-size: 110px;
+    font-size: 140px;
     font-weight: 600;
     color: #eaf5ff;
     line-height: 1;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     letter-spacing: -3px;
 }
 
 .umen-subtitle {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     color: #ffffff;
     margin-bottom: 0;
+    padding-left: 90px;
 }
 
 .umen-description {
-    font-size: 19px;
-    line-height: 1.5;
+    font-size: 21px;
+    line-height: 1.3;
     color: #ffffff;
     margin-bottom: 0;
     font-weight: 400;
