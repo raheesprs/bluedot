@@ -4258,13 +4258,20 @@ img {
 }
 
 .vision {
-    background: url('../images/abt-Vector.png'), #EDF2F6;
+    background: #EDF2F6;
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: contain;
     height: 100%;
     padding: 100px 0 0;
+    position: relative;
 }
+
+/* .abt-vision-vector {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+} */
 
 .vision h3 {
     font-family: Aeonik;
@@ -4447,7 +4454,7 @@ img {
 .join {
 
     background: #EDF2F6;
-    padding: 40px;
+    padding: 60px;
 }
 
 .join-blue {
@@ -4474,6 +4481,12 @@ img {
     color: #000000;
     padding: 10px 20px;
     text-decoration: none;
+}
+
+.join-content a:hover {
+    background: #0095D6;
+    color: #fff;
+    border-color: #73a4b9;
 }
 
 .request {
@@ -4832,7 +4845,7 @@ img {
 
 .leadership {
     padding-top: 100px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .main-team {
