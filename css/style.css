@@ -1306,6 +1306,14 @@ img {
         padding: 40px 0 40px;
     }
 
+    .svc-card-img {
+        height: 220px;
+    }
+
+    .svc-card-left {
+        height: 340px;
+    }
+
     .svc-card-text {
         padding: 28px 24px;
     }
@@ -1442,7 +1450,7 @@ img {
 
 @media (max-width: 575.98px) {
     .services-slider-nav {
-        margin-top: 0;
+        margin-top: 15px;
     }
 
     .accredited-section {
