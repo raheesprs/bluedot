@@ -7450,6 +7450,7 @@ html[dir="rtl"] svg {
     /* Light blue-gray matching design */
     border-radius: 10px;
     padding: 60px 0 0 60px;
+    padding-left: 0px;
     /* Padding top and left, zero right and bottom for image bleed */
     overflow: hidden;
     /* Ensures image respects bottom-right corner rounding */
@@ -7461,6 +7462,7 @@ html[dir="rtl"] svg {
     padding-right: 40px;
     /* Space between text and image */
     padding-top: 50px;
+    padding-left: 40px;
 }
 
 .worldwide-content h2 {
@@ -7501,7 +7503,7 @@ html[dir="rtl"] svg {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 20px 0 0 0;
+    border-radius: 0px 10px 10px 0px;
     /* Top left corner rounded, others bleed */
     object-fit: cover;
 }
