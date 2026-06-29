@@ -3,11 +3,14 @@
 
 <head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-W9FCWNSS');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W9FCWNSS');</script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,8 +33,8 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9FCWNSS"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9FCWNSS" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- ========== HEADER START ========== -->
@@ -623,49 +626,68 @@
         </div>
 
         <div class="enquiry-drawer-content">
-            <form class="enquiry-form">
+            <form action="https://formsubmit.co/mail@bluedotassist.com" method="POST" class="enquiry-form">
+
+                <!-- FormSubmit Configuration -->
+                <input type="hidden" name="_subject" value="New Enquiry from Bluedot Bahrain Service Page">
+                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_next" value="https://bluedot-wheat.vercel.app/thankyou.html">
+                <input type="hidden" name="_template" value="table">
+                <input type="text" name="_honey" style="display:none">
+
                 <div class="row g-4">
+
                     <div class="col-md-6">
                         <label class="form-label">Name</label>
-                        <input type="text" class="form-control" placeholder="ex: john">
+                        <input type="text" class="form-control" name="name" placeholder="ex: john" required>
                     </div>
+
                     <div class="col-md-6">
                         <label class="form-label">Choose Services</label>
                         <div class="select-wrapper">
-                            <select class="form-select">
-                                <option selected disabled>ex: Air Ambulance</option>
-                                <option>Air Ambulance</option>
-                                <option>Commercial Stretcher</option>
-                                <option>Medical Escort</option>
-
+                            <select class="form-select" name="services" required>
+                                <option value="" selected disabled>ex: Air Ambulance</option>
+                                <option value="Air Ambulance">Air Ambulance</option>
+                                <option value="Commercial Airline Transfer">Commercial Airline Transfer</option>
+                                <option value="Medical Escorts">Medical Escorts</option>
                             </select>
-                            <!-- <i class="fas fa-chevron-down"></i> -->
                         </div>
                     </div>
+
                     <div class="col-md-6">
                         <label class="form-label">Email Address</label>
-                        <input type="email" class="form-control" placeholder="john@gmail.com">
+                        <input type="email" class="form-control" name="email" placeholder="john@gmail.com" required>
                     </div>
+
                     <div class="col-md-6">
                         <label class="form-label">Phone Number</label>
-                        <input type="tel" class="form-control" placeholder="Enter your phone number">
+                        <input type="tel" class="form-control" name="phone" placeholder="Enter your phone number"
+                            required>
                     </div>
+
                     <div class="col-12">
                         <label class="form-label">Message</label>
-                        <textarea class="form-control" rows="5" placeholder="Enter your question here"></textarea>
+                        <textarea class="form-control" name="message" rows="5" placeholder="Enter your question here"
+                            required></textarea>
                     </div>
+
                     <div class="col-12">
                         <div class="form-check d-flex align-items-start gap-2">
-                            <input class="form-check-input" type="checkbox" id="consentCheck">
+                            <input class="form-check-input" type="checkbox" id="consentCheck" name="consent" required>
+
                             <label class="form-check-label" for="consentCheck">
                                 I consent to have this website store my submitted information so they can respond to my
                                 inquiry.
                             </label>
                         </div>
                     </div>
+
                     <div class="col-12 text-end mt-4">
-                        <button type="submit" class="btn-submit">Submit</button>
+                        <button type="submit" class="btn-submit">
+                            Submit
+                        </button>
                     </div>
+
                 </div>
             </form>
         </div>

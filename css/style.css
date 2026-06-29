@@ -6037,6 +6037,7 @@ img {
     flex: 1;
     overflow-y: auto;
     padding: 30px 30px;
+    padding-top: 0px;
 }
 
 .enquiry-form .col-md-6 {
