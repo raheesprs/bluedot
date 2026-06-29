@@ -571,6 +571,10 @@ img {
     color: #01284F;
 }
 
+.site-header-light:not(.scrolled) .header-btn svg path {
+    stroke: black;
+}
+
 .site-header-light:not(.scrolled) .header-lang {
     color: #01284F;
 }
@@ -8395,7 +8399,7 @@ html[dir="rtl"] svg {
    ======================================== */
 .floating-buttons {
     position: fixed;
-   bottom: 100px;
+    bottom: 100px;
     right: 27px;
     display: flex;
     flex-direction: column;
@@ -8451,4 +8455,13 @@ html[dir="rtl"] svg {
         height: 50px;
         font-size: 26px;
     }
+}
+
+.verify-btn {
+    background-color: #009BE0;
+    color: white;
+    border-radius: 90px;
+    border: 0px;
+    font-size: 13px;
+    padding: 5px 19px;
 }
