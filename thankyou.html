@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W9FCWNSS');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Arabic Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Bluedot Air Ambulance</title>
+    <meta name="description" content="Thank you for contacting Bluedot Air Ambulance. Our team will get back to you shortly.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/js/all.min.js"></script>
+
+    <style>
+        .thankyou-section {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 20px 80px;
+            background: #f8fafc;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .thankyou-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 40%, rgba(37, 99, 235, 0.04) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 60%, rgba(16, 185, 129, 0.04) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .thankyou-card {
+            text-align: center;
+            max-width: 620px;
+            padding: 60px 40px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 40px rgba(0, 0, 0, 0.06);
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animated Checkmark */
+        .thankyou-icon {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2563eb 0%, #10b981 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: scaleIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s both;
+            box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .thankyou-icon svg {
+            width: 40px;
+            height: 40px;
+        }
+
+        .thankyou-icon .checkmark-path {
+            stroke-dasharray: 50;
+            stroke-dashoffset: 50;
+            animation: drawCheck 0.5s ease-out 0.8s forwards;
+        }
+
+        @keyframes drawCheck {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .thankyou-card h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 14px;
+            letter-spacing: -0.5px;
+        }
+
+        .thankyou-card .subtitle {
+            font-size: 1.1rem;
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 36px;
+        }
+
+        .thankyou-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .thankyou-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .thankyou-btn-primary {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+
+        .thankyou-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+            color: #fff;
+        }
+
+        .thankyou-btn-outline {
+            background: transparent;
+            color: #0f172a;
+            border: 1.5px solid #e2e8f0;
+        }
+
+        .thankyou-btn-outline:hover {
+            border-color: #2563eb;
+            color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .thankyou-divider {
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(135deg, #2563eb, #10b981);
+            border-radius: 3px;
+            margin: 0 auto 24px;
+        }
+
+        .thankyou-contact-info {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .thankyou-contact-info p {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            margin-bottom: 12px;
+        }
+
+        .thankyou-contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .thankyou-contact-info a:hover {
+            color: #1d4ed8;
+        }
+
+        /* Floating dots decoration */
+        .thankyou-section .floating-dot {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        .floating-dot-1 {
+            width: 200px;
+            height: 200px;
+            background: #2563eb;
+            top: 10%;
+            right: 5%;
+            animation: float1 6s ease-in-out infinite;
+        }
+
+        .floating-dot-2 {
+            width: 120px;
+            height: 120px;
+            background: #10b981;
+            bottom: 15%;
+            left: 8%;
+            animation: float2 8s ease-in-out infinite;
+        }
+
+        .floating-dot-3 {
+            width: 80px;
+            height: 80px;
+            background: #2563eb;
+            top: 60%;
+            right: 15%;
+            animation: float1 5s ease-in-out infinite reverse;
+        }
+
+        @keyframes float1 {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes float2 {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(15px); }
+        }
+
+        @media (max-width: 576px) {
+            .thankyou-card {
+                padding: 40px 24px;
+            }
+            .thankyou-card h1 {
+                font-size: 1.6rem;
+            }
+            .thankyou-card .subtitle {
+                font-size: 1rem;
+            }
+            .thankyou-actions {
+                flex-direction: column;
+            }
+            .thankyou-btn {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9FCWNSS" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- ========== HEADER START ========== -->
+    <header class="site-header site-header-light" id="siteHeader">
+
+
+        <div class="header-main">
+            <div class="container">
+                <div class="header-inner">
+                    <!-- Logo -->
+                    <a href="index.html" class="header-logo" id="headerLogo">
+                        <img src="images/bl-logo.svg" alt="Bluedot Logo">
+                    </a>
+
+                    <!-- Right Side Actions -->
+                    <div class="header-actions">
+                        <a href="tel:+919745410000" class="header-btn" id="btnGlobalAssistance"
+                            data-i18n="nav.global_assistance">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M9.50246 4.25722C9.19873 3.4979 8.46332 3 7.64551 3H4.89474C3.8483 3 3 3.8481 3 4.89453C3 13.7892 10.2108 21 19.1055 21C20.1519 21 21 20.1516 21 19.1052L21.0005 16.354C21.0005 15.5361 20.5027 14.8009 19.7434 14.4971L17.1069 13.4429C16.4249 13.1701 15.6483 13.2929 15.0839 13.7632L14.4035 14.3307C13.6089 14.9929 12.4396 14.9402 11.7082 14.2088L9.79222 12.2911C9.06079 11.5596 9.00673 10.3913 9.66895 9.59668L10.2363 8.9163C10.7066 8.35195 10.8305 7.57516 10.5577 6.89309L9.50246 4.25722Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg> 24/7 Global Assistance
+                        </a>
+                        <a href="javascript:void(0)" class="header-btn trigger-enquiry" id="btnEnquiry"
+                            data-i18n="nav.make_enquiry">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.59961 19.9203L7.12357 18.7012L7.13478 18.6926C7.45249 18.4384 7.61281 18.3101 7.79168 18.2188C7.95216 18.1368 8.12328 18.0771 8.2998 18.0408C8.49877 18 8.70603 18 9.12207 18H17.8031C18.921 18 19.4806 18 19.908 17.7822C20.2843 17.5905 20.5905 17.2842 20.7822 16.9079C21 16.4805 21 15.9215 21 14.8036V7.19691C21 6.07899 21 5.5192 20.7822 5.0918C20.5905 4.71547 20.2837 4.40973 19.9074 4.21799C19.4796 4 18.9203 4 17.8002 4H6.2002C5.08009 4 4.51962 4 4.0918 4.21799C3.71547 4.40973 3.40973 4.71547 3.21799 5.0918C3 5.51962 3 6.08009 3 7.2002V18.6712C3 19.7369 3 20.2696 3.21846 20.5433C3.40845 20.7813 3.69644 20.9198 4.00098 20.9195C4.35115 20.9191 4.76744 20.5861 5.59961 19.9203Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg> Make an Enquiry
+                        </a>
+                        <div class="header-lang" id="langSelector">
+                            <span class="lang-current-label">EN</span>
+                            <i class="fas fa-chevron-down"></i>
+                            <div class="lang-dropdown">
+                                <span class="lang-option active" data-lang="en">
+                                    <span class="lang-flag">🇬🇧</span>
+                                    <span class="lang-name">EN</span>
+                                </span>
+                                <span class="lang-option" data-lang="ar">
+                                    <span class="lang-flag">🇸🇦</span>
+                                    <span class="lang-name">AR</span>
+                                </span>
+                            </div>
+                        </div>
+                        <button class="header-hamburger" id="headerHamburger" aria-label="Toggle menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="12" viewBox="0 0 48 12"
+                                fill="none">
+                                <path d="M0 0.75H47.3799" stroke="currentColor" stroke-width="1.5" />
+                                <path d="M0 10.917H47.3799" stroke="currentColor" stroke-width="1.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile / Fullscreen Nav -->
+        <div class="header-nav-overlay" id="headerNavOverlay"></div>
+        <nav class="header-nav" id="headerNav">
+            <div class="nav-drawer-header">
+                <div class="nav-drawer-actions">
+                    <a href="tel:+919745410000" class="nav-outline-btn" data-i18n="nav.global_assistance">24/7 Global
+                        Assistance</a>
+                    <a href="javascript:void(0)" class="nav-outline-btn trigger-enquiry"
+                        data-i18n="nav.make_enquiry"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M5.59961 19.9203L7.12357 18.7012L7.13478 18.6926C7.45249 18.4384 7.61281 18.3101 7.79168 18.2188C7.95216 18.1368 8.12328 18.0771 8.2998 18.0408C8.49877 18 8.70603 18 9.12207 18H17.8031C18.921 18 19.4806 18 19.908 17.7822C20.2843 17.5905 20.5905 17.2842 20.7822 16.9079C21 16.4805 21 15.9215 21 14.8036V7.19691C21 6.07899 21 5.5192 20.7822 5.0918C20.5905 4.71547 20.2837 4.40973 19.9074 4.21799C19.4796 4 18.9203 4 17.8002 4H6.2002C5.08009 4 4.51962 4 4.0918 4.21799C3.71547 4.40973 3.40973 4.71547 3.21799 5.0918C3 5.51962 3 6.08009 3 7.2002V18.6712C3 19.7369 3 20.2696 3.21846 20.5433C3.40845 20.7813 3.69644 20.9198 4.00098 20.9195C4.35115 20.9191 4.76744 20.5861 5.59961 19.9203Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg> Make an Enquiry</a>
+                    <div class="nav-lang">
+                        <span class="lang-current-label">EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="lang-dropdown">
+                            <span class="lang-option active" data-lang="en">
+                                <span class="lang-flag">🇬🇧</span>
+                                <span class="lang-name">EN</span>
+                            </span>
+                            <span class="lang-option" data-lang="ar">
+                                <span class="lang-flag">🇸🇦</span>
+                                <span class="lang-name">AR</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <button class="nav-close-btn" id="navCloseBtn" aria-label="Close menu">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="close-icon">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#000000" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav-drawer-content">
+                <div class="nav-menus-wrapper" id="navMenusWrapper">
+                    <!-- Main Menu -->
+                    <div class="nav-menu-main">
+                        <ul class="header-nav-links">
+                            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+                            <li><a href="#services" class="has-submenu" data-target="servicesMenu">Services</a></li>
+                            <li><a href="fleet-select.html" data-i18n="nav.fleet">Fleet</a></li>
+                            <li><a href="news.html" data-i18n="nav.news">News & Insights</a></li>
+                            <li><a href="roles.html" data-i18n="nav.careers">Careers</a></li>
+                            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services Submenu -->
+                    <div class="nav-menu-sub" id="servicesMenu">
+                        <button class="nav-back-btn" id="navBackBtn">
+                            <svg width="40" height="24" viewBox="0 0 40 24" fill="none">
+                                <path d="M40 12H2M2 12L12 22M2 12L12 2" stroke="#000000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <ul class="header-nav-links">
+                            <li><a href="air-ambulance.html" data-i18n="nav.air_ambulance">Air Ambulance</a></li>
+                            <li><a href="Comercial-Airline-Transfer.html" data-i18n="nav.commercial_transfer">Commercial
+                                    Airline Transfer</a></li>
+                            <li><a href="Medical-Escort-Services.html" data-i18n="nav.medical_escorts">Medical
+                                    Escorts</a></li>
+                            <li><a href="Helicopter-Air-Ambulance.html" data-i18n="nav.helicopter">Helicopter Air
+                                    Ambulance</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-drawer-footer">
+                <a href="roles.html" class="nav-outline-btn" data-i18n="nav.join_team">Join the Team</a>
+                <div class="nav-socials">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========== HEADER END ========== -->
+
+    <!-- ========== THANK YOU CONTENT ========== -->
+    <section class="thankyou-section">
+        <!-- Decorative floating dots -->
+        <div class="floating-dot floating-dot-1"></div>
+        <div class="floating-dot floating-dot-2"></div>
+        <div class="floating-dot floating-dot-3"></div>
+
+        <div class="thankyou-card">
+            <!-- Animated checkmark icon -->
+            <div class="thankyou-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="checkmark-path" d="M5 13l4 4L19 7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <div class="thankyou-divider"></div>
+
+            <h1>Thank You!</h1>
+            <p class="subtitle">Your enquiry has been submitted successfully. Our team will review your request and get back to you within 24 hours.</p>
+
+            <div class="thankyou-actions">
+                <a href="index.html" class="thankyou-btn thankyou-btn-primary">
+                    <i class="fas fa-home"></i> Back to Home
+                </a>
+                <a href="contact.html" class="thankyou-btn thankyou-btn-outline">
+                    <i class="fas fa-phone-alt"></i> Contact Us
+                </a>
+            </div>
+
+            <div class="thankyou-contact-info">
+                <p>Need immediate assistance?</p>
+                <a href="tel:+919745410000"><i class="fas fa-phone-alt"></i> +91 974 541 0000</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="https://wa.me/+971551881441"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </section>
+    <!-- ========== THANK YOU CONTENT END ========== -->
+
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <!-- Row 1: Logo | Nav links | Badges -->
+            <div class="footer-row1">
+                <div class="footer-logo">
+                    <img src="images/bl-logo.svg" alt="Bluedot Logo" class="footer-logo-img">
+                </div>
+                <ul class="footer-links-sub footer-nav-center">
+                    <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+                    <li><a href="fleet-select.html" data-i18n="nav.fleet">Fleet</a></li>
+                    <li><a href="news.html" data-i18n="nav.news">News &amp; Insights</a></li>
+                    <li><a href="roles.html" data-i18n="nav.careers">Careers</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+                <div class="footer-badges">
+                    <div class="footer-flex">
+                        <img src="images/new-ft.png" alt="ITIJ Awards 2025 Winner" class="footer-award-img">
+                        <div class="footer-socials">
+                            <a href="#" class="footer-social-btn" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="footer-social-btn" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Services | Social icons -->
+            <div class="footer-row2">
+                <div class="footer-col-left">
+                    <span class="footer-title" data-i18n="footer.services">Services</span>
+                    <ul class="footer-links-main">
+                        <li><a href="air-ambulance.html" data-i18n="nav.air_ambulance">Air Ambulance</a></li>
+                        <li><a href="Comercial-Airline-Transfer.html" data-i18n="nav.commercial_transfer">Commercial
+                                Airline Transfer</a></li>
+                        <li><a href="Medical-Escort-Services.html" data-i18n="nav.medical_escorts">Medical Escorts</a>
+                        </li>
+                        <li><a href="#">HEMS</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Row 3: Copyright | Privacy -->
+            <div class="footer-bottom">
+                <p class="copyright" data-i18n="footer.copyright">2026 &copy; Bluedot Air Ambulance</p>
+                <div class="footer-bottom-links">
+                    <a href="contact.html" data-i18n="nav.contact">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== FOOTER END ========== -->
+
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/+971551881441" class="whatsapp-float" target="_blank"
+            aria-label="Chat with us on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
