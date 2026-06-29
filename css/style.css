@@ -5524,6 +5524,7 @@ img {
     transition: all 0.3s ease;
     text-decoration: none;
     font-family: 'Aeonik', sans-serif;
+    width: fit-content;
 
 }
 
@@ -7455,6 +7456,7 @@ html[dir="rtl"] svg {
     /* Replaces the missing bottom padding on the box for text */
     padding-right: 40px;
     /* Space between text and image */
+    padding-top: 50px;
 }
 
 .worldwide-content h2 {
@@ -8385,5 +8387,68 @@ html[dir="rtl"] svg {
         padding: 80px 0 50px;
     }
 
- 
+
+}
+
+/* ========================================
+   FLOATING BUTTONS
+   ======================================== */
+.floating-buttons {
+    position: fixed;
+   bottom: 100px;
+    right: 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 100;
+}
+
+.whatsapp-float {
+    width: 60px;
+    height: 60px;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-float {
+    background-color: #25d366;
+}
+
+
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.call-float:hover {
+    background-color: var(--primary-dark);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 767.98px) {
+    .floating-buttons {
+        bottom: 20px;
+        right: 20px;
+        gap: 10px;
+    }
+
+    .whatsapp-float,
+    .call-float {
+        width: 50px;
+        height: 50px;
+        font-size: 26px;
+    }
 }
