@@ -8468,3 +8468,13 @@ html[dir="rtl"] svg {
     font-size: 13px;
     padding: 5px 19px;
 }
+
+
+
+
+/* NEW/////////////////// */
+
+html[dir="rtl"] .pl-7 {
+    padding-left: 10px !important;
+    padding-right: 60px;
+}

@@ -50,7 +50,8 @@
 
                     <!-- Right Side Actions -->
                     <div class="header-actions">
-                        <a href="tel:+919745410000" class="header-btn" id="btnGlobalAssistance">
+                        <a href="tel:+919745410000" class="header-btn" id="btnGlobalAssistance"
+                            data-i18n="nav.global_assistance">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none">
                                 <path
@@ -58,7 +59,8 @@
                                     stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg> 24/7 Global Assistance
                         </a>
-                        <a href="javascript:void(0)" class="header-btn trigger-enquiry" id="btnEnquiry">
+                        <a href="javascript:void(0)" class="header-btn trigger-enquiry" id="btnEnquiry"
+                            data-i18n="nav.make_enquiry">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none">
                                 <path
@@ -67,8 +69,18 @@
                             </svg> Make an Enquiry
                         </a>
                         <div class="header-lang" id="langSelector">
-                            <span>EN</span>
+                            <span class="lang-current-label">EN</span>
                             <i class="fas fa-chevron-down"></i>
+                            <div class="lang-dropdown">
+                                <span class="lang-option active" data-lang="en">
+                                    <span class="lang-flag">🇬🇧</span>
+                                    <span class="lang-name">EN</span>
+                                </span>
+                                <span class="lang-option" data-lang="ar">
+                                    <span class="lang-flag">🇸🇦</span>
+                                    <span class="lang-name">AR</span>
+                                </span>
+                            </div>
                         </div>
                         <button class="header-hamburger" id="headerHamburger" aria-label="Toggle menu">
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="12" viewBox="0 0 48 12"
@@ -87,21 +99,28 @@
         <nav class="header-nav" id="headerNav">
             <div class="nav-drawer-header">
                 <div class="nav-drawer-actions">
-                    <a href="tel:+919745410000" class="nav-outline-btn"> <svg xmlns="http://www.w3.org/2000/svg"
-                            width="20" height="20" viewBox="0 0 24 24" fill="none">
-                            <path
-                                d="M9.50246 4.25722C9.19873 3.4979 8.46332 3 7.64551 3H4.89474C3.8483 3 3 3.8481 3 4.89453C3 13.7892 10.2108 21 19.1055 21C20.1519 21 21 20.1516 21 19.1052L21.0005 16.354C21.0005 15.5361 20.5027 14.8009 19.7434 14.4971L17.1069 13.4429C16.4249 13.1701 15.6483 13.2929 15.0839 13.7632L14.4035 14.3307C13.6089 14.9929 12.4396 14.9402 11.7082 14.2088L9.79222 12.2911C9.06079 11.5596 9.00673 10.3913 9.66895 9.59668L10.2363 8.9163C10.7066 8.35195 10.8305 7.57516 10.5577 6.89309L9.50246 4.25722Z"
-                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg> 24/7 Global Assistance</a>
-                    <a href="javascript:void(0)" class="nav-outline-btn trigger-enquiry"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <a href="tel:+919745410000" class="nav-outline-btn" data-i18n="nav.global_assistance">24/7 Global
+                        Assistance</a>
+                    <a href="javascript:void(0)" class="nav-outline-btn trigger-enquiry"
+                        data-i18n="nav.make_enquiry"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none">
                             <path
                                 d="M5.59961 19.9203L7.12357 18.7012L7.13478 18.6926C7.45249 18.4384 7.61281 18.3101 7.79168 18.2188C7.95216 18.1368 8.12328 18.0771 8.2998 18.0408C8.49877 18 8.70603 18 9.12207 18H17.8031C18.921 18 19.4806 18 19.908 17.7822C20.2843 17.5905 20.5905 17.2842 20.7822 16.9079C21 16.4805 21 15.9215 21 14.8036V7.19691C21 6.07899 21 5.5192 20.7822 5.0918C20.5905 4.71547 20.2837 4.40973 19.9074 4.21799C19.4796 4 18.9203 4 17.8002 4H6.2002C5.08009 4 4.51962 4 4.0918 4.21799C3.71547 4.40973 3.40973 4.71547 3.21799 5.0918C3 5.51962 3 6.08009 3 7.2002V18.6712C3 19.7369 3 20.2696 3.21846 20.5433C3.40845 20.7813 3.69644 20.9198 4.00098 20.9195C4.35115 20.9191 4.76744 20.5861 5.59961 19.9203Z"
                                 stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg> Make an Enquiry</a>
                     <div class="nav-lang">
-                        <span>EN</span>
+                        <span class="lang-current-label">EN</span>
                         <i class="fas fa-chevron-down"></i>
+                        <div class="lang-dropdown">
+                            <span class="lang-option active" data-lang="en">
+                                <span class="lang-flag">🇬🇧</span>
+                                <span class="lang-name">EN</span>
+                            </span>
+                            <span class="lang-option" data-lang="ar">
+                                <span class="lang-flag">🇸🇦</span>
+                                <span class="lang-name">AR</span>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <button class="nav-close-btn" id="navCloseBtn" aria-label="Close menu">
@@ -117,12 +136,12 @@
                     <!-- Main Menu -->
                     <div class="nav-menu-main">
                         <ul class="header-nav-links">
-                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
                             <li><a href="#services" class="has-submenu" data-target="servicesMenu">Services</a></li>
-                            <li><a href="fleet-select.html">Fleet</a></li>
-                            <li><a href="news.html">News & Insights</a></li>
-                            <li><a href="roles.html">Careers</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="fleet-select.html" data-i18n="nav.fleet">Fleet</a></li>
+                            <li><a href="news.html" data-i18n="nav.news">News & Insights</a></li>
+                            <li><a href="roles.html" data-i18n="nav.careers">Careers</a></li>
+                            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
                         </ul>
                     </div>
 
@@ -135,10 +154,13 @@
                             </svg>
                         </button>
                         <ul class="header-nav-links">
-                            <li><a href="air-ambulance.html">Air Ambulance</a></li>
-                            <li><a href="Comercial-Airline-Transfer.html">Commercial Airline Transfer</a></li>
-                            <li><a href="Medical-Escort-Services.html">Medical Escorts</a></li>
-                            <li><a href="Helicopter-Air-Ambulance.html">Helicopter Air Ambulance</a></li>
+                            <li><a href="air-ambulance.html" data-i18n="nav.air_ambulance">Air Ambulance</a></li>
+                            <li><a href="Comercial-Airline-Transfer.html" data-i18n="nav.commercial_transfer">Commercial
+                                    Airline Transfer</a></li>
+                            <li><a href="Medical-Escort-Services.html" data-i18n="nav.medical_escorts">Medical
+                                    Escorts</a></li>
+                            <li><a href="Helicopter-Air-Ambulance.html" data-i18n="nav.helicopter">Helicopter Air
+                                    Ambulance</a></li>
 
                         </ul>
                     </div>
@@ -146,7 +168,7 @@
             </div>
 
             <div class="nav-drawer-footer">
-                <a href="roles.html" class="nav-outline-btn">Join the Team</a>
+                <a href="roles.html" class="nav-outline-btn" data-i18n="nav.join_team">Join the Team</a>
                 <div class="nav-socials">
                     <a href="#">LinkedIn</a>
                     <a href="#">Facebook</a>
@@ -164,10 +186,23 @@
             <div class="aa-hero-overlay"></div>
             <div class="container aa-hero-content">
                 <div class="hero-text-wrapper">
-                    <h1 class="hero-title-main">Helicopter Air Ambulance</h1>
-                    <p class="hero-subtitle">Rapid medical response and short-distance air transport, designed for
-                        time-critical situations where access and speed are essential.</p>
-                    <a href="javascript:void(0)" class="btn-talk-advisor trigger-enquiry">Talk to an advisor</a>
+                    <h1 class="hero-title-main en-content">Rotary Wing Medical Transport Services</h1>
+                    <h1 class="hero-title-main ar-content">خدمات النقل الطبي بالمروحيات</h1>
+
+
+                    <p class="hero-subtitle en-content">Rapid rotary wing medical transport designed to provide safe,
+                        efficient, and flexible patient transfers between hospitals, offshore facilities, industrial
+                        sites, remote locations, and critical infrastructure where direct access matters.</p>
+                    <p class="hero-subtitle ar-content">خدمات نقل طبي بالمروحيات توفر حلولاً آمنة وسريعة ومرنة لنقل
+                        المرضى بين المستشفيات، والمنشآت البحرية، والمواقع الصناعية، والمناطق النائية، ومشاريع البنية
+                        التحتية الحيوية التي تتطلب وصولاً مباشراً.</p>
+
+
+                    <a href="javascript:void(0)" class="btn-talk-advisor trigger-enquiry en-content">Talk to an
+                        advisor</a>
+                    <a href="javascript:void(0)" class="btn-talk-advisor trigger-enquiry ar-content">تحدث مع
+                        مستشار</a>
+
                 </div>
             </div>
         </section>
@@ -198,20 +233,35 @@
             <div class="container ">
                 <div class="row">
                     <div class="col-md-4">
-                        <h2 class="info-tagline">When immediate access makes the difference</h2>
+                        <h2 class="info-tagline en-content">When immediate access makes the difference</h2>
+                        <h2 class="info-tagline ar-content">عندما يكون الوصول السريع هو ما يصنع الفرق</h2>
+
                     </div>
                     <div class="col-md-2">
 
                     </div>
                     <div class="col-md-6">
-                        <div class="info-description">
-                            <p>In critical situations, the challenge is often not just care, but reaching the patient in
-                                time.</p>
-                            <p>Helicopter Emergency Medical Services (HEMS) are used when patients need urgent medical
-                                attention in locations that are difficult to access by road, or when ground transport
-                                would cause delays that could impact outcomes.</p>
-                            <p>This includes remote areas, offshore locations, accident sites and urban environments
-                                where speed is critical.</p>
+                        <div class="info-description en-content">
+                            <p>In some situations, the challenge is not only providing medical care, but reaching the
+                                patient or destination safely and efficiently.</p>
+                            <p>Rotary wing medical transport is used when patients require rapid access between
+                                locations that are difficult to reach by road or fixed-wing aircraft, including offshore
+                                facilities, industrial sites, government operations, maritime environments, and remote
+                                project locations.</p>
+                            <p>These missions support transfers between hospitals, offshore platforms, industrial
+                                facilities, helipads, and remote destinations where operational flexibility and direct
+                                access are essential.</p>
+                        </div>
+
+                        <div class="info-description ar-content">
+                            <p>في بعض الحالات، لا يكون التحدي في تقديم الرعاية الطبية فحسب، بل في الوصول إلى المريض أو
+                                وجهة العلاج بسرعة وكفاءة وأمان.</p>
+                            <p>تُستخدم خدمات النقل الطبي بالمروحيات عندما تتطلب الحالة الوصول السريع بين مواقع يصعب
+                                الوصول إليها براً أو عبر الطائرات ثابتة الجناح، بما في ذلك المنشآت البحرية، والمواقع
+                                الصناعية، والجهات الحكومية، والبيئات البحرية، ومواقع المشاريع النائية.</p>
+
+                            <p>وتشمل هذه المهام عمليات النقل بين المستشفيات، والمنصات البحرية، والمنشآت الصناعية، ومهابط
+                                الطائرات، والمواقع النائية التي تتطلب مرونة تشغيلية وإمكانية وصول مباشرة.</p>
                         </div>
                     </div>
                 </div>
@@ -222,9 +272,16 @@
         <section class="coordination-section">
             <div class="container">
                 <div class="coordination-header">
-                    <h2 class="coordination-title">How HEMS support works</h2>
-                    <p class="coordination-subtitle">HEMS combines rapid deployment with on-site medical care and
-                        immediate transport, ensuring patients receive timely intervention and safe transfer.</p>
+                    <h2 class="coordination-title en-content">How Rotary Wing Medical Transport works</h2>
+                    <h2 class="coordination-title ar-content">
+                        كيف تتم عمليات النقل الطبي بالمروحيات</h2>
+
+                    <p class="coordination-subtitle en-content">Rotary wing medical transport combines medical planning,
+                        aviation coordination, and specialist patient care to deliver safe and efficient transfers from
+                        departure through arrival.</p>
+                    <p class="coordination-subtitle ar-content">تجمع خدمات النقل الطبي بالمروحيات بين التخطيط الطبي
+                        والتنسيق التشغيلي والرعاية المتخصصة لضمان تنفيذ عمليات النقل بأعلى مستويات السلامة والكفاءة من
+                        نقطة الانطلاق وحتى الوصول.</p>
                 </div>
 
                 <div class="row coordination-grid">
@@ -244,9 +301,15 @@
                                         stroke="white" stroke-width="4" />
                                 </svg>
                             </div>
-                            <h3 class="card-title">It begins with rapid activation</h3>
-                            <p class="card-text">Once a request is received, aircraft and medical teams are mobilised
-                                immediately, with routing and landing considerations managed in real time.</p>
+                            <h3 class="card-title en-content">It begins with understanding the mission</h3>
+                            <h3 class="card-title ar-content">تبدأ العملية بفهم متطلبات المهمة</h3>
+                            <p class="card-text en-content">Every mission begins with reviewing the patient's medical
+                                condition,
+                                transfer requirements, destination, and operational considerations to determine the most
+                                appropriate aircraft, medical crew, and level of care.</p>
+                            <p class="card-text ar-content">تبدأ كل مهمة بدراسة الحالة الطبية للمريض ومتطلبات النقل
+                                والوجهة والظروف التشغيلية، لتحديد
+                                الطائرة والطاقم الطبي ومستوى الرعاية الأنسب لكل حالة.</p>
                         </div>
                     </div>
                     <!-- Card 2 -->
@@ -269,9 +332,16 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <h3 class="card-title">Then care is delivered on-site</h3>
-                            <p class="card-text">Medical teams assess and stabilise the patient at the scene, providing
-                                critical care before transport begins.</p>
+                            <h3 class="card-title en-content">Then we coordinate the transfer</h3>
+                            <h3 class="card-title ar-content">ثم نقوم بتنسيق عملية النقل</h3>
+
+                            <p class="card-text en-content">Flight operations, medical teams, ground transportation,
+                                landing
+                                coordination, and receiving facilities are organised to ensure every stage of the
+                                journey is managed safely and efficiently.</p>
+                            <P class="card-text ar-content">يتم تنسيق عمليات الطيران، والفرق الطبية، ووسائل النقل
+                                الأرضي، وتصاريح الهبوط، والجهة
+                                الطبية المستقبلة لضمان تنفيذ جميع مراحل المهمة بأعلى مستويات الكفاءة والسلامة.</P>
                         </div>
                     </div>
                     <!-- Card 3 -->
@@ -294,9 +364,15 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <h3 class="card-title">Rapid transfer to the right facility</h3>
-                            <p class="card-text">Patients are transported directly to the most appropriate hospital,
-                                with continuous medical care maintained throughout the journey.</p>
+                            <h3 class="card-title en-content">And we stay with it</h3>
+                            <h3 class="card-title ar-content">ونبقى مع الحالة حتى اكتمال المهمة</h3>
+
+                            <p class="card-text en-content">Throughout the transfer, our medical and operational teams
+                                remain involved until the patient is safely handed over to the receiving healthcare
+                                facility.</p>
+
+                            <p class="card-text ar-content">يواصل فريقنا الطبي والتشغيلي متابعة الحالة طوال المهمة حتى
+                                يتم تسليم المريض بأمان إلى المنشأة الطبية المستقبلة.</p>
                         </div>
                     </div>
                 </div>
@@ -1020,6 +1096,9 @@
             counters.forEach(function (el) { observer.observe(el); });
         })();
     </script>
+
+    <!-- Language Switcher -->
+    <script src="js/lang.js"></script>
 </body>
 
 </html>
