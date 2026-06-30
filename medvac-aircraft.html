@@ -18,33 +18,29 @@
         rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bluedot - ">
-    <meta name="keywords" content="">
-    <meta name="author" content="Bluedot">
-
-    <title>Bluedot | </title>
-
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome 6 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Air Ambulance </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/js/all.min.js"></script>
 </head>
 
-<body class="news-page">
+<body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9FCWNSS" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
     <!-- ========== HEADER START ========== -->
-    <header class="site-header" id="siteHeader">
+    <header class="site-header site-header-light" id="siteHeader">
 
 
         <div class="header-main">
@@ -52,13 +48,13 @@
                 <div class="header-inner">
                     <!-- Logo -->
                     <a href="index.html" class="header-logo" id="headerLogo">
-                        <img src="images/main-logo.png" alt="Bluedot Logo">
+                        <img src="images/bl-logo.svg" alt="Bluedot Logo">
                     </a>
 
                     <!-- Right Side Actions -->
                     <div class="header-actions">
                         <a href="tel:+971551881441
-" class="header-btn en-content" id="btnGlobalAssistance">
+" class="header-btn" id="btnGlobalAssistance" data-i18n="nav.global_assistance">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none">
                                 <path
@@ -66,11 +62,8 @@
                                     stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg> 24/7 Global Assistance
                         </a>
-                        <a href="tel:+971551881441
-" class="header-btn ar-content">
-                            المساعدة العالمية على مدار 24/7
-                        </a>
-                        <a href="javascript:void(0)" class="header-btn trigger-enquiry en-content" id="btnEnquiry">
+                        <a href="javascript:void(0)" class="header-btn trigger-enquiry" id="btnEnquiry"
+                            data-i18n="nav.make_enquiry">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none">
                                 <path
@@ -78,19 +71,16 @@
                                     stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg> Make an Enquiry
                         </a>
-                        <a href="javascript:void(0)" class="header-btn trigger-enquiry ar-content" id="btnEnquiry">
-                            تقديم استفسار
-                        </a>
                         <div class="header-lang" id="langSelector">
                             <span class="lang-current-label">EN</span>
                             <i class="fas fa-chevron-down"></i>
                             <div class="lang-dropdown">
                                 <span class="lang-option active" data-lang="en">
-                                    <span class="lang-flag"></span>
+                                    <span class="lang-flag">🇬🇧</span>
                                     <span class="lang-name">EN</span>
                                 </span>
                                 <span class="lang-option" data-lang="ar">
-                                    <span class="lang-flag"></span>
+                                    <span class="lang-flag">🇸🇦</span>
                                     <span class="lang-name">AR</span>
                                 </span>
                             </div>
@@ -112,26 +102,16 @@
         <nav class="header-nav" id="headerNav">
             <div class="nav-drawer-header">
                 <div class="nav-drawer-actions">
-                    <a href="tel:+971551881441 c
-" class="nav-outline-btn en-content" data-i18n="nav.global_assistance">24/7 Global
-                        Assistance</a>
                     <a href="tel:+971551881441
-" class="nav-outline-btn ar-content" data-i18n="nav.global_assistance">المساعدة العالمية على مدار 24/7</a>
-                    <a href="javascript:void(0)" class="nav-outline-btn trigger-enquiry en-content"
+" class="nav-outline-btn" data-i18n="nav.global_assistance">24/7 Global
+                        Assistance</a>
+                    <a href="javascript:void(0)" class="nav-outline-btn trigger-enquiry"
                         data-i18n="nav.make_enquiry"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none">
                             <path
                                 d="M5.59961 19.9203L7.12357 18.7012L7.13478 18.6926C7.45249 18.4384 7.61281 18.3101 7.79168 18.2188C7.95216 18.1368 8.12328 18.0771 8.2998 18.0408C8.49877 18 8.70603 18 9.12207 18H17.8031C18.921 18 19.4806 18 19.908 17.7822C20.2843 17.5905 20.5905 17.2842 20.7822 16.9079C21 16.4805 21 15.9215 21 14.8036V7.19691C21 6.07899 21 5.5192 20.7822 5.0918C20.5905 4.71547 20.2837 4.40973 19.9074 4.21799C19.4796 4 18.9203 4 17.8002 4H6.2002C5.08009 4 4.51962 4 4.0918 4.21799C3.71547 4.40973 3.40973 4.71547 3.21799 5.0918C3 5.51962 3 6.08009 3 7.2002V18.6712C3 19.7369 3 20.2696 3.21846 20.5433C3.40845 20.7813 3.69644 20.9198 4.00098 20.9195C4.35115 20.9191 4.76744 20.5861 5.59961 19.9203Z"
                                 stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg> Make an Enquiry</a>
-
-                    <a href="javascript:void(0)" class="nav-outline-btn trigger-enquiry ar-content"
-                        data-i18n="nav.make_enquiry"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                            viewBox="0 0 24 24" fill="none">
-                            <path
-                                d="M5.59961 19.9203L7.12357 18.7012L7.13478 18.6926C7.45249 18.4384 7.61281 18.3101 7.79168 18.2188C7.95216 18.1368 8.12328 18.0771 8.2998 18.0408C8.49877 18 8.70603 18 9.12207 18H17.8031C18.921 18 19.4806 18 19.908 17.7822C20.2843 17.5905 20.5905 17.2842 20.7822 16.9079C21 16.4805 21 15.9215 21 14.8036V7.19691C21 6.07899 21 5.5192 20.7822 5.0918C20.5905 4.71547 20.2837 4.40973 19.9074 4.21799C19.4796 4 18.9203 4 17.8002 4H6.2002C5.08009 4 4.51962 4 4.0918 4.21799C3.71547 4.40973 3.40973 4.71547 3.21799 5.0918C3 5.51962 3 6.08009 3 7.2002V18.6712C3 19.7369 3 20.2696 3.21846 20.5433C3.40845 20.7813 3.69644 20.9198 4.00098 20.9195C4.35115 20.9191 4.76744 20.5861 5.59961 19.9203Z"
-                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg> تقديم استفسار</a>
                     <div class="nav-lang">
                         <span class="lang-current-label">EN</span>
                         <i class="fas fa-chevron-down"></i>
@@ -159,24 +139,13 @@
                 <div class="nav-menus-wrapper" id="navMenusWrapper">
                     <!-- Main Menu -->
                     <div class="nav-menu-main">
-                        <ul class="header-nav-links en-content">
-                            <li><a href="about.html">About Us</a></li>
+                        <ul class="header-nav-links">
+                            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
                             <li><a href="#services" class="has-submenu" data-target="servicesMenu">Services</a></li>
-                            <li><a href="fleet-select.html">Fleet</a></li>
-                            <li><a href="news.html">News &amp; Insights</a></li>
-                            <li><a href="roles.html">Careers</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-
-                        </ul>
-
-                        <ul class="header-nav-links ar-content">
-                            <li><a href="about.html">من نحن</a></li>
-                            <li><a href="#services" class="has-submenu" data-target="servicesMenu">خدماتنا</a></li>
-                            <li><a href="fleet-select.html">أسطولنا</a></li>
-                            <li><a href="news.html">آخر الأخبار</a></li>
-                            <li><a href="roles.html">وظائف</a></li>
-                            <li><a href="contact.html">تواصل معنا</a></li>
-
+                            <li><a href="fleet-select.html" data-i18n="nav.fleet">Fleet</a></li>
+                            <li><a href="news.html" data-i18n="nav.news">News & Insights</a></li>
+                            <li><a href="roles.html" data-i18n="nav.careers">Careers</a></li>
+                            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
                         </ul>
 
                         <!-- Mobile Nav Actions -->
@@ -228,211 +197,194 @@
                                     stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <ul class="header-nav-links ">
-                            <li class="en-content"><a href="air-ambulance.html">Air Ambulance</a></li>
-                            <li class="ar-content"><a href="air-ambulance.html">الإسعاف الجوي</a></li>
-                            <li class="en-content"><a href="Comercial-Airline-Transfer.html">Commercial Airline
-                                    Transfer</a></li>
-                            <li class="ar-content"><a href="Comercial-Airline-Transfer.html">نقل المرضى عبر الطيران
-                                    التجاري</a></li>
-
-                            <li class="en-content"><a href="Medical-Escort-Services.html">Medical Escorts</a></li>
-                            <li class="ar-content"><a href="Medical-Escort-Services.html">المرافقة الطبية</a></li>
-
-                            <li class="en-content"><a href="rotary-wing-medical-transport.html">Rotary Wing Medical
-                                    Transport</a>
-                            </li>
-                            <li class="ar-content"><a href="rotary-wing-medical-transport.html">الإسعاف الجوي
-                                    بالمروحيات</a>
-                            </li>
+                        <ul class="header-nav-links">
+                            <li><a href="air-ambulance.html" data-i18n="nav.air_ambulance">Air Ambulance</a></li>
+                            <li><a href="Comercial-Airline-Transfer.html" data-i18n="nav.commercial_transfer">Commercial
+                                    Airline Transfer</a></li>
+                            <li><a href="Medical-Escort-Services.html" data-i18n="nav.medical_escorts">Medical
+                                    Escorts</a></li>
+                            <li><a href="rotary-wing-medical-transport.html" data-i18n="nav.helicopter">Rotary Wing
+                                    Medical Transport</a></li>
 
                         </ul>
-
                     </div>
                 </div>
             </div>
 
-            <div class="nav-drawer-footer en-content">
-                <a href="roles.html" class="nav-outline-btn">Join the Team</a>
+            <div class="nav-drawer-footer">
+                <a href="roles.html" class="nav-outline-btn" data-i18n="nav.join_team">Join the Team</a>
                 <div class="nav-socials">
                     <a href="#">LinkedIn</a>
                     <a href="#">Facebook</a>
                     <a href="#">Instagram</a>
                 </div>
             </div>
-            <div class="nav-drawer-footer ar-content">
-                <a href="roles.html" class="nav-outline-btn">انضم إلى الفريق</a>
-                <div class="nav-socials">
-                    <a href="#">لينكدإن</a>
-                    <a href="#">فيسبوك</a>
-                    <a href="#">إنستغرام</a>
-                </div>
-            </div>
         </nav>
     </header>
     <!-- ========== HEADER END ========== -->
 
-
-    <!-- ========== NEWS HERO SECTION ========== -->
-    <section class="news-hero-section">
-        <div class="news-hero-bg">
-            <img src="images/bd2.png" alt="ITIJ Awards 2025" class="news-hero-img">
-            <div class="news-hero-overlay"></div>
-        </div>
-        <div class="container h-100 position-relative z-1">
-            <div class="news-hero-content">
-                <p class="news-meta">Published on 18 Dec 2025 - 1.20 min read</p>
-                <h1 class="news-title">Infant Air Transfer on ECMO</h1>
-                <a href="infant-air-transfer.html" class="btn-read-article">Read Article</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== NEWS & STORIES SECTION ========== -->
-    <section class="news-section" id="news">
+    <section class="blog-detail pt-pb common-padding">
         <div class="container">
-            <div class="news-header-top">
-                <div class="news-header-left">
-                    <h2 class="news-heading">Latest news & Stories</h2>
-                    <p class="news-desc">
-                        Explore our stories of change, recent news, the work we do,<br>
-                        and ways to make an even greater impact together.
-                    </p>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="">
+                        <p>Published on Aug 03, 2022 - 2 min read</p>
+                        <h3>Medevac Aircraft</h3>
+                        <div class="mt-4 ">
+                            <a href="news.html" data-i18n="nav.news">News</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Category Filter Tabs -->
-            <div class="news-filters">
-                <button class="news-filter-btn active" data-filter="all">All Categories</button>
-                <button class="news-filter-btn" data-filter="news">News</button>
-                <button class="news-filter-btn" data-filter="mission">Mission Stories</button>
-                <button class="news-filter-btn" data-filter="achievements">Achievements</button>
-            </div>
-
-            <div class="news-grid">
-                <a href="infant-air-transfer.html" class="news-card">
-                    <div class="news-card-img-wrapper">
-                        <img src="images/b-new2.png" alt="The New Bluedot Partnership" class="news-card-img">
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <div>
+                        <img src="images/ma.png" width="100%" />
                     </div>
-                    <div class="news-card-content">
-                        <img src="images/news-vector.png" class="news-vector-bg" alt="">
-                        <span class="news-badge en-content">Signups</span>
-                        <h3 class="news-card-title en-content">The New Bluedot Partnership</h3>
-                        <p class="news-card-meta en-content">Published on 18 Dec 2025 - 1.20 min read</p>
-
-                        <span class="news-badge ar-content">الشراكات والانضمامات</span>
-                        <h3 class="news-card-title ar-content">شراكة جديدة تعزز شبكة بلودوت العالمية</h3>
-                        <p class="news-card-meta ar-content">نُشر بتاريخ ١٨ ديسمبر ٢٠٢٥</p>
-                    </div>
-                </a>
-                <!-- Top Card: Span Full Width -->
-                <a href="neonatal-paediatric-transfer.html" class="news-card">
-                    <div class="news-card-img-wrapper">
-                        <img src="images/b-new.png" alt="Bluedot Wins Marketing Campaign of the Year"
-                            class="news-card-img">
-                    </div>
-                    <div class="news-card-content">
-                        <img src="images/news-vector.png" class="news-vector-bg" alt="">
-                        <span class="news-badge en-content">NEWS</span>
-                        <h3 class="news-card-title en-content">Neonatal & Paediatric Transfer</h3>
-                        <p class="news-card-meta en-content">Published on Mar 16, 2022 - 3 min read</p>
-
-                        <span class="news-badge ar-content">أخبار</span>
-                        <h3 class="news-card-title ar-content">نقل الرضع والصغار</h3>
-                        <p class="news-card-meta ar-content">نُشر بتاريخ ١٨ ديسمبر ٢٠٢٥ ·</p>
-                    </div>
-                </a>
-
-                <!-- Bottom Left Card -->
-                <a href="challengin-psychiatric.html" class="news-card">
-                    <div class="news-card-img-wrapper">
-                        <img src="images/b-new3.png" alt="Lifesaving Burn Evacuation" class="news-card-img">
-                    </div>
-                    <div class="news-card-content">
-                        <img src="images/news-vector.png" class="news-vector-bg" alt="">
-                        <span class="news-badge en-content">MISSION STORY</span>
-                        <h4 class="news-card-title en-content">Challenging Psychiatric Case
-                            Transfer</h4>
-                        <p class="news-card-meta en-content">Published on Apr 19, 2022 - 2 min
-                            read
-                        </p>
-                        <span class="news-badge ar-content">البعثات الطبية</span>
-                        <h3 class="news-card-title ar-content">إخلاء طبي عاجل لمصاب بحروق من المالديف إلى بانكوك
-                        </h3>
-                        <p class="news-card-meta ar-content">نُشر بتاريخ ١٨ ديسمبر ٢٠٢٥</p>
-                    </div>
-                </a>
-
-
-
-
-
-
-
-
-                <!-- Bottom Right Card -->
-                <a href="air-ambulance-india.html" class="news-card">
-                    <div class="news-card-img-wrapper">
-                        <img src="images/bl4.png" alt="Lifesaving Burn Evacuation" class="news-card-img">
-                    </div>
-                    <div class="news-card-content">
-                        <img src="images/news-vector.png" class="news-vector-bg" alt="">
-                        <span class="news-badge en-content">NEWS</span>
-                        <h4 class="news-card-title en-content">Air Ambulance in India</h4>
-                        <p class="news-card-meta en-content">Published on Oct 26, 2022 - 3 min read
-                        </p>
-                        <span class="news-badge ar-content">البعثات الطبية</span>
-                        <h3 class="news-card-title ar-content">إخلاء طبي عاجل لمصاب بحروق من المالديف إلى بانكوك
-                        </h3>
-                        <p class="news-card-meta ar-content">نُشر بتاريخ ١٨ ديسمبر ٢٠٢٥</p>
-                    </div>
-                </a>
-
-
-
-                <!-- Top Card: Span Full Width -->
-                <a href="doctors-in-jet-suits.html" class="news-card">
-                    <div class="news-card-img-wrapper">
-                        <img src="images/bl5.png" alt="Lifesaving Burn Evacuation" class="news-card-img">
-                    </div>
-                    <div class="news-card-content">
-                        <img src="images/news-vector.png" class="news-vector-bg" alt="">
-                        <span class="news-badge en-content">NEWS</span>
-                        <h4 class="news-card-title en-content">Doctors in Jet Suits</h4>
-                        <p class="news-card-meta en-content">Published on Aug 22, 2022 - 2 min read
-                        </p>
-                        <span class="news-badge ar-content">البعثات الطبية</span>
-                        <h3 class="news-card-title ar-content">إخلاء طبي عاجل لمصاب بحروق من المالديف إلى بانكوك
-                        </h3>
-                        <p class="news-card-meta ar-content">نُشر بتاريخ ١٨ ديسمبر ٢٠٢٥</p>
-                    </div>
-                </a>
-
-                <!-- Bottom Left Card -->
-                <a href="medvac-aircraft.html" class="news-card">
-                    <div class="news-card-img-wrapper">
-                        <img src="images/bl6.png" alt="Lifesaving Burn Evacuation" class="news-card-img">
-                    </div>
-                    <div class="news-card-content">
-                        <img src="images/news-vector.png" class="news-vector-bg" alt="">
-                        <span class="news-badge en-content">NEWS</span>
-                        <h4 class="news-card-title en-content">Medevac Aircraft</h4>
-                        <p class="news-card-meta en-content">Published on Aug 03, 2022 - 2 min read
-                        </p>
-                        <span class="news-badge ar-content">البعثات الطبية</span>
-                        <h3 class="news-card-title ar-content">إخلاء طبي عاجل لمصاب بحروق من المالديف إلى بانكوك
-                        </h3>
-                        <p class="news-card-meta ar-content">نُشر بتاريخ ١٨ ديسمبر ٢٠٢٥</p>
-                    </div>
-                </a>
-
-                <!-- Bottom Right Card -->
-
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== FOOTER ========== -->
+    <section class="common-padding blog-detail-content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 m-auto">
+                    <div class="blog-contant">
+                        <h3>Bluedot launches the Region's Biggest Midsize Medevac Aircraft from 01 August 2022</h3>
+                        <p>Striving to serve its customers better worldwide, Bluedot is all set to launch the region’s
+                            biggest midsize medevac aircraft, the American-built Cessna Citation Sovereign C680.
+                            Operating out of Dubai from 01 August 2022, this will be a milestone in the Air
+                            Ambulance industry in the Middle East and South Asia.</p>
+
+
+                        <p>The C680 Citation presents several advantages to the end-user in terms of capability versus
+                            price. It offers great speed (over 800kmph) and great range (over 5000km) while also being
+                            relatively economical to operate. This enables us to offer a safe, fast, and well-equipped
+                            service at great value.</p>
+
+                        <p>The C680 Citation fixed-wing jet has good payload capabilities and will be equipped with the
+                            latest aeromedical equipment such as Monitor/Defibrillator, Ventilator, Blood Glucose
+                            Analyser, Stretcher System, Rescue Suction Unit, Perfusors, Infusion Pump, Mobile Blood
+                            Analysis Device (EPOC), ECMO / IABP Bracket, Ultrasound equipment, External Pacemaker,
+                            Portable incubator and more, depending on the mission.</p>
+
+
+                        <p>The 2009-built Citation Sovereign has a cabin height of 1.73m, with the capacity to carry 2
+                            medical crew and 4 co-passengers, besides the patient. It also serves as a business jet for
+                            charters with double-club seating for eight. In comparison with similar flights, the C680
+                            has a bigger cabin than the Learjet60, and two more seats than the Gulfstream G150.</p>
+
+                        <p>The C680 can operate out of shorter fields. At maximum take-off weight (MTOW), at sea level,
+                            and in standard day conditions, the Sovereign needs only 1,090m (3,580ft), while the
+                            Challenger 300 needs 1,450m and the Learjet 60 1,660m. At maximum landing weight (MLW), the
+                            Sovereign needs only 808m of runway, less than the Learjet 60’s 1,042m but more than the
+                            Challenger 300’s 796m. High temperature performance is also noteworthy, with the Sovereign
+                            able to carry eight passengers from west to east coast USA, with instrument flight rules
+                            reserves on a 35°C day.</p>
+
+                        <p>Other technical facts about the C680: It can carry a full fuel payload of 1,000–1,200 lb
+                            (450–540 kg) and can fly 2,840 nmi (5,260 km) at a block speed of 406 kn (752 km/h). It can
+                            takeoff at 3,640 ft (1,110 m) and climb to FL410 in 19 min and to FL430 in just 26 min.</p>
+
+                        <p>Bluedot looks forward to serving the Middle East and Asia markets with better value for money
+                            and comfort and convenience for its passengers and patients with this bigger and
+                            well-equipped aircraft. Together with our leading aeromedical team and service expertise,
+                            you can rest assured that your medical journeys will be full of hope and positivity. Get in
+                            touch with us at +971 551 881 441 to know more about the Aircraft and our aeromedical
+                            services.
+                        </p>
+
+
+
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="related-blog-section">
+                        <h3>Recent news & Stories</h3>
+                        <div>
+                            <div class="swiper related-blog">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="neonatal-paediatric-transfer.html" class="news-card ">
+                                            <div class="news-card-img-wrapper">
+                                                <img src="images/b-new.png"
+                                                    alt="Bluedot Wins Marketing Campaign of the Year"
+                                                    class="news-card-img">
+                                            </div>
+                                            <div class="news-card-content">
+                                                <img src="images/news-vector.png" class="news-vector-bg" alt="">
+                                                <span class="news-badge en-content">NEWS</span>
+                                                <h4 class="news-card-title en-content">Neonatal & Paediatric Transfer
+                                                </h4>
+                                                <p class="news-card-meta en-content">Published on Mar 16, 2022 - 3 min
+                                                    read</p>
+
+                                                <span class="news-badge ar-content">أخبار</span>
+                                                <h3 class="news-card-title ar-content">نقل الرضع والصغار</h3>
+                                                <p class="news-card-meta ar-content">نُشر بتاريخ ١٨ ديسمبر ٢٠٢٥ ·</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="infant-air-transfer.html" class="news-card">
+                                            <div class="news-card-img-wrapper">
+                                                <img src="images/b-new2.png" alt="The New Bluedot Partnership"
+                                                    class="news-card-img">
+                                            </div>
+                                            <div class="news-card-content">
+                                                <img src="images/news-vector.png" class="news-vector-bg" alt="">
+                                                <span class="news-badge en-content">Signups</span>
+                                                <h4 class="news-card-title en-content">The New Bluedot Partnership</h4>
+                                                <p class="news-card-meta en-content">Published on 18 Dec 2025 - 1.20 min
+                                                    read</p>
+
+                                                <span class="news-badge ar-content">الشراكات والانضمامات</span>
+                                                <h3 class="news-card-title ar-content">شراكة جديدة تعزز شبكة بلودوت
+                                                    العالمية</h3>
+                                                <p class="news-card-meta ar-content">نُشر بتاريخ ١٨ ديسمبر ٢٠٢٥</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="challengin-psychiatric.html" class="news-card">
+                                            <div class="news-card-img-wrapper">
+                                                <img src="images/b-new3.png" alt="Lifesaving Burn Evacuation"
+                                                    class="news-card-img">
+                                            </div>
+                                            <div class="news-card-content">
+                                                <img src="images/news-vector.png" class="news-vector-bg" alt="">
+                                                <span class="news-badge en-content">MISSION STORY</span>
+                                                <h4 class="news-card-title en-content">Challenging Psychiatric Case
+                                                    Transfer</h4>
+                                                <p class="news-card-meta en-content">Published on Apr 19, 2022 - 2 min
+                                                    read
+                                                </p>
+
+                                                <span class="news-badge ar-content">البعثات الطبية</span>
+                                                <h3 class="news-card-title ar-content">إخلاء طبي عاجل لمصاب بحروق من
+                                                    المالديف إلى بانكوك
+                                                </h3>
+                                                <p class="news-card-meta ar-content">نُشر بتاريخ ١٨ ديسمبر ٢٠٢٥</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER START ========== -->
     <footer class="site-footer">
         <div class="container">
             <!-- Row 1: Logo | Nav links | Badges -->
@@ -494,6 +446,85 @@
         </div>
     </footer>
     <!-- ========== FOOTER END ========== -->
+    <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+
+        var swiper = new Swiper(".related-blog", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            },
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+        var swiper = new Swiper(".team", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+
 
 
     <!-- Floating Action Buttons -->
@@ -504,77 +535,6 @@
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Custom JS -->
-    <script src="js/main.js"></script>
-
-    <!-- Services Swiper Init -->
-    <script>
-        const servicesSwiper = new Swiper('.servicesSwiper', {
-            slidesPerView: 1.15,
-            centeredSlides: true,
-            spaceBetween: 24,
-            loop: true,
-            speed: 600,
-            navigation: {
-                nextEl: '#servicesNext',
-                prevEl: '#servicesPrev',
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1.3,
-                    spaceBetween: 28,
-                },
-                992: {
-                    slidesPerView: 1.5,
-                    spaceBetween: 32,
-                },
-                1200: {
-                    slidesPerView: 1.6,
-                    spaceBetween: 40,
-                },
-            },
-        });
-
-        // Testimonials Swiper
-        const testiSwiper = new Swiper('.testiSwiper', {
-            slidesPerView: 1,
-            spaceBetween: 24,
-            speed: 600,
-            navigation: {
-                nextEl: '#testiNext',
-                prevEl: '#testiPrev',
-            },
-            pagination: {
-                el: '.testi-pagination',
-                type: 'fraction',
-                renderFraction: function (currentClass, totalClass) {
-                    return '<span class="' + currentClass + '"></span> / <span class="' + totalClass + '"></span>';
-                }
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 24,
-                },
-                992: {
-                    slidesPerView: 3,
-                    spaceBetween: 24,
-                }
-            }
-        });
-    </script>
 
     <!-- ========== ENQUIRY DRAWER START ========== -->
     <div class="enquiry-drawer-overlay" id="enquiryDrawerOverlay"></div>
