@@ -3430,6 +3430,7 @@ img {
     line-height: 1.5;
     margin-bottom: 10px;
     font-family: "Aeonik";
+    max-width: 480px;
 
 }
 
@@ -8526,7 +8527,7 @@ html[dir="rtl"] .pl-7 {
     }
 }
 
-.footer-bottom-links{
+.footer-bottom-links {
     display: flex;
     gap: 10px;
 }
