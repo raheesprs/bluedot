@@ -8478,3 +8478,55 @@ html[dir="rtl"] .pl-7 {
     padding-left: 10px !important;
     padding-right: 60px;
 }
+
+.terms-white-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 80px 60px;
+
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.terms-title {
+    font-family: 'Aeonik', sans-serif;
+    font-size: 58px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 0;
+    letter-spacing: -1px;
+}
+
+.terms-hero {
+    padding: 200px 0 110px;
+    background-color: #EDF2F6;
+}
+
+.terms-content {
+    padding-top: 30px;
+}
+
+.terms-content p {
+    font-family: 'Aeonik';
+    font-size: 17px;
+    font-weight: 400;
+    color: #1F1F1F;
+    line-height: 1.2;
+    letter-spacing: 0.2;
+}
+
+@media (max-width: 767.98px) {
+    .terms-title {
+        font-size: 38px;
+    }
+
+    .terms-white-card {
+        padding: 80px 30px;
+    }
+}
+
+.footer-bottom-links{
+    display: flex;
+    gap: 10px;
+}
