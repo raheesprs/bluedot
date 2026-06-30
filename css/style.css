@@ -2036,7 +2036,7 @@ img {
 /* Responsive */
 @media (max-width: 991.98px) {
     .testi-layout {
-        flex-direction: column;
+        flex-direction: column !important;
         align-items: flex-start;
         gap: 36px;
     }
@@ -4206,7 +4206,9 @@ img {
    RESPONSIVE
    ======================================== */
 @media (max-width: 991.98px) {
-    .header-btn {
+
+    .header-btn,
+    html[dir="rtl"] .header-btn {
         display: none !important;
     }
 
@@ -4332,7 +4334,6 @@ img {
 
     .nav-drawer-actions {
         display: none;
-        /* Hide header top actions on very small screens, keep only close button */
     }
 
     .nav-drawer-content {
@@ -6778,21 +6779,12 @@ img {
    Show .en-content only when English is active.
    ===================================================== */
 
-/* Arabic content is hidden by default */
-.ar-content {
+/* Arabic content is hidden by default (when not RTL) */
+html:not([dir="rtl"]) .ar-content {
     display: none !important;
 }
 
-/* English content is shown by default */
-.en-content {
-    display: block;
-}
-
-/* When Arabic language is active */
-html[dir="rtl"] .ar-content {
-    display: block !important;
-}
-
+/* English content is hidden when RTL is active */
 html[dir="rtl"] .en-content {
     display: none !important;
 }
@@ -6988,9 +6980,9 @@ html[dir="rtl"] .hero-buttons {
 }
 
 /* ── Services Slider ── */
-html[dir="rtl"] .svc-card {
+/* html[dir="rtl"] .svc-card {
     flex-direction: row-reverse;
-}
+} */
 
 html[dir="rtl"] .svc-card-text {
     text-align: right;
@@ -7021,7 +7013,7 @@ html[dir="rtl"] .accredited-wrapper {
 html[dir="rtl"] .accredited-left-inner {
     text-align: right;
     border-left: none;
-    border-right: 4px solid #0095D6;
+    /* border-right: 4px solid #0095D6; */
     padding-left: 0;
     padding-right: 32px;
 }
@@ -8525,9 +8517,22 @@ html[dir="rtl"] .pl-7 {
     .terms-white-card {
         padding: 80px 30px;
     }
+
+    .nav-lang {
+        display: none;
+    }
+
+    html[dir="rtl"] .header-hamburger {
+        margin-right: 15px;
+    }
+
 }
 
 .footer-bottom-links {
     display: flex;
     gap: 10px;
 }
+
+/* html[dir="rtl"] .header-actions .header-btn{
+    display: none !important;
+} */
