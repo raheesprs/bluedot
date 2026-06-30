@@ -8526,6 +8526,11 @@ html[dir="rtl"] .pl-7 {
         margin-right: 15px;
     }
 
+    .related-blog-section h3 {
+        font-size: 27px;
+        line-height: 44.4px;
+    }
+
 }
 
 .footer-bottom-links {
