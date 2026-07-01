@@ -624,7 +624,7 @@ img {
     position: relative;
     z-index: 2;
     width: 100%;
-    padding: 217px 140px 100px;
+    padding: 217px 50px 100px;
 }
 
 .svc-card-1 {
@@ -692,8 +692,8 @@ img {
 }
 
 .hero-title {
-    font-size: 70px;
-    font-weight: 600;
+    font-size: 60px;
+    font-weight: 800;
     color: var(--white);
     line-height: 1.1;
     margin-bottom: 10px;
@@ -712,7 +712,7 @@ img {
 }
 
 .hero-description {
-    font-size: 26px;
+    font-size: 22px;
     color: white;
     max-width: 900px;
 
@@ -5501,7 +5501,7 @@ img {
 
 .hero-title-main {
     font-size: 68px;
-    font-weight: 400;
+    font-weight: 600;
     color: #000000;
     margin-bottom: 16px;
     letter-spacing: -1.5px;
@@ -8568,4 +8568,12 @@ html[dir="rtl"] .cabin-stat-main {
 
 .pb-50 {
     padding-bottom: 60px;
+}
+
+html[dir="rtl"] .hero-slide {
+    transform: scaleX(-1);
+}
+
+html[dir="rtl"] .hero-slide-content {
+    transform: scaleX(-1);
 }
