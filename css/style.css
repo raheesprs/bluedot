@@ -8577,3 +8577,7 @@ html[dir="rtl"] .hero-slide {
 html[dir="rtl"] .hero-slide-content {
     transform: scaleX(-1);
 }
+
+html[dir="rtl"] .related-blog-section h3 {
+    text-align: right;
+}
