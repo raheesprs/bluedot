@@ -7442,6 +7442,7 @@ html[dir="rtl"] svg {
 .oman-worldwide-section {
     padding: 60px 0;
     padding-bottom: 0px;
+    padding-top: 10px;
 }
 
 .worldwide-box {
@@ -8547,6 +8548,9 @@ html[dir="rtl"] .cabin-stat-main {
         font-size: 50px;
     }
 
+    .worldwide-content {
+        padding-left: 0px;
+    }
 }
 
 .footer-bottom-links {
