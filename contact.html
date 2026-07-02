@@ -239,8 +239,7 @@
                             <li class="en-content"><a href="Medical-Escort-Services.html">Medical Escorts</a></li>
                             <li class="ar-content"><a href="Medical-Escort-Services.html">المرافقة الطبية</a></li>
 
-                            <li class="en-content"><a href="rotary-wing-medical-transport.html">Rotary Wing Medical
-                                    Transport</a>
+                            <li class="en-content"><a href="rotary-wing-medical-transport.html">Rotary Wing Services</a>
                             </li>
                             <li class="ar-content"><a href="rotary-wing-medical-transport.html">الإسعاف الجوي
                                     بالمروحيات</a>
@@ -253,7 +252,7 @@
             </div>
 
             <div class="nav-drawer-footer en-content">
-                <a href="roles.html" class="nav-outline-btn">Join the Team</a>
+                <a href="roles.html" class="nav-outline-btn">Join the journey</a>
                 <div class="nav-socials">
                     <a href="#">LinkedIn</a>
                     <a href="#">Facebook</a>
@@ -386,7 +385,7 @@
             <img src="images/new-map.png" alt="World Map with Office Locations" class="map-image">
 
             <!-- Dammam Marker -->
-            <div class="map-marker" style="top: 45%; left: 20%;" onclick="toggleMarker(this)">
+            <div class="map-marker" style="top: 45%; left: 22%;" onclick="toggleMarker(this)">
                 <div class="marker-pin">
                     <i class="fas fa-map-marker-alt"></i>
                     <span class="marker-label en-content">Dammam</span>
@@ -416,7 +415,7 @@
             </div>
 
             <!-- Dubai Marker -->
-            <div class="map-marker" style="top: 47%; left: 27%;" onclick="toggleMarker(this)">
+            <div class="map-marker" style="top: 48%; left: 27%;" onclick="toggleMarker(this)">
                 <div class="marker-pin">
                     <i class="fas fa-map-marker-alt"></i>
                     <span class="marker-label en-content">Dubai</span>
@@ -446,7 +445,7 @@
             </div>
 
             <!-- Ernakulam Marker -->
-            <div class="map-marker active" style="top: 62%; left: 47%;" onclick="toggleMarker(this)">
+            <div class="map-marker" style="top: 62%; left: 47%;" onclick="toggleMarker(this)">
                 <div class="marker-pin">
                     <i class="fas fa-map-marker-alt"></i>
                     <span class="marker-label en-content">Ernakulam</span>
@@ -487,6 +486,24 @@
                 // Toggle active class on clicked marker
                 element.classList.toggle('active');
             }
+
+            // Prevent clicks inside the info card from closing it
+            document.addEventListener('DOMContentLoaded', function () {
+                document.querySelectorAll('.marker-card').forEach(card => {
+                    card.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                    });
+                });
+
+                // Close all markers when clicking outside
+                document.addEventListener('click', function (e) {
+                    if (!e.target.closest('.map-marker')) {
+                        document.querySelectorAll('.map-marker').forEach(marker => {
+                            marker.classList.remove('active');
+                        });
+                    }
+                });
+            });
         </script>
 
     </section>
@@ -680,7 +697,7 @@
         </div>
 
         <div class="enquiry-drawer-footer">
-            <a href="roles.html" class="nav-outline-btn" data-i18n="nav.join_team">Join the Team</a>
+            <a href="roles.html" class="nav-outline-btn" data-i18n="nav.join_team">Join the journey</a>
             <div class="nav-socials">
                 <a href="#">LinkedIn</a>
                 <a href="#">Facebook</a>
